@@ -1,0 +1,14 @@
+smiles,name
+OC(=O)CC(N)C(=O)O,ASP
+NCCCCC(N)C(=O)O,LYS
+OC(=O)C(=O)CCC(=O)O,AKG
+CC=O,AcA
+CC(=O)O,Ac
+OC(=O)C(O)CC(=O)O,MAL
+O=C=O,CO2
+OP(=O)(O)O,Pi
+OP(=O)(O)OP(=O)(O)O,PPi
+[NH3],NH3
+OC(=O)O,HCO3
+[H+],H+
+O,H20
