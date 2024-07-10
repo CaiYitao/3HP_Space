@@ -3,9 +3,7 @@ import torch
 import torch.nn.functional as F
 from torch_geometric.data import Data, Dataset
 from torch_geometric.transforms import Compose
-# from torch_geometric.utils import to_networkx
-# from torch_scatter import scatter
-#from torch.utils.data import Dataset
+
 from rdkit.Chem import AllChem
 from rdkit import Chem
 from rdkit.Chem.rdchem import Mol, HybridizationType, BondType
@@ -154,6 +152,65 @@ def smarts_to_gml(reaction_smarts_array):
     gml_format += "\n ]"
 
     return gml_format
+
+
+from collections import defaultdict
+
+def smarts_to_gml_v2(reaction_smarts, reaction_name):
+    """
+    Convert a SMARTS representation of a chemical reaction to a GML representation
+    with sorted IDs.
+    """
+    reaction = AllChem.ReactionFromSmarts(reaction_smarts)
+    gml_rule = defaultdict(lambda: {"nodes": set(), "edges": set()})
+    gml_rule["ruleID"] = f'"{reaction_name}"'
+
+    bonds = {1: "-", 2: "=", 3: "#", 1.5: ":"}
+    charges = {1: "+", -1: "-", 0: ""}
+
+    def get_molecule_info(mol):
+        atoms = {(atom.GetAtomMapNum(), atom.GetSymbol() + charges[atom.GetFormalCharge()])
+                 for atom in mol.GetAtoms() if atom.GetAtomMapNum()}
+        bonds = {(min(b.GetBeginAtom().GetAtomMapNum(), b.GetEndAtom().GetAtomMapNum()),
+                  max(b.GetBeginAtom().GetAtomMapNum(), b.GetEndAtom().GetAtomMapNum()),
+                  b.GetBondTypeAsDouble())
+                 for b in mol.GetBonds()
+                 if b.GetBeginAtom().GetAtomMapNum() and b.GetEndAtom().GetAtomMapNum()}
+        return atoms, bonds
+
+    reactants_info = [get_molecule_info(r) for r in reaction.GetReactants()]
+    products_info = [get_molecule_info(p) for p in reaction.GetProducts()]
+
+    reactant_atoms = set().union(*(atoms for atoms, _ in reactants_info))
+    reactant_bonds = set().union(*(bonds for _, bonds in reactants_info))
+    product_atoms = set().union(*(atoms for atoms, _ in products_info))
+    product_bonds = set().union(*(bonds for _, bonds in products_info))
+
+    unchanged_atoms = reactant_atoms & product_atoms
+    unchanged_bonds = reactant_bonds & product_bonds
+
+    gml_rule["left"]["nodes"] = reactant_atoms - unchanged_atoms
+    gml_rule["left"]["edges"] = reactant_bonds - unchanged_bonds
+    gml_rule["right"]["nodes"] = product_atoms - unchanged_atoms
+    gml_rule["right"]["edges"] = product_bonds - unchanged_bonds
+    gml_rule["context"]["nodes"] = unchanged_atoms
+    gml_rule["context"]["edges"] = unchanged_bonds
+
+    def format_section(section_name, section_data):
+        nodes = sorted(section_data["nodes"])
+        edges = sorted(section_data["edges"])
+        result = [f" \n {section_name} ["]
+        result.extend(f'   node [ id {id} label "{label}"]' for id, label in nodes)
+        result.extend(f'   edge [ source {s} target {t} label "{bonds[l]}"]' for s, t, l in edges)
+        result.append(" ]")
+        return "\n".join(result)
+
+    sections = ["left", "context", "right"]
+    gml_format = [f"rule[\n ruleID {gml_rule['ruleID']}"]
+    gml_format.extend(format_section(section, gml_rule[section]) for section in sections)
+    gml_format.append("]")
+
+    return "\n".join(gml_format)
 
 
 

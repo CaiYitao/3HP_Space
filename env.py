@@ -368,7 +368,7 @@ def is_smiles(encoding):
         return False
 
 def rdkit_isomorphism_check(mol1, mol2):
-    # Use RDKit for SMILES isomorphism checks (example implementation)
+    # Use RDKit for SMILES isomorphism checks 
     smiles1 = mol1.linearEncoding
     smiles2 = mol2.linearEncoding
 

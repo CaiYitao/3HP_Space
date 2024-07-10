@@ -40,7 +40,7 @@ def apply_reaction(init_dg,rule,cofactors) -> list:
 
     cofactor = [cofactors[2]]
 
-    mstrat = (rightPredicate[lambda dg: all(g.vLabelCount('C') <= 88 for g in dg.right)](rule) )
+    mstrat = (rightPredicate[lambda dg: all(g.vLabelCount('C') <= 66 for g in dg.right)](rule) )
 
     dg = DG()
 
@@ -52,7 +52,7 @@ def apply_reaction(init_dg,rule,cofactors) -> list:
                 print(f"e.targets: {e.targets}")
                 b.addHyperEdge(e)
   
-        res = b.execute(addSubset(init_dg.graphDatabase + cofactor) >> mstrat)
+        res = b.execute(addUniverse(cofactors) >> addSubset(init_dg.graphDatabase ) >> mstrat)
 
     products =[]
 
@@ -109,20 +109,3 @@ if __name__ == "__main__":
 
     
 
-
-
-    # for i in range(episodes):
-    #     rule_action = random.randint(0,len(rules)-1)
-    #     print(f"rule action: R{rule_action+1} at the {i+1}th episode")
-    #     # ma = random.randint(0,known_mol.shape[0]-1)
-    #     mol_action = random.randint(0,len(mol_pool)-1)
-    #     cof_action = random.randint(0,len(cofactors)-1)
-    #     # print(f"molecule action: {known_mol.iloc[ma]['name']} at the {i+1}th episode")
-    #     print(f"molecule action: {source_pool[mol_action].name} at the {i+1}th episode")
-    #     print(f"cofactor action: {cofactors[cof_action].name} at the {i+1}th episode")
-    #     print(f"rule action: {rules[rule_action].name} at the {i+1}th episode")
-    #     # dg_new,_,_= env.step(rule_action,(mol_action,cof_action))
-    #     dg_new,_,_= env.step(rule_action,mol_action)
-    #     # if i % 20 == 0:
-    #     #     env.render()
-    #     action.append([mol_action,cof_action,rule_action])
