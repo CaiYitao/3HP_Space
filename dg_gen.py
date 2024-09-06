@@ -3,7 +3,7 @@ import sys
 import subprocess
 sys.path.append("/home/talax/xtof/local/Mod/lib64")
 from mod import *
-
+from utils import collect_rules
 
 
 
@@ -24,6 +24,8 @@ def main():
     h2o  = smiles('O', 'H2O')
     hco3 = smiles('OC(=O)O', 'HCO3') 
     hp = smiles('[H+]', 'H+')
+    # oxoglutarate = smiles('C(CC(=O)O)C(=O)C(=O)O','OXO')
+    glutamate = smiles('C(CC(=O)O)C(C(=O)O)N','GLU')
 
     coa     = graphDFS('[CoA]S[H]', 'CoA')
     sam     = graphDFS('[Ad][S+](C)CCCN', 'SAM')
@@ -37,25 +39,25 @@ def main():
     #     m.print()
 
     # rules(s)
-    r1  = ruleGML('/home/mescalin/yitao/Documents/Code/3HPspace/rule-0001.gml')
-    r2  = ruleGML('/home/mescalin/yitao/Documents/Code/3HPspace/rule-0002.gml')
-    r3  = ruleGML('/home/mescalin/yitao/Documents/Code/3HPspace/rule-0003.gml')
-    r4  = ruleGML('/home/mescalin/yitao/Documents/Code/3HPspace/rule-0004.gml')
-    r5  = ruleGML('/home/mescalin/yitao/Documents/Code/3HPspace/rule-0005.gml')
-    r6  = ruleGML('/home/mescalin/yitao/Documents/Code/3HPspace/rule-0006.gml')
-    r7  = ruleGML('/home/mescalin/yitao/Documents/Code/3HPspace/rule-0007.gml')
-    r8  = ruleGML('/home/mescalin/yitao/Documents/Code/3HPspace/rule-0008.gml')
-    r9  = ruleGML('/home/mescalin/yitao/Documents/Code/3HPspace/rule-0009.gml')
-    r10 = ruleGML('/home/mescalin/yitao/Documents/Code/3HPspace/rule-0010.gml')
-    r11 = ruleGML('/home/mescalin/yitao/Documents/Code/3HPspace/rule-0011.gml')
+    # r1  = ruleGML('/home/mescalin/yitao/Documents/Code/3HPspace/rule-0001.gml')
+    # r2  = ruleGML('/home/mescalin/yitao/Documents/Code/3HPspace/rule-0002.gml')
+    # r3  = ruleGML('/home/mescalin/yitao/Documents/Code/3HPspace/rule-0003.gml')
+    # r4  = ruleGML('/home/mescalin/yitao/Documents/Code/3HPspace/rule-0004.gml')
+    # r5  = ruleGML('/home/mescalin/yitao/Documents/Code/3HPspace/rule-0005.gml')
+    # r6  = ruleGML('/home/mescalin/yitao/Documents/Code/3HPspace/rule-0006.gml')
+    # r7  = ruleGML('/home/mescalin/yitao/Documents/Code/3HPspace/rule-0007.gml')
+    # r8  = ruleGML('/home/mescalin/yitao/Documents/Code/3HPspace/rule-0008.gml')
+    # r9  = ruleGML('/home/mescalin/yitao/Documents/Code/3HPspace/rule-0009.gml')
+    # r10 = ruleGML('/home/mescalin/yitao/Documents/Code/3HPspace/rule-0010.gml')
+    # r11 = ruleGML('/home/mescalin/yitao/Documents/Code/3HPspace/rule-0011.gml')
     # reaction_smarts = "[H:1][O:2][C:3][C:4][H:5]>>[H:1][O:2][H:5].[C:3]=[C:4]"
     # reaction_name = "Hydrogenation"
     # rxn_arr = [reaction_smarts,reaction_name]
     # # Convert the reaction SMARTS into GML format rule
     # gml_format_rule = smarts_to_gml(rxn_arr)
     # rule = ruleGMLString(gml_format_rule)
-
-
+    rules_path ="/home/mescalin/yitao/Documents/Code/3HP/gml_rules"
+    rules = collect_rules(rules_path)
 
     p = GraphPrinter()
     p.setReactionDefault()
@@ -63,9 +65,9 @@ def main():
     for r in inputRules:
         r.print(p)
     
-    i=10
+    i=15
     strat = (addSubset(inputGraphs) >> repeat[i](inputRules))
-    dg = DG(graphDatabase=inputGraphs)
+    dg = DG()
     dg.build().execute(strat)
     # with dg.build() as b:
     #     b.subset=inputGraphs
@@ -78,7 +80,7 @@ def main():
     # hg_featurizer = HyperGraphFeaturizer()
     # hg_data = hg_featurizer(dg)
     # pickle.dump(hg_data, open(f"/home/mescalin/yitao/Documents/Code/3HPspace/hg_data{i}.pkl", "wb"))
-    
+    dg.dump('/home/mescalin/yitao/Documents/Code/3HP/data/dg')
     dg.print()
 
     # flush summary file handle

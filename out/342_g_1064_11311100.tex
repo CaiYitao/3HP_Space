@@ -1,0 +1,36 @@
+\begin{tikzpicture}[remember picture, scale=\modGraphScale, baseline={([yshift={-0.5ex}]current bounding box)}, thick, solid]
+\input{\modInputPrefix/out/341_g_1064_mol_coord.tex}
+\node[modStyleGraphVertex, at=(\modIdPrefix v-coord-0)] (\modIdPrefix v-0) {\textbf{CoA}};
+\node[modStyleGraphVertex, text=olive, at=(\modIdPrefix v-coord-1)] (\modIdPrefix v-1) {\textbf{S}};
+\node[modStyleGraphVertex, modStyleCarbon, at=(\modIdPrefix v-coord-2)] (\modIdPrefix v-2) {\textbf{}};
+\node[modStyleGraphVertex, text=red, at=(\modIdPrefix v-coord-3)] (\modIdPrefix v-3) {\textbf{O}};
+\node[modStyleGraphVertex, modStyleCarbon, at=(\modIdPrefix v-coord-4)] (\modIdPrefix v-4) {\textbf{}};
+\node[modStyleGraphVertex, text=red, at=(\modIdPrefix v-coord-5)] (\modIdPrefix v-5) {\textbf{O}};
+\node[modStyleGraphVertex, text=red, at=(\modIdPrefix v-coord-6)] (\modIdPrefix v-6) {\textbf{O}};
+\node[modStyleGraphVertex, text=red, at=(\modIdPrefix v-6.west), anchor=east] (\modIdPrefix v-6-aux) {\textbf{H}};
+\node[modStyleGraphVertex, at=(\modIdPrefix v-6-aux)] {\phantom{\textbf{H}}};
+\node[modStyleGraphVertex, at=(\modIdPrefix v-coord-8)] (\modIdPrefix v-8) {\textbf{CoA}};
+\node[modStyleGraphVertex, text=olive, at=(\modIdPrefix v-coord-9)] (\modIdPrefix v-9) {\textbf{S}};
+\node[modStyleGraphVertex, modStyleCarbon, at=(\modIdPrefix v-coord-10)] (\modIdPrefix v-10) {\textbf{}};
+\node[modStyleGraphVertex, text=red, at=(\modIdPrefix v-coord-11)] (\modIdPrefix v-11) {\textbf{O}};
+\node[modStyleGraphVertex, modStyleCarbon, at=(\modIdPrefix v-coord-12)] (\modIdPrefix v-12) {\textbf{}};
+\node[modStyleGraphVertex, modStyleCarbon, at=(\modIdPrefix v-coord-13)] (\modIdPrefix v-13) {\textbf{}};
+\node[modStyleGraphVertex, text=red, at=(\modIdPrefix v-coord-14)] (\modIdPrefix v-14) {\textbf{O}};
+\node[modStyleGraphVertex, text=red, at=(\modIdPrefix v-coord-15)] (\modIdPrefix v-15) {\textbf{O}};
+\node[modStyleGraphVertex, text=red, at=(\modIdPrefix v-15.east), anchor=west] (\modIdPrefix v-15-aux) {\textbf{H}};
+\node[modStyleGraphVertex, at=(\modIdPrefix v-15-aux)] {\phantom{\textbf{H}}};
+\modDrawSingleBond{12}{13}{0}{0}{}{}
+\modDrawDoubleBond{14}{13}{1}{0}{}{}
+\modDrawSingleBond{13}{15}{0}{1}{}{}
+\modDrawSingleBond{12}{4}{0}{0}{}{}
+\modDrawDoubleBond{5}{4}{1}{0}{}{}
+\modDrawSingleBond{4}{6}{0}{1}{}{}
+\modDrawSingleBond{12}{10}{0}{0}{}{}
+\modDrawDoubleBond{10}{11}{0}{1}{}{}
+\modDrawSingleBond{10}{9}{0}{1}{}{}
+\modDrawSingleBond{9}{8}{1}{1}{}{}
+\modDrawSingleBond{12}{2}{0}{0}{}{}
+\modDrawDoubleBond{2}{3}{0}{1}{}{}
+\modDrawSingleBond{2}{1}{0}{1}{}{}
+\modDrawSingleBond{1}{0}{1}{1}{}{}
+\end{tikzpicture}

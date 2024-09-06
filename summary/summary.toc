@@ -1,0 +1,21 @@
+\babel@toc {english}{}\relax 
+\contentsline {subsection}{\numberline {0.0.1}R1: (S)-lactate + NAD+ = pyruvate + NADH + H+}{2}{subsection.0.0.1}%
+\contentsline {subsection}{\numberline {0.0.2}R2: Ac-aldehyde + CoA + NAD+ = Ac-CoA + NADH + H+}{2}{subsection.0.0.2}%
+\contentsline {subsection}{\numberline {0.0.3}R3: L-Aspartate + 2-Oxoglutarate \textless {}=\textgreater {} Oxaloacetate + L-Glutamate}{2}{subsection.0.0.3}%
+\contentsline {subsection}{\numberline {0.0.4}R4: Acyl-CoA + H2O \textless {}=\textgreater {} CoA + Carboxylate}{3}{subsection.0.0.4}%
+\contentsline {subsection}{\numberline {0.0.5}R5: SAM + CO2 = SAM-CO2H}{3}{subsection.0.0.5}%
+\contentsline {subsection}{\numberline {0.0.6}R6: L-malate = fumarate + H2O}{3}{subsection.0.0.6}%
+\contentsline {subsection}{\numberline {0.0.7}R7: Lactoyl-CoA \textless {}=\textgreater {} Propenoyl-CoA + H2O}{3}{subsection.0.0.7}%
+\contentsline {subsection}{\numberline {0.0.8}R8: L-Aspartate \textless {}=\textgreater {} Fumarate + Ammonia}{4}{subsection.0.0.8}%
+\contentsline {subsection}{\numberline {0.0.9}R9: L-lysine = (3S)-3,6-diaminohexanoate}{4}{subsection.0.0.9}%
+\contentsline {subsection}{\numberline {0.0.10}R10: ATP + Acetate + CoA \textless {}=\textgreater {} AMP + PPi + Ac-CoA}{5}{subsection.0.0.10}%
+\contentsline {subsection}{\numberline {0.0.11}R11: ATP + Ac-CoA + HCO3- = ADP + malonyl-CoA + Pi}{5}{subsection.0.0.11}%
+\contentsline {subsection}{\numberline {0.0.12}L-glutamate + NAD+ + H2O = 2-oxoglutarate + NADH + NH3 \{ir\}|| ec num:1.4.1.2}{5}{subsection.0.0.12}%
+\contentsline {subsection}{\numberline {0.0.13}pyruvate = acetaldehyde + CO2 \{r\}|| ec num: 4.1.1.1}{6}{subsection.0.0.13}%
+\contentsline {subsection}{\numberline {0.0.14}cellobiose + phosphate = alpha-D-glucose 1-phosphate + D-glucose}{6}{subsection.0.0.14}%
+\contentsline {subsection}{\numberline {0.0.15}ATP+glucose= ADP+Glucose 6-phosphate}{6}{subsection.0.0.15}%
+\contentsline {subsection}{\numberline {0.0.16}alpha-D-glucose 1-phosphate = D-glucose 6-phosphate}{6}{subsection.0.0.16}%
+\contentsline {subsection}{\numberline {0.0.17}D-Glucose 6-phosphate = L-myo-Inositol 1-phosphate}{7}{subsection.0.0.17}%
+\contentsline {subsection}{\numberline {0.0.18}inositol 1-phosphate + H2O = myo-inositol + phosphate}{7}{subsection.0.0.18}%
+\contentsline {subsection}{\numberline {0.0.19}glucose= D-Glucose}{7}{subsection.0.0.19}%
+\contentsline {subsection}{\numberline {0.0.20}DG Hyper, \texttt {dg\_0}}{8}{subsection.0.0.20}%

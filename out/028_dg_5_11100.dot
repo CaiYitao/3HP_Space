@@ -1,0 +1,353 @@
+digraph g {
+// id = 0, graphName = Phosphate
+"0-0" [ shape=ellipse label="Phosphate" image="out/006_g_2_11311100.svg" ];
+// id = 1, graphName = Cellobiose
+"1-0" [ shape=ellipse label="Cellobiose" image="out/008_g_3_11311100.svg" ];
+// id = 2, graphName = p_{1,0}
+"2-0" [ shape=ellipse label="p_{1,0}" image="out/010_g_4_11311100.svg" ];
+// id = 3, graphName = p_{1,1}
+"3-0" [ shape=ellipse label="p_{1,1}" image="out/012_g_5_11311100.svg" ];
+// id = 5, graphName = ATP
+"5-0" [ shape=ellipse label="ATP" image="out/004_g_1_11311100.svg" ];
+// id = 6, graphName = p_{2,0}
+"6-0" [ shape=ellipse label="p_{2,0}" image="out/016_g_20_11311100.svg" ];
+// id = 7, graphName = p_{2,1}
+"7-0" [ shape=ellipse label="p_{2,1}" image="out/018_g_21_11311100.svg" ];
+// id = 9, graphName = p_{3,0}
+"9-0" [ shape=ellipse label="p_{3,0}" image="out/022_g_32_11311100.svg" ];
+// id = 11, graphName = p_{4,0}
+"11-0" [ shape=ellipse label="p_{4,0}" image="out/026_g_43_11311100.svg" ];
+// id = 13, graphName = H2O
+"13-0" [ shape=ellipse label="H2O" image="out/002_g_0_11311100.svg" ];
+// id = 14, graphName = p_{5,0}
+"14-0" [ shape=ellipse label="p_{5,0}" image="out/030_g_59_11311100.svg" ];
+// id = 16, graphName = p_{5,1}
+"16-0" [ shape=ellipse label="p_{5,1}" image="out/032_g_63_11311100.svg" ];
+// id = 18, graphName = p_{5,2}
+"18-0" [ shape=ellipse label="p_{5,2}" image="out/034_g_65_11311100.svg" ];
+// id = 20, graphName = p_{5,3}
+"20-0" [ shape=ellipse label="p_{5,3}" image="out/036_g_67_11311100.svg" ];
+// id = 22, graphName = p_{5,4}
+"22-0" [ shape=ellipse label="p_{5,4}" image="out/038_g_73_11311100.svg" ];
+// id = 24, graphName = p_{5,5}
+"24-0" [ shape=ellipse label="p_{5,5}" image="out/040_g_75_11311100.svg" ];
+// id = 26, graphName = p_{5,6}
+"26-0" [ shape=ellipse label="p_{5,6}" image="out/042_g_77_11311100.svg" ];
+// id = 28, graphName = p_{5,7}
+"28-0" [ shape=ellipse label="p_{5,7}" image="out/044_g_79_11311100.svg" ];
+// id = 30, graphName = p_{5,8}
+"30-0" [ shape=ellipse label="p_{5,8}" image="out/046_g_81_11311100.svg" ];
+// id = 32, graphName = p_{5,9}
+"32-0" [ shape=ellipse label="p_{5,9}" image="out/048_g_83_11311100.svg" ];
+// id = 34, graphName = p_{5,10}
+"34-0" [ shape=ellipse label="p_{5,10}" image="out/050_g_85_11311100.svg" ];
+// id = 36, graphName = p_{5,11}
+"36-0" [ shape=ellipse label="p_{5,11}" image="out/052_g_87_11311100.svg" ];
+// id = 38, graphName = p_{5,12}
+"38-0" [ shape=ellipse label="p_{5,12}" image="out/054_g_89_11311100.svg" ];
+// id = 40, graphName = p_{5,13}
+"40-0" [ shape=ellipse label="p_{5,13}" image="out/056_g_93_11311100.svg" ];
+// id = 42, graphName = p_{5,14}
+"42-0" [ shape=ellipse label="p_{5,14}" image="out/058_g_95_11311100.svg" ];
+// id = 44, graphName = p_{5,15}
+"44-0" [ shape=ellipse label="p_{5,15}" image="out/060_g_97_11311100.svg" ];
+// id = 46, graphName = p_{5,16}
+"46-0" [ shape=ellipse label="p_{5,16}" image="out/062_g_99_11311100.svg" ];
+// id = 48, graphName = p_{5,17}
+"48-0" [ shape=ellipse label="p_{5,17}" image="out/064_g_102_11311100.svg" ];
+// id = 50, graphName = p_{5,18}
+"50-0" [ shape=ellipse label="p_{5,18}" image="out/066_g_103_11311100.svg" ];
+// id = 52, graphName = p_{5,19}
+"52-0" [ shape=ellipse label="p_{5,19}" image="out/068_g_105_11311100.svg" ];
+// id = 54, graphName = p_{5,20}
+"54-0" [ shape=ellipse label="p_{5,20}" image="out/070_g_107_11311100.svg" ];
+// id = 56, graphName = p_{5,21}
+"56-0" [ shape=ellipse label="p_{5,21}" image="out/072_g_109_11311100.svg" ];
+// id = 58, graphName = p_{5,22}
+"58-0" [ shape=ellipse label="p_{5,22}" image="out/074_g_111_11311100.svg" ];
+// id = 60, graphName = p_{5,23}
+"60-0" [ shape=ellipse label="p_{5,23}" image="out/076_g_115_11311100.svg" ];
+// id = 62, graphName = p_{5,24}
+"62-0" [ shape=ellipse label="p_{5,24}" image="out/078_g_119_11311100.svg" ];
+// id = 64, graphName = p_{5,25}
+"64-0" [ shape=ellipse label="p_{5,25}" image="out/080_g_121_11311100.svg" ];
+// id = 66, graphName = p_{5,26}
+"66-0" [ shape=ellipse label="p_{5,26}" image="out/082_g_123_11311100.svg" ];
+// id = 68, graphName = p_{5,27}
+"68-0" [ shape=ellipse label="p_{5,27}" image="out/084_g_125_11311100.svg" ];
+// id = 70, graphName = p_{5,28}
+"70-0" [ shape=ellipse label="p_{5,28}" image="out/086_g_127_11311100.svg" ];
+// id = 72, graphName = p_{5,29}
+"72-0" [ shape=ellipse label="p_{5,29}" image="out/088_g_131_11311100.svg" ];
+// id = 74, graphName = p_{5,30}
+"74-0" [ shape=ellipse label="p_{5,30}" image="out/090_g_133_11311100.svg" ];
+// id = 76, graphName = p_{5,31}
+"76-0" [ shape=ellipse label="p_{5,31}" image="out/092_g_135_11311100.svg" ];
+// id = 78, graphName = p_{5,32}
+"78-0" [ shape=ellipse label="p_{5,32}" image="out/094_g_137_11311100.svg" ];
+// id = 80, graphName = p_{5,33}
+"80-0" [ shape=ellipse label="p_{5,33}" image="out/096_g_139_11311100.svg" ];
+// id = 4{ 'Phosphate' 'Cellobiose' }, ' cellobiose + phosphate = alpha-D-glucose 1-phosphate + D-glucose', { 'p_{1,0}' 'p_{1,1}' }
+"4-0" [ shape=box label="r_{0}" ];
+// id = 8{ 'ATP' 'p_{1,1}' }, ' ATP+glucose= ADP+Glucose 6-phosphate', { 'p_{2,0}' 'p_{2,1}' }
+"8-0" [ shape=box label="r_{1}" ];
+// id = 15{ 'p_{4,0}' 'p_{4,0}' }, ' inositol 1-phosphate + H2O = myo-inositol + phosphate', { 'Phosphate' 'p_{5,0}' }
+"15-0" [ shape=box label="r_{4}" ];
+// id = 17{ 'p_{4,0}' 'p_{4,0}' }, ' inositol 1-phosphate + H2O = myo-inositol + phosphate', { 'Phosphate' 'p_{5,1}' }
+"17-0" [ shape=box label="r_{4}" ];
+// id = 19{ 'p_{4,0}' 'p_{4,0}' }, ' inositol 1-phosphate + H2O = myo-inositol + phosphate', { 'Phosphate' 'p_{5,2}' }
+"19-0" [ shape=box label="r_{4}" ];
+// id = 21{ 'p_{4,0}' 'p_{4,0}' }, ' inositol 1-phosphate + H2O = myo-inositol + phosphate', { 'Phosphate' 'p_{5,3}' }
+"21-0" [ shape=box label="r_{4}" ];
+// id = 23{ 'Cellobiose' 'p_{4,0}' }, ' inositol 1-phosphate + H2O = myo-inositol + phosphate', { 'Phosphate' 'p_{5,4}' }
+"23-0" [ shape=box label="r_{4}" ];
+// id = 25{ 'Cellobiose' 'p_{4,0}' }, ' inositol 1-phosphate + H2O = myo-inositol + phosphate', { 'Phosphate' 'p_{5,5}' }
+"25-0" [ shape=box label="r_{4}" ];
+// id = 27{ 'Cellobiose' 'p_{4,0}' }, ' inositol 1-phosphate + H2O = myo-inositol + phosphate', { 'Phosphate' 'p_{5,6}' }
+"27-0" [ shape=box label="r_{4}" ];
+// id = 29{ 'Cellobiose' 'p_{4,0}' }, ' inositol 1-phosphate + H2O = myo-inositol + phosphate', { 'Phosphate' 'p_{5,7}' }
+"29-0" [ shape=box label="r_{4}" ];
+// id = 31{ 'Cellobiose' 'p_{4,0}' }, ' inositol 1-phosphate + H2O = myo-inositol + phosphate', { 'Phosphate' 'p_{5,8}' }
+"31-0" [ shape=box label="r_{4}" ];
+// id = 33{ 'Cellobiose' 'p_{4,0}' }, ' inositol 1-phosphate + H2O = myo-inositol + phosphate', { 'Phosphate' 'p_{5,9}' }
+"33-0" [ shape=box label="r_{4}" ];
+// id = 35{ 'Cellobiose' 'p_{4,0}' }, ' inositol 1-phosphate + H2O = myo-inositol + phosphate', { 'Phosphate' 'p_{5,10}' }
+"35-0" [ shape=box label="r_{4}" ];
+// id = 37{ 'Cellobiose' 'p_{4,0}' }, ' inositol 1-phosphate + H2O = myo-inositol + phosphate', { 'Phosphate' 'p_{5,11}' }
+"37-0" [ shape=box label="r_{4}" ];
+// id = 39{ 'p_{1,0}' 'p_{4,0}' }, ' inositol 1-phosphate + H2O = myo-inositol + phosphate', { 'Phosphate' 'p_{5,12}' }
+"39-0" [ shape=box label="r_{4}" ];
+// id = 41{ 'p_{1,0}' 'p_{4,0}' }, ' inositol 1-phosphate + H2O = myo-inositol + phosphate', { 'Phosphate' 'p_{5,13}' }
+"41-0" [ shape=box label="r_{4}" ];
+// id = 43{ 'p_{1,0}' 'p_{4,0}' }, ' inositol 1-phosphate + H2O = myo-inositol + phosphate', { 'Phosphate' 'p_{5,14}' }
+"43-0" [ shape=box label="r_{4}" ];
+// id = 45{ 'p_{1,0}' 'p_{4,0}' }, ' inositol 1-phosphate + H2O = myo-inositol + phosphate', { 'Phosphate' 'p_{5,15}' }
+"45-0" [ shape=box label="r_{4}" ];
+// id = 47{ 'p_{1,0}' 'p_{4,0}' }, ' inositol 1-phosphate + H2O = myo-inositol + phosphate', { 'Phosphate' 'p_{5,16}' }
+"47-0" [ shape=box label="r_{4}" ];
+// id = 49{ 'p_{1,1}' 'p_{4,0}' }, ' inositol 1-phosphate + H2O = myo-inositol + phosphate', { 'Phosphate' 'p_{5,17}' }
+"49-0" [ shape=box label="r_{4}" ];
+// id = 51{ 'p_{1,1}' 'p_{4,0}' }, ' inositol 1-phosphate + H2O = myo-inositol + phosphate', { 'Phosphate' 'p_{5,18}' }
+"51-0" [ shape=box label="r_{4}" ];
+// id = 53{ 'p_{1,1}' 'p_{4,0}' }, ' inositol 1-phosphate + H2O = myo-inositol + phosphate', { 'Phosphate' 'p_{5,19}' }
+"53-0" [ shape=box label="r_{4}" ];
+// id = 55{ 'p_{1,1}' 'p_{4,0}' }, ' inositol 1-phosphate + H2O = myo-inositol + phosphate', { 'Phosphate' 'p_{5,20}' }
+"55-0" [ shape=box label="r_{4}" ];
+// id = 57{ 'p_{1,1}' 'p_{4,0}' }, ' inositol 1-phosphate + H2O = myo-inositol + phosphate', { 'Phosphate' 'p_{5,21}' }
+"57-0" [ shape=box label="r_{4}" ];
+// id = 59{ 'ATP' 'p_{4,0}' }, ' inositol 1-phosphate + H2O = myo-inositol + phosphate', { 'Phosphate' 'p_{5,22}' }
+"59-0" [ shape=box label="r_{4}" ];
+// id = 61{ 'p_{2,1}' 'p_{4,0}' }, ' inositol 1-phosphate + H2O = myo-inositol + phosphate', { 'Phosphate' 'p_{5,23}' }
+"61-0" [ shape=box label="r_{4}" ];
+// id = 63{ 'p_{2,1}' 'p_{4,0}' }, ' inositol 1-phosphate + H2O = myo-inositol + phosphate', { 'Phosphate' 'p_{5,24}' }
+"63-0" [ shape=box label="r_{4}" ];
+// id = 65{ 'p_{2,1}' 'p_{4,0}' }, ' inositol 1-phosphate + H2O = myo-inositol + phosphate', { 'Phosphate' 'p_{5,25}' }
+"65-0" [ shape=box label="r_{4}" ];
+// id = 67{ 'p_{2,1}' 'p_{4,0}' }, ' inositol 1-phosphate + H2O = myo-inositol + phosphate', { 'Phosphate' 'p_{5,26}' }
+"67-0" [ shape=box label="r_{4}" ];
+// id = 69{ 'p_{2,1}' 'p_{4,0}' }, ' inositol 1-phosphate + H2O = myo-inositol + phosphate', { 'Phosphate' 'p_{5,27}' }
+"69-0" [ shape=box label="r_{4}" ];
+// id = 71{ 'p_{3,0}' 'p_{4,0}' }, ' inositol 1-phosphate + H2O = myo-inositol + phosphate', { 'Phosphate' 'p_{5,28}' }
+"71-0" [ shape=box label="r_{4}" ];
+// id = 73{ 'p_{3,0}' 'p_{4,0}' }, ' inositol 1-phosphate + H2O = myo-inositol + phosphate', { 'Phosphate' 'p_{5,29}' }
+"73-0" [ shape=box label="r_{4}" ];
+// id = 75{ 'p_{3,0}' 'p_{4,0}' }, ' inositol 1-phosphate + H2O = myo-inositol + phosphate', { 'Phosphate' 'p_{5,30}' }
+"75-0" [ shape=box label="r_{4}" ];
+// id = 77{ 'p_{3,0}' 'p_{4,0}' }, ' inositol 1-phosphate + H2O = myo-inositol + phosphate', { 'Phosphate' 'p_{5,31}' }
+"77-0" [ shape=box label="r_{4}" ];
+// id = 79{ 'p_{3,0}' 'p_{4,0}' }, ' inositol 1-phosphate + H2O = myo-inositol + phosphate', { 'Phosphate' 'p_{5,32}' }
+"79-0" [ shape=box label="r_{4}" ];
+// id = 81{ 'H2O' 'p_{4,0}' }, ' inositol 1-phosphate + H2O = myo-inositol + phosphate', { 'Phosphate' 'p_{5,33}' }
+"81-0" [ shape=box label="r_{4}" ];
+// id = 82{ 'Phosphate' 'p_{4,0}' }, ' inositol 1-phosphate + H2O = myo-inositol + phosphate', { 'Phosphate' 'p_{4,0}' }
+"82-0" [ shape=box label="r_{4}" ];
+// id = 4{ 'Phosphate' 'Cellobiose' }, ' cellobiose + phosphate = alpha-D-glucose 1-phosphate + D-glucose', { 'p_{1,0}' 'p_{1,1}' }
+"0-0" -> "4-0" [ ];
+"1-0" -> "4-0" [ ];
+"4-0" -> "2-0" [ ];
+"4-0" -> "3-0" [ ];
+// id = 8{ 'ATP' 'p_{1,1}' }, ' ATP+glucose= ADP+Glucose 6-phosphate', { 'p_{2,0}' 'p_{2,1}' }
+"3-0" -> "8-0" [ ];
+"5-0" -> "8-0" [ ];
+"8-0" -> "6-0" [ ];
+"8-0" -> "7-0" [ ];
+// id = 10{ 'p_{2,1}' }, ' glucose= D-Glucose ', { 'p_{3,0}' }
+"7-0" -> "9-0" [ label="r_{5}" ];
+// id = 12{ 'p_{3,0}' }, ' D-Glucose 6-phosphate = L-myo-Inositol 1-phosphate', { 'p_{4,0}' }
+"9-0" -> "11-0" [ label="r_{3}" ];
+// id = 15{ 'p_{4,0}' 'p_{4,0}' }, ' inositol 1-phosphate + H2O = myo-inositol + phosphate', { 'Phosphate' 'p_{5,0}' }
+"11-0" -> "15-0" [ ];
+"11-0" -> "15-0" [ ];
+"15-0" -> "0-0" [ ];
+"15-0" -> "14-0" [ ];
+// id = 17{ 'p_{4,0}' 'p_{4,0}' }, ' inositol 1-phosphate + H2O = myo-inositol + phosphate', { 'Phosphate' 'p_{5,1}' }
+"11-0" -> "17-0" [ ];
+"11-0" -> "17-0" [ ];
+"17-0" -> "0-0" [ ];
+"17-0" -> "16-0" [ ];
+// id = 19{ 'p_{4,0}' 'p_{4,0}' }, ' inositol 1-phosphate + H2O = myo-inositol + phosphate', { 'Phosphate' 'p_{5,2}' }
+"11-0" -> "19-0" [ ];
+"11-0" -> "19-0" [ ];
+"19-0" -> "0-0" [ ];
+"19-0" -> "18-0" [ ];
+// id = 21{ 'p_{4,0}' 'p_{4,0}' }, ' inositol 1-phosphate + H2O = myo-inositol + phosphate', { 'Phosphate' 'p_{5,3}' }
+"11-0" -> "21-0" [ ];
+"11-0" -> "21-0" [ ];
+"21-0" -> "0-0" [ ];
+"21-0" -> "20-0" [ ];
+// id = 23{ 'Cellobiose' 'p_{4,0}' }, ' inositol 1-phosphate + H2O = myo-inositol + phosphate', { 'Phosphate' 'p_{5,4}' }
+"1-0" -> "23-0" [ ];
+"11-0" -> "23-0" [ ];
+"23-0" -> "0-0" [ ];
+"23-0" -> "22-0" [ ];
+// id = 25{ 'Cellobiose' 'p_{4,0}' }, ' inositol 1-phosphate + H2O = myo-inositol + phosphate', { 'Phosphate' 'p_{5,5}' }
+"1-0" -> "25-0" [ ];
+"11-0" -> "25-0" [ ];
+"25-0" -> "0-0" [ ];
+"25-0" -> "24-0" [ ];
+// id = 27{ 'Cellobiose' 'p_{4,0}' }, ' inositol 1-phosphate + H2O = myo-inositol + phosphate', { 'Phosphate' 'p_{5,6}' }
+"1-0" -> "27-0" [ ];
+"11-0" -> "27-0" [ ];
+"27-0" -> "0-0" [ ];
+"27-0" -> "26-0" [ ];
+// id = 29{ 'Cellobiose' 'p_{4,0}' }, ' inositol 1-phosphate + H2O = myo-inositol + phosphate', { 'Phosphate' 'p_{5,7}' }
+"1-0" -> "29-0" [ ];
+"11-0" -> "29-0" [ ];
+"29-0" -> "0-0" [ ];
+"29-0" -> "28-0" [ ];
+// id = 31{ 'Cellobiose' 'p_{4,0}' }, ' inositol 1-phosphate + H2O = myo-inositol + phosphate', { 'Phosphate' 'p_{5,8}' }
+"1-0" -> "31-0" [ ];
+"11-0" -> "31-0" [ ];
+"31-0" -> "0-0" [ ];
+"31-0" -> "30-0" [ ];
+// id = 33{ 'Cellobiose' 'p_{4,0}' }, ' inositol 1-phosphate + H2O = myo-inositol + phosphate', { 'Phosphate' 'p_{5,9}' }
+"1-0" -> "33-0" [ ];
+"11-0" -> "33-0" [ ];
+"33-0" -> "0-0" [ ];
+"33-0" -> "32-0" [ ];
+// id = 35{ 'Cellobiose' 'p_{4,0}' }, ' inositol 1-phosphate + H2O = myo-inositol + phosphate', { 'Phosphate' 'p_{5,10}' }
+"1-0" -> "35-0" [ ];
+"11-0" -> "35-0" [ ];
+"35-0" -> "0-0" [ ];
+"35-0" -> "34-0" [ ];
+// id = 37{ 'Cellobiose' 'p_{4,0}' }, ' inositol 1-phosphate + H2O = myo-inositol + phosphate', { 'Phosphate' 'p_{5,11}' }
+"1-0" -> "37-0" [ ];
+"11-0" -> "37-0" [ ];
+"37-0" -> "0-0" [ ];
+"37-0" -> "36-0" [ ];
+// id = 39{ 'p_{1,0}' 'p_{4,0}' }, ' inositol 1-phosphate + H2O = myo-inositol + phosphate', { 'Phosphate' 'p_{5,12}' }
+"2-0" -> "39-0" [ ];
+"11-0" -> "39-0" [ ];
+"39-0" -> "0-0" [ ];
+"39-0" -> "38-0" [ ];
+// id = 41{ 'p_{1,0}' 'p_{4,0}' }, ' inositol 1-phosphate + H2O = myo-inositol + phosphate', { 'Phosphate' 'p_{5,13}' }
+"2-0" -> "41-0" [ ];
+"11-0" -> "41-0" [ ];
+"41-0" -> "0-0" [ ];
+"41-0" -> "40-0" [ ];
+// id = 43{ 'p_{1,0}' 'p_{4,0}' }, ' inositol 1-phosphate + H2O = myo-inositol + phosphate', { 'Phosphate' 'p_{5,14}' }
+"2-0" -> "43-0" [ ];
+"11-0" -> "43-0" [ ];
+"43-0" -> "0-0" [ ];
+"43-0" -> "42-0" [ ];
+// id = 45{ 'p_{1,0}' 'p_{4,0}' }, ' inositol 1-phosphate + H2O = myo-inositol + phosphate', { 'Phosphate' 'p_{5,15}' }
+"2-0" -> "45-0" [ ];
+"11-0" -> "45-0" [ ];
+"45-0" -> "0-0" [ ];
+"45-0" -> "44-0" [ ];
+// id = 47{ 'p_{1,0}' 'p_{4,0}' }, ' inositol 1-phosphate + H2O = myo-inositol + phosphate', { 'Phosphate' 'p_{5,16}' }
+"2-0" -> "47-0" [ ];
+"11-0" -> "47-0" [ ];
+"47-0" -> "0-0" [ ];
+"47-0" -> "46-0" [ ];
+// id = 49{ 'p_{1,1}' 'p_{4,0}' }, ' inositol 1-phosphate + H2O = myo-inositol + phosphate', { 'Phosphate' 'p_{5,17}' }
+"3-0" -> "49-0" [ ];
+"11-0" -> "49-0" [ ];
+"49-0" -> "0-0" [ ];
+"49-0" -> "48-0" [ ];
+// id = 51{ 'p_{1,1}' 'p_{4,0}' }, ' inositol 1-phosphate + H2O = myo-inositol + phosphate', { 'Phosphate' 'p_{5,18}' }
+"3-0" -> "51-0" [ ];
+"11-0" -> "51-0" [ ];
+"51-0" -> "0-0" [ ];
+"51-0" -> "50-0" [ ];
+// id = 53{ 'p_{1,1}' 'p_{4,0}' }, ' inositol 1-phosphate + H2O = myo-inositol + phosphate', { 'Phosphate' 'p_{5,19}' }
+"3-0" -> "53-0" [ ];
+"11-0" -> "53-0" [ ];
+"53-0" -> "0-0" [ ];
+"53-0" -> "52-0" [ ];
+// id = 55{ 'p_{1,1}' 'p_{4,0}' }, ' inositol 1-phosphate + H2O = myo-inositol + phosphate', { 'Phosphate' 'p_{5,20}' }
+"3-0" -> "55-0" [ ];
+"11-0" -> "55-0" [ ];
+"55-0" -> "0-0" [ ];
+"55-0" -> "54-0" [ ];
+// id = 57{ 'p_{1,1}' 'p_{4,0}' }, ' inositol 1-phosphate + H2O = myo-inositol + phosphate', { 'Phosphate' 'p_{5,21}' }
+"3-0" -> "57-0" [ ];
+"11-0" -> "57-0" [ ];
+"57-0" -> "0-0" [ ];
+"57-0" -> "56-0" [ ];
+// id = 59{ 'ATP' 'p_{4,0}' }, ' inositol 1-phosphate + H2O = myo-inositol + phosphate', { 'Phosphate' 'p_{5,22}' }
+"5-0" -> "59-0" [ ];
+"11-0" -> "59-0" [ ];
+"59-0" -> "0-0" [ ];
+"59-0" -> "58-0" [ ];
+// id = 61{ 'p_{2,1}' 'p_{4,0}' }, ' inositol 1-phosphate + H2O = myo-inositol + phosphate', { 'Phosphate' 'p_{5,23}' }
+"7-0" -> "61-0" [ ];
+"11-0" -> "61-0" [ ];
+"61-0" -> "0-0" [ ];
+"61-0" -> "60-0" [ ];
+// id = 63{ 'p_{2,1}' 'p_{4,0}' }, ' inositol 1-phosphate + H2O = myo-inositol + phosphate', { 'Phosphate' 'p_{5,24}' }
+"7-0" -> "63-0" [ ];
+"11-0" -> "63-0" [ ];
+"63-0" -> "0-0" [ ];
+"63-0" -> "62-0" [ ];
+// id = 65{ 'p_{2,1}' 'p_{4,0}' }, ' inositol 1-phosphate + H2O = myo-inositol + phosphate', { 'Phosphate' 'p_{5,25}' }
+"7-0" -> "65-0" [ ];
+"11-0" -> "65-0" [ ];
+"65-0" -> "0-0" [ ];
+"65-0" -> "64-0" [ ];
+// id = 67{ 'p_{2,1}' 'p_{4,0}' }, ' inositol 1-phosphate + H2O = myo-inositol + phosphate', { 'Phosphate' 'p_{5,26}' }
+"7-0" -> "67-0" [ ];
+"11-0" -> "67-0" [ ];
+"67-0" -> "0-0" [ ];
+"67-0" -> "66-0" [ ];
+// id = 69{ 'p_{2,1}' 'p_{4,0}' }, ' inositol 1-phosphate + H2O = myo-inositol + phosphate', { 'Phosphate' 'p_{5,27}' }
+"7-0" -> "69-0" [ ];
+"11-0" -> "69-0" [ ];
+"69-0" -> "0-0" [ ];
+"69-0" -> "68-0" [ ];
+// id = 71{ 'p_{3,0}' 'p_{4,0}' }, ' inositol 1-phosphate + H2O = myo-inositol + phosphate', { 'Phosphate' 'p_{5,28}' }
+"9-0" -> "71-0" [ ];
+"11-0" -> "71-0" [ ];
+"71-0" -> "0-0" [ ];
+"71-0" -> "70-0" [ ];
+// id = 73{ 'p_{3,0}' 'p_{4,0}' }, ' inositol 1-phosphate + H2O = myo-inositol + phosphate', { 'Phosphate' 'p_{5,29}' }
+"9-0" -> "73-0" [ ];
+"11-0" -> "73-0" [ ];
+"73-0" -> "0-0" [ ];
+"73-0" -> "72-0" [ ];
+// id = 75{ 'p_{3,0}' 'p_{4,0}' }, ' inositol 1-phosphate + H2O = myo-inositol + phosphate', { 'Phosphate' 'p_{5,30}' }
+"9-0" -> "75-0" [ ];
+"11-0" -> "75-0" [ ];
+"75-0" -> "0-0" [ ];
+"75-0" -> "74-0" [ ];
+// id = 77{ 'p_{3,0}' 'p_{4,0}' }, ' inositol 1-phosphate + H2O = myo-inositol + phosphate', { 'Phosphate' 'p_{5,31}' }
+"9-0" -> "77-0" [ ];
+"11-0" -> "77-0" [ ];
+"77-0" -> "0-0" [ ];
+"77-0" -> "76-0" [ ];
+// id = 79{ 'p_{3,0}' 'p_{4,0}' }, ' inositol 1-phosphate + H2O = myo-inositol + phosphate', { 'Phosphate' 'p_{5,32}' }
+"9-0" -> "79-0" [ ];
+"11-0" -> "79-0" [ ];
+"79-0" -> "0-0" [ ];
+"79-0" -> "78-0" [ ];
+// id = 81{ 'H2O' 'p_{4,0}' }, ' inositol 1-phosphate + H2O = myo-inositol + phosphate', { 'Phosphate' 'p_{5,33}' }
+"11-0" -> "81-0" [ ];
+"13-0" -> "81-0" [ ];
+"81-0" -> "0-0" [ ];
+"81-0" -> "80-0" [ ];
+// id = 82{ 'Phosphate' 'p_{4,0}' }, ' inositol 1-phosphate + H2O = myo-inositol + phosphate', { 'Phosphate' 'p_{4,0}' }
+"0-0" -> "82-0" [ ];
+"11-0" -> "82-0" [ ];
+"82-0" -> "0-0" [ ];
+"82-0" -> "11-0" [ ];
+}

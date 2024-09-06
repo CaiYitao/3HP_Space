@@ -1,0 +1,16 @@
+Running Python Interpreter -----------------------------------------
+Executing code from 'base_test.py'
+Traceback (most recent call last):
+  File "/home/mescalin/yitao/Documents/Code/CRN_IMA/out/input", line 69, in <module>
+    include("base_test.py")
+  File "/home/mescalin/yitao/Documents/Code/CRN_IMA/out/input", line 46, in include
+    exec(code, globals())
+  File "base_test.py", line 1, in <module>
+    from env import Env,init_dg
+  File "/home/mescalin/yitao/Documents/Code/CRN_IMA/env.py", line 1, in <module>
+    import gymnasium as gym
+ModuleNotFoundError: No module named 'gymnasium'
+
+real	0m0.152s
+user	0m0.124s
+sys	0m0.020s

@@ -1,0 +1,2240 @@
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Fedora 40) (preloaded format=pdflatex 2024.8.1)  6 SEP 2024 13:44
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**summary/master.tex
+(./summary/master.tex
+LaTeX2e <2022-11-01> patch level 1
+L3 programming layer <2023-02-22>
+(/home/talax/xtof/local/Mod/bin/../share/mod/summary.tex
+(/home/talax/xtof/local/Mod/bin/../share/mod/commonPreamble.tex
+(/usr/share/texlive/texmf-dist/tex/latex/base/report.cls
+Document Class: report 2022/07/02 v1.4n Standard LaTeX document class
+(/usr/share/texlive/texmf-dist/tex/latex/base/size12.clo
+File: size12.clo 2022/07/02 v1.4n Standard LaTeX file (size option)
+)
+\c@part=\count185
+\c@chapter=\count186
+\c@section=\count187
+\c@subsection=\count188
+\c@subsubsection=\count189
+\c@paragraph=\count190
+\c@subparagraph=\count191
+\c@figure=\count192
+\c@table=\count193
+\abovecaptionskip=\skip48
+\belowcaptionskip=\skip49
+\bibindent=\dimen140
+)
+(/usr/share/texlive/texmf-dist/tex/latex/etex-pkg/etex.sty
+Package: etex 2016/08/01 v2.7 eTeX basic definition package (PEB,DPC)
+\et@xins=\count194
+)
+(/usr/share/texlive/texmf-dist/tex/latex/base/inputenc.sty
+Package: inputenc 2021/02/14 v1.3d Input encoding file
+\inpenc@prehook=\toks16
+\inpenc@posthook=\toks17
+)
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsmath.sty
+Package: amsmath 2022/04/08 v2.17n AMS math features
+\@mathmargin=\skip50
+
+For additional information on amsmath, use the `?' option.
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amstext.sty
+Package: amstext 2021/08/26 v2.01 AMS text
+
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsgen.sty
+File: amsgen.sty 1999/11/30 v2.0 generic functions
+\@emptytoks=\toks18
+\ex@=\dimen141
+))
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsbsy.sty
+Package: amsbsy 1999/11/29 v1.2d Bold Symbols
+\pmbraise@=\dimen142
+)
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsopn.sty
+Package: amsopn 2022/04/08 v2.04 operator names
+)
+\inf@bad=\count195
+LaTeX Info: Redefining \frac on input line 234.
+\uproot@=\count196
+\leftroot@=\count197
+LaTeX Info: Redefining \overline on input line 399.
+LaTeX Info: Redefining \colon on input line 410.
+\classnum@=\count198
+\DOTSCASE@=\count199
+LaTeX Info: Redefining \ldots on input line 496.
+LaTeX Info: Redefining \dots on input line 499.
+LaTeX Info: Redefining \cdots on input line 620.
+\Mathstrutbox@=\box51
+\strutbox@=\box52
+LaTeX Info: Redefining \big on input line 722.
+LaTeX Info: Redefining \Big on input line 723.
+LaTeX Info: Redefining \bigg on input line 724.
+LaTeX Info: Redefining \Bigg on input line 725.
+\big@size=\dimen143
+LaTeX Font Info:    Redeclaring font encoding OML on input line 743.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 744.
+Normal \count register pool exhausted, switching to extended pool.
+\macc@depth=\count277
+LaTeX Info: Redefining \bmod on input line 905.
+LaTeX Info: Redefining \pmod on input line 910.
+LaTeX Info: Redefining \smash on input line 940.
+LaTeX Info: Redefining \relbar on input line 970.
+LaTeX Info: Redefining \Relbar on input line 971.
+\c@MaxMatrixCols=\count278
+\dotsspace@=\muskip16
+\c@parentequation=\count279
+\dspbrk@lvl=\count280
+\tag@help=\toks19
+\row@=\count281
+\column@=\count282
+\maxfields@=\count283
+\andhelp@=\toks20
+\eqnshift@=\dimen144
+\alignsep@=\dimen145
+\tagshift@=\dimen146
+\tagwidth@=\dimen147
+\totwidth@=\dimen148
+\lineht@=\dimen149
+\@envbody=\toks21
+\multlinegap=\skip51
+\multlinetaggap=\skip52
+\mathdisplay@stack=\toks22
+LaTeX Info: Redefining \[ on input line 2953.
+LaTeX Info: Redefining \] on input line 2954.
+)
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amssymb.sty
+Package: amssymb 2013/01/14 v3.01 AMS font symbols
+
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amsfonts.sty
+Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
+\symAMSa=\mathgroup4
+\symAMSb=\mathgroup5
+LaTeX Font Info:    Redeclaring math symbol \hbar on input line 98.
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
+))
+(/usr/share/texlive/texmf-dist/tex/latex/ntgclass/a4.sty
+Package: a4 2023/01/10 v1.2g A4 based page layout
+)
+(/usr/share/texlive/texmf-dist/tex/generic/babel/babel.sty
+Package: babel 2023/02/13 3.86 The Babel package
+\babel@savecnt=\count284
+\U@D=\dimen150
+\l@unhyphenated=\language11
+
+(/usr/share/texlive/texmf-dist/tex/generic/babel/txtbabel.def)
+\bbl@readstream=\read2
+\bbl@dirlevel=\count285
+
+(/usr/share/texlive/texmf-dist/tex/generic/babel-english/english.ldf
+Language: english 2017/06/06 v3.3r English support from the babel system
+Package babel Info: Hyphen rules for 'canadian' set to \l@english
+(babel)             (\language0). Reported on input line 102.
+Package babel Info: Hyphen rules for 'australian' set to \l@ukenglish
+(babel)             (\language8). Reported on input line 105.
+Package babel Info: Hyphen rules for 'newzealand' set to \l@ukenglish
+(babel)             (\language8). Reported on input line 108.
+))
+(/usr/share/texlive/texmf-dist/tex/generic/babel/locale/en/babel-english.tex
+Package babel Info: Importing font and identification data for english
+(babel)             from babel-en.ini. Reported on input line 11.
+)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 2021/09/16 v1.2d Enhanced LaTeX Graphics (DPC,SPQR)
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 2022/05/29 v1.15 key=value parser (DPC)
+\KV@toks@=\toks23
+)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2022/03/10 v1.4e Standard LaTeX Graphics (DPC,SPQR)
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/trig.sty
+Package: trig 2021/08/11 v1.11 sin cos tan (DPC)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: pdftex.def on input line 107.
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics-def/pdftex.def
+File: pdftex.def 2022/09/22 v1.2b Graphics/color driver for pdftex
+))
+\Gin@req@height=\dimen151
+\Gin@req@width=\dimen152
+)
+(/usr/share/texlive/texmf-dist/tex/latex/base/ifthen.sty
+Package: ifthen 2022/04/13 v1.1d Standard LaTeX ifthen package (DPC)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/tools/verbatim.sty
+Package: verbatim 2022-07-02 v1.5u LaTeX2e package for verbatim enhancements
+\every@verbatim=\toks24
+\verbatim@line=\toks25
+\verbatim@in@stream=\read3
+)
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/hyperref.sty
+Package: hyperref 2023-02-07 v7.00v Hypertext links for LaTeX
+
+(/usr/share/texlive/texmf-dist/tex/generic/ltxcmds/ltxcmds.sty
+Package: ltxcmds 2020-05-10 v1.25 LaTeX kernel commands for general use (HO)
+)
+(/usr/share/texlive/texmf-dist/tex/generic/iftex/iftex.sty
+Package: iftex 2022/02/03 v1.0f TeX engine tests
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pdftexcmds/pdftexcmds.sty
+Package: pdftexcmds 2020-06-27 v0.33 Utility functions of pdfTeX for LuaTeX (HO
+)
+
+(/usr/share/texlive/texmf-dist/tex/generic/infwarerr/infwarerr.sty
+Package: infwarerr 2019/12/03 v1.5 Providing info/warning/error messages (HO)
+)
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+)
+(/usr/share/texlive/texmf-dist/tex/latex/kvsetkeys/kvsetkeys.sty
+Package: kvsetkeys 2022-10-05 v1.19 Key value parser (HO)
+)
+(/usr/share/texlive/texmf-dist/tex/generic/kvdefinekeys/kvdefinekeys.sty
+Package: kvdefinekeys 2019-12-19 v1.6 Define keys (HO)
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pdfescape/pdfescape.sty
+Package: pdfescape 2019/12/09 v1.15 Implements pdfTeX's escape features (HO)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/hycolor/hycolor.sty
+Package: hycolor 2020-01-27 v1.10 Color options for hyperref/bookmark (HO)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/letltxmacro/letltxmacro.sty
+Package: letltxmacro 2019/12/03 v1.6 Let assignment for LaTeX macros (HO)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/auxhook/auxhook.sty
+Package: auxhook 2019-12-17 v1.6 Hooks for auxiliary files (HO)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
+Package: nameref 2022-05-17 v2.50 Cross-referencing by name of section
+
+(/usr/share/texlive/texmf-dist/tex/latex/refcount/refcount.sty
+Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
+)
+(/usr/share/texlive/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty
+Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
+
+(/usr/share/texlive/texmf-dist/tex/latex/kvoptions/kvoptions.sty
+Package: kvoptions 2022-06-15 v3.15 Key value format for package options (HO)
+))
+\c@section@level=\count286
+)
+\@linkdim=\dimen153
+\Hy@linkcounter=\count287
+\Hy@pagecounter=\count288
+
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/pd1enc.def
+File: pd1enc.def 2023-02-07 v7.00v Hyperref: PDFDocEncoding definition (HO)
+Now handling font encoding PD1 ...
+... no UTF-8 mapping file for font encoding PD1
+)
+(/usr/share/texlive/texmf-dist/tex/generic/intcalc/intcalc.sty
+Package: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
+)
+(/usr/share/texlive/texmf-dist/tex/generic/etexcmds/etexcmds.sty
+Package: etexcmds 2019/12/15 v1.7 Avoid name clashes with e-TeX commands (HO)
+)
+\Hy@SavedSpaceFactor=\count289
+
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/puenc.def
+File: puenc.def 2023-02-07 v7.00v Hyperref: PDF Unicode definition (HO)
+Now handling font encoding PU ...
+... no UTF-8 mapping file for font encoding PU
+)
+Package hyperref Info: Hyper figures OFF on input line 4177.
+Package hyperref Info: Link nesting OFF on input line 4182.
+Package hyperref Info: Hyper index ON on input line 4185.
+Package hyperref Info: Plain pages OFF on input line 4192.
+Package hyperref Info: Backreferencing OFF on input line 4197.
+Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
+Package hyperref Info: Bookmarks ON on input line 4425.
+\c@Hy@tempcnt=\count290
+
+(/usr/share/texlive/texmf-dist/tex/latex/url/url.sty
+\Urlmuskip=\muskip17
+Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
+)
+LaTeX Info: Redefining \url on input line 4763.
+\XeTeXLinkMargin=\dimen154
+
+(/usr/share/texlive/texmf-dist/tex/generic/bitset/bitset.sty
+Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
+
+(/usr/share/texlive/texmf-dist/tex/generic/bigintcalc/bigintcalc.sty
+Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO
+)
+))
+\Fld@menulength=\count291
+\Field@Width=\dimen155
+\Fld@charsize=\dimen156
+Package hyperref Info: Hyper figures OFF on input line 6042.
+Package hyperref Info: Link nesting OFF on input line 6047.
+Package hyperref Info: Hyper index ON on input line 6050.
+Package hyperref Info: backreferencing OFF on input line 6057.
+Package hyperref Info: Link coloring OFF on input line 6062.
+Package hyperref Info: Link coloring with OCG OFF on input line 6067.
+Package hyperref Info: PDF/A mode OFF on input line 6072.
+
+(/usr/share/texlive/texmf-dist/tex/latex/base/atbegshi-ltx.sty
+Package: atbegshi-ltx 2021/01/10 v1.0c Emulation of the original atbegshi
+package with kernel methods
+)
+\Hy@abspage=\count292
+\c@Item=\count293
+\c@Hfootnote=\count294
+)
+Package hyperref Info: Driver (autodetected): hpdftex.
+
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/hpdftex.def
+File: hpdftex.def 2023-02-07 v7.00v Hyperref driver for pdfTeX
+
+(/usr/share/texlive/texmf-dist/tex/latex/base/atveryend-ltx.sty
+Package: atveryend-ltx 2020/08/19 v1.0a Emulation of the original atveryend pac
+kage
+with kernel methods
+)
+\Fld@listcount=\count295
+\c@bookmark@seq@number=\count296
+
+(/usr/share/texlive/texmf-dist/tex/latex/rerunfilecheck/rerunfilecheck.sty
+Package: rerunfilecheck 2022-07-10 v1.10 Rerun checks for auxiliary files (HO)
+
+(/usr/share/texlive/texmf-dist/tex/generic/uniquecounter/uniquecounter.sty
+Package: uniquecounter 2019/12/15 v1.4 Provide unlimited unique counter (HO)
+)
+Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
+85.
+)
+\Hy@SectionHShift=\skip53
+)
+(/usr/share/texlive/texmf-dist/tex/latex/siunitx/siunitx.sty
+Package: siunitx 2023-03-14 v3.2.3 A comprehensive (SI) units package
+\l__siunitx_angle_tmp_dim=\dimen157
+\l__siunitx_angle_marker_box=\box53
+\l__siunitx_angle_unit_box=\box54
+\l__siunitx_compound_count_int=\count297
+
+(/usr/share/texlive/texmf-dist/tex/latex/translations/translations.sty
+Package: translations 2022/02/05 v1.12 internationalization of LaTeX2e packages
+ (CN)
+
+(/usr/share/texlive/texmf-dist/tex/latex/etoolbox/etoolbox.sty
+Package: etoolbox 2020/10/05 v2.5k e-TeX tools for LaTeX (JAW)
+\etb@tempcnta=\count298
+))
+\l__siunitx_number_exponent_fixed_int=\count299
+\l__siunitx_number_min_decimal_int=\count300
+\l__siunitx_number_min_integer_int=\count301
+\l__siunitx_number_round_precision_int=\count302
+\l__siunitx_number_lower_threshold_int=\count303
+\l__siunitx_number_upper_threshold_int=\count304
+\l__siunitx_number_group_first_int=\count305
+\l__siunitx_number_group_size_int=\count306
+\l__siunitx_number_group_minimum_int=\count307
+\l__siunitx_table_tmp_box=\box55
+\l__siunitx_table_tmp_dim=\dimen158
+\l__siunitx_table_column_width_dim=\dimen159
+\l__siunitx_table_integer_box=\box56
+\l__siunitx_table_decimal_box=\box57
+\l__siunitx_table_uncert_box=\box58
+\l__siunitx_table_before_box=\box59
+\l__siunitx_table_after_box=\box60
+\l__siunitx_table_before_dim=\dimen160
+\l__siunitx_table_carry_dim=\dimen161
+\l__siunitx_unit_tmp_int=\count308
+\l__siunitx_unit_position_int=\count309
+\l__siunitx_unit_total_int=\count310
+
+(/usr/share/texlive/texmf-dist/tex/latex/tools/array.sty
+Package: array 2022/09/04 v2.5g Tabular extension package (FMi)
+\col@sep=\dimen162
+\ar@mcellbox=\box61
+\extrarowheight=\dimen163
+\NC@list=\toks26
+\extratabsurround=\skip54
+\backup@length=\skip55
+\ar@cellbox=\box62
+))
+(/usr/share/texlive/texmf-dist/tex/latex/booktabs/booktabs.sty
+Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
+\heavyrulewidth=\dimen164
+\lightrulewidth=\dimen165
+\cmidrulewidth=\dimen166
+\belowrulesep=\dimen167
+\belowbottomsep=\dimen168
+\aboverulesep=\dimen169
+\abovetopsep=\dimen170
+\cmidrulesep=\dimen171
+\cmidrulekern=\dimen172
+\defaultaddspace=\dimen173
+\@cmidla=\count311
+\@cmidlb=\count312
+\@aboverulesep=\dimen174
+\@belowrulesep=\dimen175
+\@thisruleclass=\count313
+\@lastruleclass=\count314
+\@thisrulewidth=\dimen176
+)
+(/usr/share/texlive/texmf-dist/tex/latex/caption/subcaption.sty
+Package: subcaption 2023/02/19 v1.6 Sub-captions (AR)
+
+(/usr/share/texlive/texmf-dist/tex/latex/caption/caption.sty
+Package: caption 2023/03/12 v3.6j Customizing captions (AR)
+
+(/usr/share/texlive/texmf-dist/tex/latex/caption/caption3.sty
+Package: caption3 2023/03/12 v2.4 caption3 kernel (AR)
+\caption@tempdima=\dimen177
+\captionmargin=\dimen178
+\caption@leftmargin=\dimen179
+\caption@rightmargin=\dimen180
+\caption@width=\dimen181
+\caption@indent=\dimen182
+\caption@parindent=\dimen183
+\caption@hangindent=\dimen184
+Package caption Info: Standard document class detected.
+)
+\c@caption@flags=\count315
+\c@continuedfloat=\count316
+Package caption Info: hyperref package is loaded.
+)
+Package caption Info: New subtype `subfigure' on input line 239.
+\c@subfigure=\count317
+Package caption Info: New subtype `subtable' on input line 239.
+\c@subtable=\count318
+))
+(/usr/share/texlive/texmf-dist/tex/latex/pgfplots/pgfplots.sty
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/pgfplots.revision.tex)
+Package: pgfplots 2021/05/15 v1.18.1 Data Visualization (1.18.1)
+
+(/usr/share/texlive/texmf-dist/tex/latex/pgf/frontendlayer/tikz.sty
+(/usr/share/texlive/texmf-dist/tex/latex/pgf/basiclayer/pgf.sty
+(/usr/share/texlive/texmf-dist/tex/latex/pgf/utilities/pgfrcs.sty
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfutil-common.tex
+\pgfutil@everybye=\toks27
+\pgfutil@tempdima=\dimen185
+\pgfutil@tempdimb=\dimen186
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfutil-latex.def
+\pgfutil@abb=\box63
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfrcs.code.tex
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/pgf.revision.tex)
+Package: pgfrcs 2023-01-15 v3.1.10 (3.1.10)
+))
+Package: pgf 2023-01-15 v3.1.10 (3.1.10)
+
+(/usr/share/texlive/texmf-dist/tex/latex/pgf/basiclayer/pgfcore.sty
+(/usr/share/texlive/texmf-dist/tex/latex/pgf/systemlayer/pgfsys.sty
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsys.code.tex
+Package: pgfsys 2023-01-15 v3.1.10 (3.1.10)
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex
+\pgfkeys@pathtoks=\toks28
+\pgfkeys@temptoks=\toks29
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfkeyslibraryfiltered
+.code.tex
+\pgfkeys@tmptoks=\toks30
+))
+\pgf@x=\dimen187
+\pgf@y=\dimen188
+\pgf@xa=\dimen189
+\pgf@ya=\dimen190
+\pgf@xb=\dimen191
+\pgf@yb=\dimen192
+\pgf@xc=\dimen193
+\pgf@yc=\dimen194
+\pgf@xd=\dimen195
+\pgf@yd=\dimen196
+\w@pgf@writea=\write3
+\r@pgf@reada=\read4
+\c@pgf@counta=\count319
+\c@pgf@countb=\count320
+\c@pgf@countc=\count321
+\c@pgf@countd=\count322
+\t@pgf@toka=\toks31
+\t@pgf@tokb=\toks32
+\t@pgf@tokc=\toks33
+\pgf@sys@id@count=\count323
+ (/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgf.cfg
+File: pgf.cfg 2023-01-15 v3.1.10 (3.1.10)
+)
+Driver file for pgf: pgfsys-pdftex.def
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-pdftex.def
+File: pgfsys-pdftex.def 2023-01-15 v3.1.10 (3.1.10)
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-common-pdf.de
+f
+File: pgfsys-common-pdf.def 2023-01-15 v3.1.10 (3.1.10)
+)))
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsyssoftpath.code.
+tex
+File: pgfsyssoftpath.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgfsyssoftpath@smallbuffer@items=\count324
+\pgfsyssoftpath@bigbuffer@items=\count325
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsysprotocol.code.
+tex
+File: pgfsysprotocol.code.tex 2023-01-15 v3.1.10 (3.1.10)
+)) (/usr/share/texlive/texmf-dist/tex/latex/xcolor/xcolor.sty
+Package: xcolor 2022/06/12 v2.14 LaTeX color extensions (UK)
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/color.cfg
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package xcolor Info: Driver file: pdftex.def on input line 227.
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/mathcolor.ltx)
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1353.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1357.
+Package xcolor Info: Model `RGB' extended on input line 1369.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1371.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1372.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1373.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1374.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1375.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1376.
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/dvipsnam.def
+File: dvipsnam.def 2016/06/17 v3.0m Driver-dependent file (DPC,SPQR)
+))
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcore.code.tex
+Package: pgfcore 2023-01-15 v3.1.10 (3.1.10)
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathutil.code.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathparser.code.tex
+\pgfmath@dimen=\dimen197
+\pgfmath@count=\count326
+\pgfmath@box=\box64
+\pgfmath@toks=\toks34
+\pgfmath@stack@operand=\toks35
+\pgfmath@stack@operation=\toks36
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.code.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.basic.code
+.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.trigonomet
+ric.code.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.random.cod
+e.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.comparison
+.code.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.base.code.
+tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.round.code
+.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.misc.code.
+tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.integerari
+thmetics.code.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathcalc.code.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfloat.code.tex
+\c@pgfmathroundto@lastzeros=\count327
+))
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfint.code.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepoints.code.te
+x
+File: pgfcorepoints.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgf@picminx=\dimen198
+\pgf@picmaxx=\dimen199
+Normal \dimen register pool exhausted, switching to extended pool.
+\pgf@picminy=\dimen256
+\pgf@picmaxy=\dimen257
+\pgf@pathminx=\dimen258
+\pgf@pathmaxx=\dimen259
+\pgf@pathminy=\dimen260
+\pgf@pathmaxy=\dimen261
+\pgf@xx=\dimen262
+\pgf@xy=\dimen263
+\pgf@yx=\dimen264
+\pgf@yy=\dimen265
+\pgf@zx=\dimen266
+\pgf@zy=\dimen267
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathconstruct.
+code.tex
+File: pgfcorepathconstruct.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgf@path@lastx=\dimen268
+\pgf@path@lasty=\dimen269
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathusage.code
+.tex
+File: pgfcorepathusage.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgf@shorten@end@additional=\dimen270
+\pgf@shorten@start@additional=\dimen271
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorescopes.code.te
+x
+File: pgfcorescopes.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgfpic=\box65
+\pgf@hbox=\box66
+\pgf@layerbox@main=\box67
+\pgf@picture@serial@count=\count328
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoregraphicstate.c
+ode.tex
+File: pgfcoregraphicstate.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgflinewidth=\dimen272
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretransformation
+s.code.tex
+File: pgfcoretransformations.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgf@pt@x=\dimen273
+\pgf@pt@y=\dimen274
+\pgf@pt@temp=\dimen275
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorequick.code.tex
+File: pgfcorequick.code.tex 2023-01-15 v3.1.10 (3.1.10)
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreobjects.code.t
+ex
+File: pgfcoreobjects.code.tex 2023-01-15 v3.1.10 (3.1.10)
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathprocessing
+.code.tex
+File: pgfcorepathprocessing.code.tex 2023-01-15 v3.1.10 (3.1.10)
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorearrows.code.te
+x
+File: pgfcorearrows.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgfarrowsep=\dimen276
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreshade.code.tex
+File: pgfcoreshade.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgf@max=\dimen277
+\pgf@sys@shading@range@num=\count329
+\pgf@shadingcount=\count330
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreimage.code.tex
+File: pgfcoreimage.code.tex 2023-01-15 v3.1.10 (3.1.10)
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreexternal.code.
+tex
+File: pgfcoreexternal.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgfexternal@startupbox=\box68
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorelayers.code.te
+x
+File: pgfcorelayers.code.tex 2023-01-15 v3.1.10 (3.1.10)
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretransparency.c
+ode.tex
+File: pgfcoretransparency.code.tex 2023-01-15 v3.1.10 (3.1.10)
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepatterns.code.
+tex
+File: pgfcorepatterns.code.tex 2023-01-15 v3.1.10 (3.1.10)
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorerdf.code.tex
+File: pgfcorerdf.code.tex 2023-01-15 v3.1.10 (3.1.10)
+)))
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/modules/pgfmoduleshapes.code.tex
+File: pgfmoduleshapes.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgfnodeparttextbox=\box69
+) (/usr/share/texlive/texmf-dist/tex/generic/pgf/modules/pgfmoduleplot.code.tex
+File: pgfmoduleplot.code.tex 2023-01-15 v3.1.10 (3.1.10)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-0-65
+.sty
+Package: pgfcomp-version-0-65 2023-01-15 v3.1.10 (3.1.10)
+\pgf@nodesepstart=\dimen278
+\pgf@nodesepend=\dimen279
+)
+(/usr/share/texlive/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-1-18
+.sty
+Package: pgfcomp-version-1-18 2023-01-15 v3.1.10 (3.1.10)
+)) (/usr/share/texlive/texmf-dist/tex/latex/pgf/utilities/pgffor.sty
+(/usr/share/texlive/texmf-dist/tex/latex/pgf/utilities/pgfkeys.sty
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex))
+(/usr/share/texlive/texmf-dist/tex/latex/pgf/math/pgfmath.sty
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex))
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgffor.code.tex
+Package: pgffor 2023-01-15 v3.1.10 (3.1.10)
+\pgffor@iter=\dimen280
+\pgffor@skip=\dimen281
+\pgffor@stack=\toks37
+\pgffor@toks=\toks38
+))
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/tikz.code.tex
+Package: tikz 2023-01-15 v3.1.10 (3.1.10)
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/libraries/pgflibraryplothandlers
+.code.tex
+File: pgflibraryplothandlers.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgf@plot@mark@count=\count331
+\pgfplotmarksize=\dimen282
+)
+\tikz@lastx=\dimen283
+\tikz@lasty=\dimen284
+\tikz@lastxsaved=\dimen285
+\tikz@lastysaved=\dimen286
+\tikz@lastmovetox=\dimen287
+\tikz@lastmovetoy=\dimen288
+\tikzleveldistance=\dimen289
+\tikzsiblingdistance=\dimen290
+\tikz@figbox=\box70
+\tikz@figbox@bg=\box71
+\tikz@tempbox=\box72
+\tikz@tempbox@bg=\box73
+\tikztreelevel=\count332
+\tikznumberofchildren=\count333
+\tikznumberofcurrentchild=\count334
+\tikz@fig@count=\count335
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/modules/pgfmodulematrix.code.tex
+File: pgfmodulematrix.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgfmatrixcurrentrow=\count336
+\pgfmatrixcurrentcolumn=\count337
+\pgf@matrix@numberofcolumns=\count338
+)
+\tikz@expandcount=\count339
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
+zlibrarytopaths.code.tex
+File: tikzlibrarytopaths.code.tex 2023-01-15 v3.1.10 (3.1.10)
+)))
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/pgfplots.code.tex
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/pgfplotscore.code.tex
+\t@pgfplots@toka=\toks39
+\t@pgfplots@tokb=\toks40
+\t@pgfplots@tokc=\toks41
+\pgfplots@tmpa=\dimen291
+\c@pgfplots@coordindex=\count340
+\c@pgfplots@scanlineindex=\count341
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/sys/pgfplotssysgeneric.code
+.tex))
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/libs/pgfplotslibrary.code.t
+ex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/oldpgfcompatib/pgfplotsoldp
+gfsupp_loader.code.tex
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/libraries/pgflibraryfpu.code.tex
+)
+Package pgfplots: loading complementary utilities for your pgf version...
+\t@pgf@toka=\toks42
+\t@pgf@tokb=\toks43
+\t@pgf@tokc=\toks44
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/oldpgfcompatib/pgfplotsoldp
+gfsupp_pgfutil-common-lists.tex))
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/util/pgfplotsutil.code.tex
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/liststructure/pgfplotslists
+tructure.code.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/liststructure/pgfplotslists
+tructureext.code.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/liststructure/pgfplotsarray
+.code.tex
+\c@pgfplotsarray@tmp=\count342
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/liststructure/pgfplotsmatri
+x.code.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/numtable/pgfplotstableshare
+d.code.tex
+\c@pgfplotstable@counta=\count343
+\t@pgfplotstable@a=\toks45
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/liststructure/pgfplotsdeque
+.code.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/util/pgfplotsbinary.code.te
+x
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/util/pgfplotsbinary.data.co
+de.tex))
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/util/pgfplotsutil.verb.code
+.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/libs/pgflibrarypgfplots.sur
+fshading.code.tex
+\c@pgfplotslibrarysurf@no=\count344
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/sys/pgflibrarypgfplots.surf
+shading.pgfsys-pdftex.def)))
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/util/pgfplotscolormap.code.
+tex
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/util/pgfplotscolor.code.tex
+))
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/pgfplotsstackedplots.code.t
+ex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/pgfplotsplothandlers.code.t
+ex
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/pgfplotsmeshplothandler.cod
+e.tex
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/pgfplotsmeshplotimage.code.
+tex)))
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/pgfplots.scaling.code.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/pgfplotscoordprocessing.cod
+e.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/pgfplots.errorbars.code.tex
+) (/usr/share/texlive/texmf-dist/tex/generic/pgfplots/pgfplots.markers.code.tex
+) (/usr/share/texlive/texmf-dist/tex/generic/pgfplots/pgfplotsticks.code.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/pgfplots.paths.code.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
+zlibrarydecorations.code.tex
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/modules/pgfmoduledecorations.cod
+e.tex
+\pgfdecoratedcompleteddistance=\dimen292
+\pgfdecoratedremainingdistance=\dimen293
+\pgfdecoratedinputsegmentcompleteddistance=\dimen294
+\pgfdecoratedinputsegmentremainingdistance=\dimen295
+\pgf@decorate@distancetomove=\dimen296
+\pgf@decorate@repeatstate=\count345
+\pgfdecorationsegmentamplitude=\dimen297
+\pgfdecorationsegmentlength=\dimen298
+)
+\tikz@lib@dec@box=\box74
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
+zlibrarydecorations.pathmorphing.code.tex
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/libraries/decorations/pgflibrary
+decorations.pathmorphing.code.tex))
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
+zlibrarydecorations.pathreplacing.code.tex
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/libraries/decorations/pgflibrary
+decorations.pathreplacing.code.tex))
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/libs/tikzlibrarypgfplots.co
+ntourlua.code.tex)
+\pgfplots@numplots=\count346
+\pgfplots@xmin@reg=\dimen299
+\pgfplots@xmax@reg=\dimen300
+\pgfplots@ymin@reg=\dimen301
+\pgfplots@ymax@reg=\dimen302
+\pgfplots@zmin@reg=\dimen303
+\pgfplots@zmax@reg=\dimen304
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
+zlibraryplotmarks.code.tex
+File: tikzlibraryplotmarks.code.tex 2023-01-15 v3.1.10 (3.1.10)
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/libraries/pgflibraryplotmarks.co
+de.tex
+File: pgflibraryplotmarks.code.tex 2023-01-15 v3.1.10 (3.1.10)
+))) (/home/talax/xtof/local/Mod/bin/../share/mod/mod.sty
+
+LaTeX Warning: You have requested package `/home/talax/xtof/local/Mod/bin/../sh
+are/mod/mod',
+               but the package provides `mod'.
+
+Package: mod 2024/01/09 The MØD Package
+(/usr/share/texlive/texmf-dist/tex/latex/grffile/grffile.sty
+Package: grffile 2019/11/11 v2.1 Extended file name support for graphics (legac
+y)
+Package grffile Info: This package is an empty stub for compatibility on input 
+line 40.
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
+zlibraryshapes.code.tex
+File: tikzlibraryshapes.code.tex 2023-01-15 v3.1.10 (3.1.10)
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
+zlibraryshapes.geometric.code.tex
+File: tikzlibraryshapes.geometric.code.tex 2023-01-15 v3.1.10 (3.1.10)
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/libraries/shapes/pgflibraryshape
+s.geometric.code.tex
+File: pgflibraryshapes.geometric.code.tex 2023-01-15 v3.1.10 (3.1.10)
+))
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
+zlibraryshapes.misc.code.tex
+File: tikzlibraryshapes.misc.code.tex 2023-01-15 v3.1.10 (3.1.10)
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/libraries/shapes/pgflibraryshape
+s.misc.code.tex
+File: pgflibraryshapes.misc.code.tex 2023-01-15 v3.1.10 (3.1.10)
+))
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
+zlibraryshapes.symbols.code.tex
+File: tikzlibraryshapes.symbols.code.tex 2023-01-15 v3.1.10 (3.1.10)
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/libraries/shapes/pgflibraryshape
+s.symbols.code.tex
+File: pgflibraryshapes.symbols.code.tex 2023-01-15 v3.1.10 (3.1.10)
+))
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
+zlibraryshapes.arrows.code.tex
+File: tikzlibraryshapes.arrows.code.tex 2023-01-15 v3.1.10 (3.1.10)
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/libraries/shapes/pgflibraryshape
+s.arrows.code.tex
+File: pgflibraryshapes.arrows.code.tex 2023-01-15 v3.1.10 (3.1.10)
+))
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
+zlibraryshapes.callouts.code.tex
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/libraries/shapes/pgflibraryshape
+s.callouts.code.tex))
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
+zlibraryshapes.multipart.code.tex
+File: tikzlibraryshapes.multipart.code.tex 2023-01-15 v3.1.10 (3.1.10)
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/libraries/shapes/pgflibraryshape
+s.multipart.code.tex
+File: pgflibraryshapes.multipart.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgfnodepartlowerbox=\box75
+\pgfnodeparttwobox=\box76
+\pgfnodepartthreebox=\box77
+\pgfnodepartfourbox=\box78
+\pgfnodeparttwentybox=\box79
+\pgfnodepartnineteenbox=\box80
+\pgfnodeparteighteenbox=\box81
+\pgfnodepartseventeenbox=\box82
+\pgfnodepartsixteenbox=\box83
+\pgfnodepartfifteenbox=\box84
+\pgfnodepartfourteenbox=\box85
+\pgfnodepartthirteenbox=\box86
+\pgfnodeparttwelvebox=\box87
+\pgfnodepartelevenbox=\box88
+\pgfnodeparttenbox=\box89
+\pgfnodepartninebox=\box90
+\pgfnodeparteightbox=\box91
+\pgfnodepartsevenbox=\box92
+\pgfnodepartsixbox=\box93
+\pgfnodepartfivebox=\box94
+)))
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
+zlibrarypositioning.code.tex
+File: tikzlibrarypositioning.code.tex 2023-01-15 v3.1.10 (3.1.10)
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
+zlibraryarrows.code.tex
+File: tikzlibraryarrows.code.tex 2023-01-15 v3.1.10 (3.1.10)
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/libraries/pgflibraryarrows.code.
+tex
+File: pgflibraryarrows.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\arrowsize=\dimen305
+))
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
+zlibraryfit.code.tex
+File: tikzlibraryfit.code.tex 2023-01-15 v3.1.10 (3.1.10)
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
+zlibrarycalc.code.tex
+File: tikzlibrarycalc.code.tex 2023-01-15 v3.1.10 (3.1.10)
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
+zlibrarymatrix.code.tex
+File: tikzlibrarymatrix.code.tex 2023-01-15 v3.1.10 (3.1.10)
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
+zlibraryshadows.code.tex
+File: tikzlibraryshadows.code.tex 2023-01-15 v3.1.10 (3.1.10)
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
+zlibraryfadings.code.tex
+File: tikzlibraryfadings.code.tex 2023-01-15 v3.1.10 (3.1.10)
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/libraries/pgflibraryfadings.code
+.tex
+File: pgflibraryfadings.code.tex 2023-01-15 v3.1.10 (3.1.10)
+)))
+\mod@figOutput=\write4
+\c@mod@figCounter=\count347
+\mod@testWidth=\skip56
+) (/usr/share/texlive/texmf-dist/tex/latex/preprint/fullpage.sty
+Package: fullpage 1999/02/23 1.1 (PWD)
+\FP@margin=\skip57
+)
+(/usr/share/texlive/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
+Package: fancyhdr 2022/11/09 v4.1 Extensive control of page headers and footers
+
+\f@nch@headwidth=\skip58
+\f@nch@O@elh=\skip59
+\f@nch@O@erh=\skip60
+\f@nch@O@olh=\skip61
+\f@nch@O@orh=\skip62
+\f@nch@O@elf=\skip63
+\f@nch@O@erf=\skip64
+\f@nch@O@olf=\skip65
+\f@nch@O@orf=\skip66
+)
+(/usr/share/texlive/texmf-dist/tex/latex/lastpage/lastpage.sty
+Package: lastpage 2023/03/07 v2.0a lastpage: 2.09 or 2e? (HMM)
+
+(/usr/share/texlive/texmf-dist/tex/latex/lastpage/lastpage2e.sty
+Package: lastpage2e 2023/03/07 v2.0a Decide which 2e lastpage version to use (H
+MM)
+
+(/usr/share/texlive/texmf-dist/tex/latex/lastpage/lastpagemodern.sty
+Package: lastpagemodern 2023-03-07 v2.0a Refers to last page's name (HMM; JPG)
+) 
+)) (/usr/share/texlive/texmf-dist/tex/latex/listings/listings.sty
+\lst@mode=\count348
+\lst@gtempboxa=\box95
+\lst@token=\toks46
+\lst@length=\count349
+\lst@currlwidth=\dimen306
+\lst@column=\count350
+\lst@pos=\count351
+\lst@lostspace=\dimen307
+\lst@width=\dimen308
+\lst@newlines=\count352
+\lst@lineno=\count353
+\lst@maxwidth=\dimen309
+
+(/usr/share/texlive/texmf-dist/tex/latex/listings/lstmisc.sty
+File: lstmisc.sty 2023/02/27 1.9 (Carsten Heinz)
+\c@lstnumber=\count354
+\lst@skipnumbers=\count355
+\lst@framebox=\box96
+)
+(/usr/share/texlive/texmf-dist/tex/latex/listings/listings.cfg
+File: listings.cfg 2023/02/27 1.9 listings configuration
+))
+Package: listings 2023/02/27 1.9 (Carsten Heinz)
+
+(/usr/share/texlive/texmf-dist/tex/latex/float/float.sty
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count356
+\float@exts=\toks47
+\float@box=\box97
+\@float@everytoks=\toks48
+\@floatcapt=\box98
+)
+(/usr/share/texlive/texmf-dist/tex/latex/tools/longtable.sty
+Package: longtable 2021-09-01 v4.17 Multi-page Table package (DPC)
+\LTleft=\skip67
+\LTright=\skip68
+\LTpre=\skip69
+\LTpost=\skip70
+\LTchunksize=\count357
+\LTcapwidth=\dimen310
+\LT@head=\box99
+\LT@firsthead=\box100
+\LT@foot=\box101
+\LT@lastfoot=\box102
+\LT@gbox=\box103
+\LT@cols=\count358
+\LT@rows=\count359
+\c@LT@tables=\count360
+\c@LT@chunks=\count361
+\LT@p@ftn=\toks49
+)
+(/usr/share/texlive/texmf-dist/tex/latex/base/fontenc.sty
+Package: fontenc 2021/04/29 v2.0v Standard LaTeX package
+)
+(/usr/share/texlive/texmf-dist/tex/latex/lm/lmodern.sty
+Package: lmodern 2015/05/01 v1.6.1 Latin Modern Fonts
+LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
+(Font)                  OT1/cmr/m/n --> OT1/lmr/m/n on input line 22.
+LaTeX Font Info:    Overwriting symbol font `letters' in version `normal'
+(Font)                  OML/cmm/m/it --> OML/lmm/m/it on input line 23.
+LaTeX Font Info:    Overwriting symbol font `symbols' in version `normal'
+(Font)                  OMS/cmsy/m/n --> OMS/lmsy/m/n on input line 24.
+LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `normal'
+(Font)                  OMX/cmex/m/n --> OMX/lmex/m/n on input line 25.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
+(Font)                  OT1/cmr/bx/n --> OT1/lmr/bx/n on input line 26.
+LaTeX Font Info:    Overwriting symbol font `letters' in version `bold'
+(Font)                  OML/cmm/b/it --> OML/lmm/b/it on input line 27.
+LaTeX Font Info:    Overwriting symbol font `symbols' in version `bold'
+(Font)                  OMS/cmsy/b/n --> OMS/lmsy/b/n on input line 28.
+LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `bold'
+(Font)                  OMX/cmex/m/n --> OMX/lmex/m/n on input line 29.
+LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
+(Font)                  OT1/cmr/bx/n --> OT1/lmr/bx/n on input line 31.
+LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
+(Font)                  OT1/cmss/m/n --> OT1/lmss/m/n on input line 32.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
+(Font)                  OT1/cmr/m/it --> OT1/lmr/m/it on input line 33.
+LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
+(Font)                  OT1/cmtt/m/n --> OT1/lmtt/m/n on input line 34.
+LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
+(Font)                  OT1/cmr/bx/n --> OT1/lmr/bx/n on input line 35.
+LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
+(Font)                  OT1/cmss/bx/n --> OT1/lmss/bx/n on input line 36.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
+(Font)                  OT1/cmr/bx/it --> OT1/lmr/bx/it on input line 37.
+LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
+(Font)                  OT1/cmtt/m/n --> OT1/lmtt/m/n on input line 38.
+)
+(/usr/share/texlive/texmf-dist/tex/latex/colortbl/colortbl.sty
+Package: colortbl 2022/06/20 v1.0f Color table columns (DPC)
+\everycr=\toks50
+\minrowclearance=\skip71
+\rownum=\count362
+)
+\testwd=\skip72
+\testht=\skip73
+LaTeX Font Info:    Trying to load font information for T1+lmr on input line 35
+7.
+
+(/usr/share/texlive/texmf-dist/tex/latex/lm/t1lmr.fd
+File: t1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
+)
+(/usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
+File: l3backend-pdftex.def 2023-01-16 L3 backend support: PDF output (pdfTeX)
+\l__color_backend_stack_int=\count363
+\l__pdf_internal_box=\box104
+)
+(summary/summary.aux)
+\openout1 = `summary.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 357.
+LaTeX Font Info:    ... okay on input line 357.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 357.
+LaTeX Font Info:    ... okay on input line 357.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 357.
+LaTeX Font Info:    ... okay on input line 357.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 357.
+LaTeX Font Info:    ... okay on input line 357.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 357.
+LaTeX Font Info:    ... okay on input line 357.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 357.
+LaTeX Font Info:    ... okay on input line 357.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 357.
+LaTeX Font Info:    ... okay on input line 357.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 357.
+LaTeX Font Info:    ... okay on input line 357.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 357.
+LaTeX Font Info:    ... okay on input line 357.
+
+(/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count364
+\scratchdimen=\dimen311
+\scratchbox=\box105
+\nofMPsegments=\count365
+\nofMParguments=\count366
+\everyMPshowfont=\toks51
+\MPscratchCnt=\count367
+\MPscratchDim=\dimen312
+\MPnumerator=\count368
+\makeMPintoPDFobject=\count369
+\everyMPtoPDFconversion=\toks52
+) (/usr/share/texlive/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
+Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
+85.
+
+(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
+e
+))
+Package hyperref Info: Link coloring OFF on input line 357.
+
+(summary/summary.out) (summary/summary.out)
+\@outlinefile=\write5
+\openout5 = `summary.out'.
+
+
+(/usr/share/texlive/texmf-dist/tex/latex/translations/translations-basic-dictio
+nary-english.trsl
+File: translations-basic-dictionary-english.trsl (english translation file `tra
+nslations-basic-dictionary')
+)
+Package translations Info: loading dictionary `translations-basic-dictionary' f
+or `english'. on input line 357.
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: float package is loaded.
+Package caption Info: listings package is loaded.
+Package caption Info: longtable package is loaded.
+
+(/usr/share/texlive/texmf-dist/tex/latex/caption/ltcaption.sty
+Package: ltcaption 2021/01/08 v1.4c longtable captions (AR)
+)
+Package caption Info: End \AtBeginDocument code.
+
+
+Package pgfplots Warning: running in backwards compatibility mode (unsuitable t
+ick labels; missing features). Consider writing \pgfplotsset{compat=1.18} into 
+your preamble.
+ on input line 357.
+
+\c@lstlisting=\count370
+LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 3
+59.
+(/usr/share/texlive/texmf-dist/tex/latex/lm/ot1lmr.fd
+File: ot1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
+)
+LaTeX Font Info:    Trying to load font information for OML+lmm on input line 3
+59.
+
+(/usr/share/texlive/texmf-dist/tex/latex/lm/omllmm.fd
+File: omllmm.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
+)
+LaTeX Font Info:    Trying to load font information for OMS+lmsy on input line 
+359.
+
+(/usr/share/texlive/texmf-dist/tex/latex/lm/omslmsy.fd
+File: omslmsy.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
+)
+LaTeX Font Info:    Trying to load font information for OMX+lmex on input line 
+359.
+
+(/usr/share/texlive/texmf-dist/tex/latex/lm/omxlmex.fd
+File: omxlmex.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
+)
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <14.4> on input line 359.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <10> on input line 359.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <7> on input line 359.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 359
+.
+
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Trying to load font information for U+msb on input line 359
+.
+
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+
+LaTeX Warning: No \author given.
+
+[1
+
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}{/usr/share/texlive/texmf-di
+st/fonts/enc/dvips/lm/lm-ec.enc}] (summary/summary.toc
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <12> on input line 2.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <8> on input line 2.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <6> on input line 2.
+LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 2
+1.
+
+(/usr/share/texlive/texmf-dist/tex/latex/lm/t1lmtt.fd
+File: t1lmtt.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
+))
+\tf@toc=\write6
+\openout6 = `summary.toc'.
+
+
+pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has 
+been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.360 \newpage
+               [1
+
+] (./summary/all.tex
+<out/001_r_0_11300110_L.pdf, id=145, 133.8621pt x 104.23442pt>
+File: out/001_r_0_11300110_L.pdf Graphic file (type pdf)
+<use out/001_r_0_11300110_L.pdf>
+Package pdftex.def Info: out/001_r_0_11300110_L.pdf  used on input line 2.
+(pdftex.def)             Requested size: 133.86176pt x 104.23415pt.
+File: out/001_r_0_11300110_L.pdf Graphic file (type pdf)
+<use out/001_r_0_11300110_L.pdf>
+Package pdftex.def Info: out/001_r_0_11300110_L.pdf  used on input line 2.
+(pdftex.def)             Requested size: 133.86176pt x 104.23415pt.
+
+out/001_r_0_11300110_L width=133.86176pt, hight=104.23415pt, pagewidth=143.4012
+6pt, pageheight=729.6886pt
+File: out/001_r_0_11300110_L.pdf Graphic file (type pdf)
+<use out/001_r_0_11300110_L.pdf>
+Package pdftex.def Info: out/001_r_0_11300110_L.pdf  used on input line 2.
+(pdftex.def)             Requested size: 143.40259pt x 111.6633pt.
+<out/001_r_0_11300110_K.pdf, id=146, 133.8621pt x 104.23442pt>
+File: out/001_r_0_11300110_K.pdf Graphic file (type pdf)
+<use out/001_r_0_11300110_K.pdf>
+Package pdftex.def Info: out/001_r_0_11300110_K.pdf  used on input line 2.
+(pdftex.def)             Requested size: 133.86176pt x 104.23415pt.
+File: out/001_r_0_11300110_K.pdf Graphic file (type pdf)
+<use out/001_r_0_11300110_K.pdf>
+Package pdftex.def Info: out/001_r_0_11300110_K.pdf  used on input line 2.
+(pdftex.def)             Requested size: 133.86176pt x 104.23415pt.
+
+out/001_r_0_11300110_K width=133.86176pt, hight=104.23415pt, pagewidth=143.4012
+6pt, pageheight=729.6886pt
+File: out/001_r_0_11300110_K.pdf Graphic file (type pdf)
+<use out/001_r_0_11300110_K.pdf>
+Package pdftex.def Info: out/001_r_0_11300110_K.pdf  used on input line 2.
+(pdftex.def)             Requested size: 143.40259pt x 111.6633pt.
+<out/001_r_0_11300110_R.pdf, id=147, 133.8621pt x 104.23442pt>
+File: out/001_r_0_11300110_R.pdf Graphic file (type pdf)
+<use out/001_r_0_11300110_R.pdf>
+Package pdftex.def Info: out/001_r_0_11300110_R.pdf  used on input line 2.
+(pdftex.def)             Requested size: 133.86176pt x 104.23415pt.
+File: out/001_r_0_11300110_R.pdf Graphic file (type pdf)
+<use out/001_r_0_11300110_R.pdf>
+Package pdftex.def Info: out/001_r_0_11300110_R.pdf  used on input line 2.
+(pdftex.def)             Requested size: 133.86176pt x 104.23415pt.
+
+out/001_r_0_11300110_R width=133.86176pt, hight=104.23415pt, pagewidth=143.4012
+6pt, pageheight=729.6886pt
+File: out/001_r_0_11300110_R.pdf Graphic file (type pdf)
+<use out/001_r_0_11300110_R.pdf>
+Package pdftex.def Info: out/001_r_0_11300110_R.pdf  used on input line 2.
+(pdftex.def)             Requested size: 143.40259pt x 111.6633pt.
+ (./out/002_r_0_constraints.tex)
+<out/004_r_1_11300110_L.pdf, id=148, 114.88922pt x 95.96954pt>
+File: out/004_r_1_11300110_L.pdf Graphic file (type pdf)
+<use out/004_r_1_11300110_L.pdf>
+Package pdftex.def Info: out/004_r_1_11300110_L.pdf  used on input line 3.
+(pdftex.def)             Requested size: 114.88893pt x 95.9693pt.
+File: out/004_r_1_11300110_L.pdf Graphic file (type pdf)
+<use out/004_r_1_11300110_L.pdf>
+Package pdftex.def Info: out/004_r_1_11300110_L.pdf  used on input line 3.
+(pdftex.def)             Requested size: 114.88893pt x 95.9693pt.
+
+out/004_r_1_11300110_L width=114.88893pt, hight=95.9693pt, pagewidth=143.40126p
+t, pageheight=729.6886pt
+File: out/004_r_1_11300110_L.pdf Graphic file (type pdf)
+<use out/004_r_1_11300110_L.pdf>
+Package pdftex.def Info: out/004_r_1_11300110_L.pdf  used on input line 3.
+(pdftex.def)             Requested size: 143.41832pt x 119.80054pt.
+<out/004_r_1_11300110_K.pdf, id=149, 114.88922pt x 95.96954pt>
+File: out/004_r_1_11300110_K.pdf Graphic file (type pdf)
+<use out/004_r_1_11300110_K.pdf>
+Package pdftex.def Info: out/004_r_1_11300110_K.pdf  used on input line 3.
+(pdftex.def)             Requested size: 114.88893pt x 95.9693pt.
+File: out/004_r_1_11300110_K.pdf Graphic file (type pdf)
+<use out/004_r_1_11300110_K.pdf>
+Package pdftex.def Info: out/004_r_1_11300110_K.pdf  used on input line 3.
+(pdftex.def)             Requested size: 114.88893pt x 95.9693pt.
+
+out/004_r_1_11300110_K width=114.88893pt, hight=95.9693pt, pagewidth=143.40126p
+t, pageheight=729.6886pt
+File: out/004_r_1_11300110_K.pdf Graphic file (type pdf)
+<use out/004_r_1_11300110_K.pdf>
+Package pdftex.def Info: out/004_r_1_11300110_K.pdf  used on input line 3.
+(pdftex.def)             Requested size: 143.41832pt x 119.80054pt.
+<out/004_r_1_11300110_R.pdf, id=150, 114.88922pt x 95.4496pt>
+File: out/004_r_1_11300110_R.pdf Graphic file (type pdf)
+<use out/004_r_1_11300110_R.pdf>
+Package pdftex.def Info: out/004_r_1_11300110_R.pdf  used on input line 3.
+(pdftex.def)             Requested size: 114.88893pt x 95.44934pt.
+File: out/004_r_1_11300110_R.pdf Graphic file (type pdf)
+<use out/004_r_1_11300110_R.pdf>
+Package pdftex.def Info: out/004_r_1_11300110_R.pdf  used on input line 3.
+(pdftex.def)             Requested size: 114.88893pt x 95.44934pt.
+
+out/004_r_1_11300110_R width=114.88893pt, hight=95.44934pt, pagewidth=143.40126
+pt, pageheight=729.6886pt
+File: out/004_r_1_11300110_R.pdf Graphic file (type pdf)
+<use out/004_r_1_11300110_R.pdf>
+Package pdftex.def Info: out/004_r_1_11300110_R.pdf  used on input line 3.
+(pdftex.def)             Requested size: 143.41832pt x 119.15146pt.
+ (./out/005_r_1_constraints.tex)
+Overfull \hbox (27.01741pt too wide) in paragraph at lines 4--4
+[]\T1/lmr/bx/n/14.4 R3: L-Aspartate + 2-Oxoglutarate <=> Ox-aloac-etate + L-Glu
+tamate 
+ []
+
+<out/007_r_2_11300110_L.pdf, id=151, 212.4768pt x 158.76314pt>
+File: out/007_r_2_11300110_L.pdf Graphic file (type pdf)
+<use out/007_r_2_11300110_L.pdf>
+Package pdftex.def Info: out/007_r_2_11300110_L.pdf  used on input line 4.
+(pdftex.def)             Requested size: 212.47629pt x 158.76274pt.
+File: out/007_r_2_11300110_L.pdf Graphic file (type pdf)
+<use out/007_r_2_11300110_L.pdf>
+Package pdftex.def Info: out/007_r_2_11300110_L.pdf  used on input line 4.
+(pdftex.def)             Requested size: 212.47629pt x 158.76274pt.
+
+out/007_r_2_11300110_L width=212.47629pt, hight=158.76274pt, pagewidth=143.4012
+6pt, pageheight=729.6886pt
+File: out/007_r_2_11300110_L.pdf Graphic file (type pdf)
+<use out/007_r_2_11300110_L.pdf>
+Package pdftex.def Info: out/007_r_2_11300110_L.pdf  used on input line 4.
+(pdftex.def)             Requested size: 143.40593pt x 107.15321pt.
+<out/007_r_2_11300110_K.pdf, id=152, 212.4768pt x 158.76314pt>
+File: out/007_r_2_11300110_K.pdf Graphic file (type pdf)
+<use out/007_r_2_11300110_K.pdf>
+Package pdftex.def Info: out/007_r_2_11300110_K.pdf  used on input line 4.
+(pdftex.def)             Requested size: 212.47629pt x 158.76274pt.
+File: out/007_r_2_11300110_K.pdf Graphic file (type pdf)
+<use out/007_r_2_11300110_K.pdf>
+Package pdftex.def Info: out/007_r_2_11300110_K.pdf  used on input line 4.
+(pdftex.def)             Requested size: 212.47629pt x 158.76274pt.
+
+out/007_r_2_11300110_K width=212.47629pt, hight=158.76274pt, pagewidth=143.4012
+6pt, pageheight=729.6886pt
+File: out/007_r_2_11300110_K.pdf Graphic file (type pdf)
+<use out/007_r_2_11300110_K.pdf>
+Package pdftex.def Info: out/007_r_2_11300110_K.pdf  used on input line 4.
+(pdftex.def)             Requested size: 143.40593pt x 107.15321pt.
+<out/007_r_2_11300110_R.pdf, id=153, 212.4768pt x 158.76314pt>
+File: out/007_r_2_11300110_R.pdf Graphic file (type pdf)
+<use out/007_r_2_11300110_R.pdf>
+Package pdftex.def Info: out/007_r_2_11300110_R.pdf  used on input line 4.
+(pdftex.def)             Requested size: 212.47629pt x 158.76274pt.
+File: out/007_r_2_11300110_R.pdf Graphic file (type pdf)
+<use out/007_r_2_11300110_R.pdf>
+Package pdftex.def Info: out/007_r_2_11300110_R.pdf  used on input line 4.
+(pdftex.def)             Requested size: 212.47629pt x 158.76274pt.
+
+out/007_r_2_11300110_R width=212.47629pt, hight=158.76274pt, pagewidth=143.4012
+6pt, pageheight=729.6886pt
+File: out/007_r_2_11300110_R.pdf Graphic file (type pdf)
+<use out/007_r_2_11300110_R.pdf>
+Package pdftex.def Info: out/007_r_2_11300110_R.pdf  used on input line 4.
+(pdftex.def)             Requested size: 143.40593pt x 107.15321pt.
+ (./out/008_r_2_constraints.tex)
+<out/010_r_3_11300110_L.pdf, id=154, 112.29553pt x 77.14722pt>
+File: out/010_r_3_11300110_L.pdf Graphic file (type pdf)
+<use out/010_r_3_11300110_L.pdf>
+Package pdftex.def Info: out/010_r_3_11300110_L.pdf  used on input line 5.
+(pdftex.def)             Requested size: 112.29524pt x 77.147pt.
+File: out/010_r_3_11300110_L.pdf Graphic file (type pdf)
+<use out/010_r_3_11300110_L.pdf>
+Package pdftex.def Info: out/010_r_3_11300110_L.pdf  used on input line 5.
+(pdftex.def)             Requested size: 112.29524pt x 77.147pt.
+
+out/010_r_3_11300110_L width=112.29524pt, hight=77.147pt, pagewidth=143.40126pt
+, pageheight=729.6886pt
+File: out/010_r_3_11300110_L.pdf Graphic file (type pdf)
+<use out/010_r_3_11300110_L.pdf>
+Package pdftex.def Info: out/010_r_3_11300110_L.pdf  used on input line 5.
+(pdftex.def)             Requested size: 143.41905pt x 98.52911pt.
+<out/010_r_3_11300110_K.pdf, id=155, 112.29553pt x 77.14722pt>
+File: out/010_r_3_11300110_K.pdf Graphic file (type pdf)
+<use out/010_r_3_11300110_K.pdf>
+Package pdftex.def Info: out/010_r_3_11300110_K.pdf  used on input line 5.
+(pdftex.def)             Requested size: 112.29524pt x 77.147pt.
+File: out/010_r_3_11300110_K.pdf Graphic file (type pdf)
+<use out/010_r_3_11300110_K.pdf>
+Package pdftex.def Info: out/010_r_3_11300110_K.pdf  used on input line 5.
+(pdftex.def)             Requested size: 112.29524pt x 77.147pt.
+
+out/010_r_3_11300110_K width=112.29524pt, hight=77.147pt, pagewidth=143.40126pt
+, pageheight=729.6886pt
+File: out/010_r_3_11300110_K.pdf Graphic file (type pdf)
+<use out/010_r_3_11300110_K.pdf>
+Package pdftex.def Info: out/010_r_3_11300110_K.pdf  used on input line 5.
+(pdftex.def)             Requested size: 143.41905pt x 98.52911pt.
+<out/010_r_3_11300110_R.pdf, id=156, 112.29553pt x 77.14722pt>
+File: out/010_r_3_11300110_R.pdf Graphic file (type pdf)
+<use out/010_r_3_11300110_R.pdf>
+Package pdftex.def Info: out/010_r_3_11300110_R.pdf  used on input line 5.
+(pdftex.def)             Requested size: 112.29524pt x 77.147pt.
+File: out/010_r_3_11300110_R.pdf Graphic file (type pdf)
+<use out/010_r_3_11300110_R.pdf>
+Package pdftex.def Info: out/010_r_3_11300110_R.pdf  used on input line 5.
+(pdftex.def)             Requested size: 112.29524pt x 77.147pt.
+
+out/010_r_3_11300110_R width=112.29524pt, hight=77.147pt, pagewidth=143.40126pt
+, pageheight=729.6886pt
+File: out/010_r_3_11300110_R.pdf Graphic file (type pdf)
+<use out/010_r_3_11300110_R.pdf>
+Package pdftex.def Info: out/010_r_3_11300110_R.pdf  used on input line 5.
+(pdftex.def)             Requested size: 143.41905pt x 98.52911pt.
+ [2{/usr/share/texlive/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc} <./out/001_
+r_0_11300110_L.pdf> <./out/001_r_0_11300110_K.pdf> <./out/001_r_0_11300110_R.pd
+f> <./out/004_r_1_11300110_L.pdf> <./out/004_r_1_11300110_K.pdf> <./out/004_r_1
+_11300110_R.pdf> <./out/007_r_2_11300110_L.pdf> <./out/007_r_2_11300110_K.pdf> 
+<./out/007_r_2_11300110_R.pdf>]
+(./out/011_r_3_constraints.tex)
+<out/013_r_4_11300110_L.pdf, id=318, 150.54643pt x 127.85767pt>
+File: out/013_r_4_11300110_L.pdf Graphic file (type pdf)
+<use out/013_r_4_11300110_L.pdf>
+Package pdftex.def Info: out/013_r_4_11300110_L.pdf  used on input line 6.
+(pdftex.def)             Requested size: 150.54605pt x 127.85733pt.
+File: out/013_r_4_11300110_L.pdf Graphic file (type pdf)
+<use out/013_r_4_11300110_L.pdf>
+Package pdftex.def Info: out/013_r_4_11300110_L.pdf  used on input line 6.
+(pdftex.def)             Requested size: 150.54605pt x 127.85733pt.
+
+out/013_r_4_11300110_L width=150.54605pt, hight=127.85733pt, pagewidth=143.4012
+6pt, pageheight=729.6886pt
+File: out/013_r_4_11300110_L.pdf Graphic file (type pdf)
+<use out/013_r_4_11300110_L.pdf>
+Package pdftex.def Info: out/013_r_4_11300110_L.pdf  used on input line 6.
+(pdftex.def)             Requested size: 143.41339pt x 121.79962pt.
+<out/013_r_4_11300110_K.pdf, id=319, 150.54643pt x 127.85767pt>
+File: out/013_r_4_11300110_K.pdf Graphic file (type pdf)
+<use out/013_r_4_11300110_K.pdf>
+Package pdftex.def Info: out/013_r_4_11300110_K.pdf  used on input line 6.
+(pdftex.def)             Requested size: 150.54605pt x 127.85733pt.
+File: out/013_r_4_11300110_K.pdf Graphic file (type pdf)
+<use out/013_r_4_11300110_K.pdf>
+Package pdftex.def Info: out/013_r_4_11300110_K.pdf  used on input line 6.
+(pdftex.def)             Requested size: 150.54605pt x 127.85733pt.
+
+out/013_r_4_11300110_K width=150.54605pt, hight=127.85733pt, pagewidth=143.4012
+6pt, pageheight=729.6886pt
+File: out/013_r_4_11300110_K.pdf Graphic file (type pdf)
+<use out/013_r_4_11300110_K.pdf>
+Package pdftex.def Info: out/013_r_4_11300110_K.pdf  used on input line 6.
+(pdftex.def)             Requested size: 143.41339pt x 121.79962pt.
+<out/013_r_4_11300110_R.pdf, id=320, 150.54643pt x 127.85767pt>
+File: out/013_r_4_11300110_R.pdf Graphic file (type pdf)
+<use out/013_r_4_11300110_R.pdf>
+Package pdftex.def Info: out/013_r_4_11300110_R.pdf  used on input line 6.
+(pdftex.def)             Requested size: 150.54605pt x 127.85733pt.
+File: out/013_r_4_11300110_R.pdf Graphic file (type pdf)
+<use out/013_r_4_11300110_R.pdf>
+Package pdftex.def Info: out/013_r_4_11300110_R.pdf  used on input line 6.
+(pdftex.def)             Requested size: 150.54605pt x 127.85733pt.
+
+out/013_r_4_11300110_R width=150.54605pt, hight=127.85733pt, pagewidth=143.4012
+6pt, pageheight=729.6886pt
+File: out/013_r_4_11300110_R.pdf Graphic file (type pdf)
+<use out/013_r_4_11300110_R.pdf>
+Package pdftex.def Info: out/013_r_4_11300110_R.pdf  used on input line 6.
+(pdftex.def)             Requested size: 143.41339pt x 121.79962pt.
+ (./out/014_r_4_constraints.tex)
+<out/016_r_5_11300110_L.pdf, id=321, 173.49718pt x 110.14551pt>
+File: out/016_r_5_11300110_L.pdf Graphic file (type pdf)
+<use out/016_r_5_11300110_L.pdf>
+Package pdftex.def Info: out/016_r_5_11300110_L.pdf  used on input line 7.
+(pdftex.def)             Requested size: 173.49675pt x 110.14523pt.
+File: out/016_r_5_11300110_L.pdf Graphic file (type pdf)
+<use out/016_r_5_11300110_L.pdf>
+Package pdftex.def Info: out/016_r_5_11300110_L.pdf  used on input line 7.
+(pdftex.def)             Requested size: 173.49675pt x 110.14523pt.
+
+out/016_r_5_11300110_L width=173.49675pt, hight=110.14523pt, pagewidth=143.4012
+6pt, pageheight=729.6886pt
+File: out/016_r_5_11300110_L.pdf Graphic file (type pdf)
+<use out/016_r_5_11300110_L.pdf>
+Package pdftex.def Info: out/016_r_5_11300110_L.pdf  used on input line 7.
+(pdftex.def)             Requested size: 143.4096pt x 91.04427pt.
+<out/016_r_5_11300110_K.pdf, id=322, 173.49718pt x 110.14551pt>
+File: out/016_r_5_11300110_K.pdf Graphic file (type pdf)
+<use out/016_r_5_11300110_K.pdf>
+Package pdftex.def Info: out/016_r_5_11300110_K.pdf  used on input line 7.
+(pdftex.def)             Requested size: 173.49675pt x 110.14523pt.
+File: out/016_r_5_11300110_K.pdf Graphic file (type pdf)
+<use out/016_r_5_11300110_K.pdf>
+Package pdftex.def Info: out/016_r_5_11300110_K.pdf  used on input line 7.
+(pdftex.def)             Requested size: 173.49675pt x 110.14523pt.
+
+out/016_r_5_11300110_K width=173.49675pt, hight=110.14523pt, pagewidth=143.4012
+6pt, pageheight=729.6886pt
+File: out/016_r_5_11300110_K.pdf Graphic file (type pdf)
+<use out/016_r_5_11300110_K.pdf>
+Package pdftex.def Info: out/016_r_5_11300110_K.pdf  used on input line 7.
+(pdftex.def)             Requested size: 143.4096pt x 91.04427pt.
+<out/016_r_5_11300110_R.pdf, id=323, 173.49718pt x 110.14551pt>
+File: out/016_r_5_11300110_R.pdf Graphic file (type pdf)
+<use out/016_r_5_11300110_R.pdf>
+Package pdftex.def Info: out/016_r_5_11300110_R.pdf  used on input line 7.
+(pdftex.def)             Requested size: 173.49675pt x 110.14523pt.
+File: out/016_r_5_11300110_R.pdf Graphic file (type pdf)
+<use out/016_r_5_11300110_R.pdf>
+Package pdftex.def Info: out/016_r_5_11300110_R.pdf  used on input line 7.
+(pdftex.def)             Requested size: 173.49675pt x 110.14523pt.
+
+out/016_r_5_11300110_R width=173.49675pt, hight=110.14523pt, pagewidth=143.4012
+6pt, pageheight=729.6886pt
+File: out/016_r_5_11300110_R.pdf Graphic file (type pdf)
+<use out/016_r_5_11300110_R.pdf>
+Package pdftex.def Info: out/016_r_5_11300110_R.pdf  used on input line 7.
+(pdftex.def)             Requested size: 143.4096pt x 91.04427pt.
+ (./out/017_r_5_constraints.tex)
+<out/019_r_6_11300110_L.pdf, id=324, 145.10712pt x 101.88063pt>
+File: out/019_r_6_11300110_L.pdf Graphic file (type pdf)
+<use out/019_r_6_11300110_L.pdf>
+Package pdftex.def Info: out/019_r_6_11300110_L.pdf  used on input line 8.
+(pdftex.def)             Requested size: 145.10675pt x 101.88037pt.
+File: out/019_r_6_11300110_L.pdf Graphic file (type pdf)
+<use out/019_r_6_11300110_L.pdf>
+Package pdftex.def Info: out/019_r_6_11300110_L.pdf  used on input line 8.
+(pdftex.def)             Requested size: 145.10675pt x 101.88037pt.
+
+out/019_r_6_11300110_L width=145.10675pt, hight=101.88037pt, pagewidth=143.4012
+6pt, pageheight=729.6886pt
+File: out/019_r_6_11300110_L.pdf Graphic file (type pdf)
+<use out/019_r_6_11300110_L.pdf>
+Package pdftex.def Info: out/019_r_6_11300110_L.pdf  used on input line 8.
+(pdftex.def)             Requested size: 143.41292pt x 100.69112pt.
+<out/019_r_6_11300110_K.pdf, id=325, 145.10712pt x 101.88063pt>
+File: out/019_r_6_11300110_K.pdf Graphic file (type pdf)
+<use out/019_r_6_11300110_K.pdf>
+Package pdftex.def Info: out/019_r_6_11300110_K.pdf  used on input line 8.
+(pdftex.def)             Requested size: 145.10675pt x 101.88037pt.
+File: out/019_r_6_11300110_K.pdf Graphic file (type pdf)
+<use out/019_r_6_11300110_K.pdf>
+Package pdftex.def Info: out/019_r_6_11300110_K.pdf  used on input line 8.
+(pdftex.def)             Requested size: 145.10675pt x 101.88037pt.
+
+out/019_r_6_11300110_K width=145.10675pt, hight=101.88037pt, pagewidth=143.4012
+6pt, pageheight=729.6886pt
+File: out/019_r_6_11300110_K.pdf Graphic file (type pdf)
+<use out/019_r_6_11300110_K.pdf>
+Package pdftex.def Info: out/019_r_6_11300110_K.pdf  used on input line 8.
+(pdftex.def)             Requested size: 143.41292pt x 100.69112pt.
+<out/019_r_6_11300110_R.pdf, id=326, 145.10712pt x 101.88063pt>
+File: out/019_r_6_11300110_R.pdf Graphic file (type pdf)
+<use out/019_r_6_11300110_R.pdf>
+Package pdftex.def Info: out/019_r_6_11300110_R.pdf  used on input line 8.
+(pdftex.def)             Requested size: 145.10675pt x 101.88037pt.
+File: out/019_r_6_11300110_R.pdf Graphic file (type pdf)
+<use out/019_r_6_11300110_R.pdf>
+Package pdftex.def Info: out/019_r_6_11300110_R.pdf  used on input line 8.
+(pdftex.def)             Requested size: 145.10675pt x 101.88037pt.
+
+out/019_r_6_11300110_R width=145.10675pt, hight=101.88037pt, pagewidth=143.4012
+6pt, pageheight=729.6886pt
+File: out/019_r_6_11300110_R.pdf Graphic file (type pdf)
+<use out/019_r_6_11300110_R.pdf>
+Package pdftex.def Info: out/019_r_6_11300110_R.pdf  used on input line 8.
+(pdftex.def)             Requested size: 143.41292pt x 100.69112pt.
+ [3 <./out/010_r_3_11300110_L.pdf> <./out/010_r_3_11300110_K.pdf> <./out/010_r_
+3_11300110_R.pdf> <./out/013_r_4_11300110_L.pdf> <./out/013_r_4_11300110_K.pdf>
+ <./out/013_r_4_11300110_R.pdf> <./out/016_r_5_11300110_L.pdf> <./out/016_r_5_1
+1300110_K.pdf> <./out/016_r_5_11300110_R.pdf> <./out/019_r_6_11300110_L.pdf> <.
+/out/019_r_6_11300110_K.pdf> <./out/019_r_6_11300110_R.pdf>] (./out/020_r_6_con
+straints.tex)
+<out/022_r_7_11300110_L.pdf, id=502, 173.49718pt x 101.88063pt>
+File: out/022_r_7_11300110_L.pdf Graphic file (type pdf)
+<use out/022_r_7_11300110_L.pdf>
+Package pdftex.def Info: out/022_r_7_11300110_L.pdf  used on input line 9.
+(pdftex.def)             Requested size: 173.49675pt x 101.88037pt.
+File: out/022_r_7_11300110_L.pdf Graphic file (type pdf)
+<use out/022_r_7_11300110_L.pdf>
+Package pdftex.def Info: out/022_r_7_11300110_L.pdf  used on input line 9.
+(pdftex.def)             Requested size: 173.49675pt x 101.88037pt.
+
+out/022_r_7_11300110_L width=173.49675pt, hight=101.88037pt, pagewidth=143.4012
+6pt, pageheight=729.6886pt
+File: out/022_r_7_11300110_L.pdf Graphic file (type pdf)
+<use out/022_r_7_11300110_L.pdf>
+Package pdftex.def Info: out/022_r_7_11300110_L.pdf  used on input line 9.
+(pdftex.def)             Requested size: 143.4096pt x 84.21266pt.
+<out/022_r_7_11300110_K.pdf, id=503, 173.49718pt x 101.88063pt>
+File: out/022_r_7_11300110_K.pdf Graphic file (type pdf)
+<use out/022_r_7_11300110_K.pdf>
+Package pdftex.def Info: out/022_r_7_11300110_K.pdf  used on input line 9.
+(pdftex.def)             Requested size: 173.49675pt x 101.88037pt.
+File: out/022_r_7_11300110_K.pdf Graphic file (type pdf)
+<use out/022_r_7_11300110_K.pdf>
+Package pdftex.def Info: out/022_r_7_11300110_K.pdf  used on input line 9.
+(pdftex.def)             Requested size: 173.49675pt x 101.88037pt.
+
+out/022_r_7_11300110_K width=173.49675pt, hight=101.88037pt, pagewidth=143.4012
+6pt, pageheight=729.6886pt
+File: out/022_r_7_11300110_K.pdf Graphic file (type pdf)
+<use out/022_r_7_11300110_K.pdf>
+Package pdftex.def Info: out/022_r_7_11300110_K.pdf  used on input line 9.
+(pdftex.def)             Requested size: 143.4096pt x 84.21266pt.
+<out/022_r_7_11300110_R.pdf, id=504, 173.49718pt x 101.88063pt>
+File: out/022_r_7_11300110_R.pdf Graphic file (type pdf)
+<use out/022_r_7_11300110_R.pdf>
+Package pdftex.def Info: out/022_r_7_11300110_R.pdf  used on input line 9.
+(pdftex.def)             Requested size: 173.49675pt x 101.88037pt.
+File: out/022_r_7_11300110_R.pdf Graphic file (type pdf)
+<use out/022_r_7_11300110_R.pdf>
+Package pdftex.def Info: out/022_r_7_11300110_R.pdf  used on input line 9.
+(pdftex.def)             Requested size: 173.49675pt x 101.88037pt.
+
+out/022_r_7_11300110_R width=173.49675pt, hight=101.88037pt, pagewidth=143.4012
+6pt, pageheight=729.6886pt
+File: out/022_r_7_11300110_R.pdf Graphic file (type pdf)
+<use out/022_r_7_11300110_R.pdf>
+Package pdftex.def Info: out/022_r_7_11300110_R.pdf  used on input line 9.
+(pdftex.def)             Requested size: 143.4096pt x 84.21266pt.
+ (./out/023_r_7_constraints.tex)
+<out/025_r_8_11300110_L.pdf, id=505, 116.15195pt x 203.23128pt>
+File: out/025_r_8_11300110_L.pdf Graphic file (type pdf)
+<use out/025_r_8_11300110_L.pdf>
+Package pdftex.def Info: out/025_r_8_11300110_L.pdf  used on input line 10.
+(pdftex.def)             Requested size: 116.15164pt x 203.23077pt.
+File: out/025_r_8_11300110_L.pdf Graphic file (type pdf)
+<use out/025_r_8_11300110_L.pdf>
+Package pdftex.def Info: out/025_r_8_11300110_L.pdf  used on input line 10.
+(pdftex.def)             Requested size: 116.15164pt x 203.23077pt.
+
+out/025_r_8_11300110_L width=116.15164pt, hight=203.23077pt, pagewidth=143.4012
+6pt, pageheight=729.6886pt
+File: out/025_r_8_11300110_L.pdf Graphic file (type pdf)
+<use out/025_r_8_11300110_L.pdf>
+Package pdftex.def Info: out/025_r_8_11300110_L.pdf  used on input line 10.
+(pdftex.def)             Requested size: 143.41367pt x 250.9312pt.
+<out/025_r_8_11300110_K.pdf, id=506, 104.96515pt x 203.23128pt>
+File: out/025_r_8_11300110_K.pdf Graphic file (type pdf)
+<use out/025_r_8_11300110_K.pdf>
+Package pdftex.def Info: out/025_r_8_11300110_K.pdf  used on input line 10.
+(pdftex.def)             Requested size: 104.96487pt x 203.23077pt.
+File: out/025_r_8_11300110_K.pdf Graphic file (type pdf)
+<use out/025_r_8_11300110_K.pdf>
+Package pdftex.def Info: out/025_r_8_11300110_K.pdf  used on input line 10.
+(pdftex.def)             Requested size: 104.96487pt x 203.23077pt.
+
+out/025_r_8_11300110_K width=104.96487pt, hight=203.23077pt, pagewidth=143.4012
+6pt, pageheight=729.6886pt
+File: out/025_r_8_11300110_K.pdf Graphic file (type pdf)
+<use out/025_r_8_11300110_K.pdf>
+Package pdftex.def Info: out/025_r_8_11300110_K.pdf  used on input line 10.
+(pdftex.def)             Requested size: 143.41696pt x 277.68091pt.
+<out/025_r_8_11300110_R.pdf, id=507, 116.15195pt x 203.23128pt>
+File: out/025_r_8_11300110_R.pdf Graphic file (type pdf)
+<use out/025_r_8_11300110_R.pdf>
+Package pdftex.def Info: out/025_r_8_11300110_R.pdf  used on input line 10.
+(pdftex.def)             Requested size: 116.15164pt x 203.23077pt.
+File: out/025_r_8_11300110_R.pdf Graphic file (type pdf)
+<use out/025_r_8_11300110_R.pdf>
+Package pdftex.def Info: out/025_r_8_11300110_R.pdf  used on input line 10.
+(pdftex.def)             Requested size: 116.15164pt x 203.23077pt.
+
+out/025_r_8_11300110_R width=116.15164pt, hight=203.23077pt, pagewidth=143.4012
+6pt, pageheight=729.6886pt
+File: out/025_r_8_11300110_R.pdf Graphic file (type pdf)
+<use out/025_r_8_11300110_R.pdf>
+Package pdftex.def Info: out/025_r_8_11300110_R.pdf  used on input line 10.
+(pdftex.def)             Requested size: 143.41367pt x 250.9312pt.
+ (./out/026_r_8_constraints.tex)
+<out/028_r_9_11300110_L.pdf, id=508, 190.71352pt x 171.37024pt>
+File: out/028_r_9_11300110_L.pdf Graphic file (type pdf)
+<use out/028_r_9_11300110_L.pdf>
+Package pdftex.def Info: out/028_r_9_11300110_L.pdf  used on input line 11.
+(pdftex.def)             Requested size: 190.71304pt x 171.36981pt.
+File: out/028_r_9_11300110_L.pdf Graphic file (type pdf)
+<use out/028_r_9_11300110_L.pdf>
+Package pdftex.def Info: out/028_r_9_11300110_L.pdf  used on input line 11.
+(pdftex.def)             Requested size: 190.71304pt x 171.36981pt.
+
+out/028_r_9_11300110_L width=190.71304pt, hight=171.36981pt, pagewidth=143.4012
+6pt, pageheight=729.6886pt
+File: out/028_r_9_11300110_L.pdf Graphic file (type pdf)
+<use out/028_r_9_11300110_L.pdf>
+Package pdftex.def Info: out/028_r_9_11300110_L.pdf  used on input line 11.
+(pdftex.def)             Requested size: 143.40726pt x 128.86206pt.
+<out/028_r_9_11300110_K.pdf, id=509, 190.71352pt x 171.37024pt>
+File: out/028_r_9_11300110_K.pdf Graphic file (type pdf)
+<use out/028_r_9_11300110_K.pdf>
+Package pdftex.def Info: out/028_r_9_11300110_K.pdf  used on input line 11.
+(pdftex.def)             Requested size: 190.71304pt x 171.36981pt.
+File: out/028_r_9_11300110_K.pdf Graphic file (type pdf)
+<use out/028_r_9_11300110_K.pdf>
+Package pdftex.def Info: out/028_r_9_11300110_K.pdf  used on input line 11.
+(pdftex.def)             Requested size: 190.71304pt x 171.36981pt.
+
+out/028_r_9_11300110_K width=190.71304pt, hight=171.36981pt, pagewidth=143.4012
+6pt, pageheight=729.6886pt
+File: out/028_r_9_11300110_K.pdf Graphic file (type pdf)
+<use out/028_r_9_11300110_K.pdf>
+Package pdftex.def Info: out/028_r_9_11300110_K.pdf  used on input line 11.
+(pdftex.def)             Requested size: 143.40726pt x 128.86206pt.
+<out/028_r_9_11300110_R.pdf, id=510, 190.71352pt x 171.37024pt>
+File: out/028_r_9_11300110_R.pdf Graphic file (type pdf)
+<use out/028_r_9_11300110_R.pdf>
+Package pdftex.def Info: out/028_r_9_11300110_R.pdf  used on input line 11.
+(pdftex.def)             Requested size: 190.71304pt x 171.36981pt.
+File: out/028_r_9_11300110_R.pdf Graphic file (type pdf)
+<use out/028_r_9_11300110_R.pdf>
+Package pdftex.def Info: out/028_r_9_11300110_R.pdf  used on input line 11.
+(pdftex.def)             Requested size: 190.71304pt x 171.36981pt.
+
+out/028_r_9_11300110_R width=190.71304pt, hight=171.36981pt, pagewidth=143.4012
+6pt, pageheight=729.6886pt
+File: out/028_r_9_11300110_R.pdf Graphic file (type pdf)
+<use out/028_r_9_11300110_R.pdf>
+Package pdftex.def Info: out/028_r_9_11300110_R.pdf  used on input line 11.
+(pdftex.def)             Requested size: 143.40726pt x 128.86206pt.
+ [4 <./out/022_r_7_11300110_L.pdf> <./out/022_r_7_11300110_K.pdf> <./out/022_r_
+7_11300110_R.pdf> <./out/025_r_8_11300110_L.pdf> <./out/025_r_8_11300110_K.pdf>
+ <./out/025_r_8_11300110_R.pdf>]
+(./out/029_r_9_constraints.tex)
+<out/031_r_10_11300110_L.pdf, id=619, 238.1999pt x 201.76982pt>
+File: out/031_r_10_11300110_L.pdf Graphic file (type pdf)
+<use out/031_r_10_11300110_L.pdf>
+Package pdftex.def Info: out/031_r_10_11300110_L.pdf  used on input line 12.
+(pdftex.def)             Requested size: 238.19933pt x 201.76932pt.
+File: out/031_r_10_11300110_L.pdf Graphic file (type pdf)
+<use out/031_r_10_11300110_L.pdf>
+Package pdftex.def Info: out/031_r_10_11300110_L.pdf  used on input line 12.
+(pdftex.def)             Requested size: 238.19933pt x 201.76932pt.
+
+out/031_r_10_11300110_L width=238.19933pt, hight=201.76932pt, pagewidth=143.401
+26pt, pageheight=729.6886pt
+File: out/031_r_10_11300110_L.pdf Graphic file (type pdf)
+<use out/031_r_10_11300110_L.pdf>
+Package pdftex.def Info: out/031_r_10_11300110_L.pdf  used on input line 12.
+(pdftex.def)             Requested size: 143.40808pt x 121.47537pt.
+<out/031_r_10_11300110_K.pdf, id=620, 238.1999pt x 201.76982pt>
+File: out/031_r_10_11300110_K.pdf Graphic file (type pdf)
+<use out/031_r_10_11300110_K.pdf>
+Package pdftex.def Info: out/031_r_10_11300110_K.pdf  used on input line 12.
+(pdftex.def)             Requested size: 238.19933pt x 201.76932pt.
+File: out/031_r_10_11300110_K.pdf Graphic file (type pdf)
+<use out/031_r_10_11300110_K.pdf>
+Package pdftex.def Info: out/031_r_10_11300110_K.pdf  used on input line 12.
+(pdftex.def)             Requested size: 238.19933pt x 201.76932pt.
+
+out/031_r_10_11300110_K width=238.19933pt, hight=201.76932pt, pagewidth=143.401
+26pt, pageheight=729.6886pt
+File: out/031_r_10_11300110_K.pdf Graphic file (type pdf)
+<use out/031_r_10_11300110_K.pdf>
+Package pdftex.def Info: out/031_r_10_11300110_K.pdf  used on input line 12.
+(pdftex.def)             Requested size: 143.40808pt x 121.47537pt.
+<out/031_r_10_11300110_R.pdf, id=621, 238.1999pt x 201.76982pt>
+File: out/031_r_10_11300110_R.pdf Graphic file (type pdf)
+<use out/031_r_10_11300110_R.pdf>
+Package pdftex.def Info: out/031_r_10_11300110_R.pdf  used on input line 12.
+(pdftex.def)             Requested size: 238.19933pt x 201.76932pt.
+File: out/031_r_10_11300110_R.pdf Graphic file (type pdf)
+<use out/031_r_10_11300110_R.pdf>
+Package pdftex.def Info: out/031_r_10_11300110_R.pdf  used on input line 12.
+(pdftex.def)             Requested size: 238.19933pt x 201.76932pt.
+
+out/031_r_10_11300110_R width=238.19933pt, hight=201.76932pt, pagewidth=143.401
+26pt, pageheight=729.6886pt
+File: out/031_r_10_11300110_R.pdf Graphic file (type pdf)
+<use out/031_r_10_11300110_R.pdf>
+Package pdftex.def Info: out/031_r_10_11300110_R.pdf  used on input line 12.
+(pdftex.def)             Requested size: 143.40808pt x 121.47537pt.
+ (./out/032_r_10_constraints.tex)
+<out/034_r_11_11300110_L.pdf, id=622, 201.66943pt x 126.40726pt>
+File: out/034_r_11_11300110_L.pdf Graphic file (type pdf)
+<use out/034_r_11_11300110_L.pdf>
+Package pdftex.def Info: out/034_r_11_11300110_L.pdf  used on input line 13.
+(pdftex.def)             Requested size: 201.66891pt x 126.40694pt.
+File: out/034_r_11_11300110_L.pdf Graphic file (type pdf)
+<use out/034_r_11_11300110_L.pdf>
+Package pdftex.def Info: out/034_r_11_11300110_L.pdf  used on input line 13.
+(pdftex.def)             Requested size: 201.66891pt x 126.40694pt.
+
+out/034_r_11_11300110_L width=201.66891pt, hight=126.40694pt, pagewidth=143.401
+26pt, pageheight=729.6886pt
+File: out/034_r_11_11300110_L.pdf Graphic file (type pdf)
+<use out/034_r_11_11300110_L.pdf>
+Package pdftex.def Info: out/034_r_11_11300110_L.pdf  used on input line 13.
+(pdftex.def)             Requested size: 143.40784pt x 89.88864pt.
+<out/034_r_11_11300110_K.pdf, id=623, 201.66943pt x 126.40726pt>
+File: out/034_r_11_11300110_K.pdf Graphic file (type pdf)
+<use out/034_r_11_11300110_K.pdf>
+Package pdftex.def Info: out/034_r_11_11300110_K.pdf  used on input line 13.
+(pdftex.def)             Requested size: 201.66891pt x 126.40694pt.
+File: out/034_r_11_11300110_K.pdf Graphic file (type pdf)
+<use out/034_r_11_11300110_K.pdf>
+Package pdftex.def Info: out/034_r_11_11300110_K.pdf  used on input line 13.
+(pdftex.def)             Requested size: 201.66891pt x 126.40694pt.
+
+out/034_r_11_11300110_K width=201.66891pt, hight=126.40694pt, pagewidth=143.401
+26pt, pageheight=729.6886pt
+File: out/034_r_11_11300110_K.pdf Graphic file (type pdf)
+<use out/034_r_11_11300110_K.pdf>
+Package pdftex.def Info: out/034_r_11_11300110_K.pdf  used on input line 13.
+(pdftex.def)             Requested size: 143.40784pt x 89.88864pt.
+<out/034_r_11_11300110_R.pdf, id=624, 201.66943pt x 126.40726pt>
+File: out/034_r_11_11300110_R.pdf Graphic file (type pdf)
+<use out/034_r_11_11300110_R.pdf>
+Package pdftex.def Info: out/034_r_11_11300110_R.pdf  used on input line 13.
+(pdftex.def)             Requested size: 201.66891pt x 126.40694pt.
+File: out/034_r_11_11300110_R.pdf Graphic file (type pdf)
+<use out/034_r_11_11300110_R.pdf>
+Package pdftex.def Info: out/034_r_11_11300110_R.pdf  used on input line 13.
+(pdftex.def)             Requested size: 201.66891pt x 126.40694pt.
+
+out/034_r_11_11300110_R width=201.66891pt, hight=126.40694pt, pagewidth=143.401
+26pt, pageheight=729.6886pt
+File: out/034_r_11_11300110_R.pdf Graphic file (type pdf)
+<use out/034_r_11_11300110_R.pdf>
+Package pdftex.def Info: out/034_r_11_11300110_R.pdf  used on input line 13.
+(pdftex.def)             Requested size: 143.40784pt x 89.88864pt.
+ (./out/035_r_11_constraints.tex)
+<out/037_r_12_11300110_L.pdf, id=625, 127.64087pt x 87.1526pt>
+File: out/037_r_12_11300110_L.pdf Graphic file (type pdf)
+<use out/037_r_12_11300110_L.pdf>
+Package pdftex.def Info: out/037_r_12_11300110_L.pdf  used on input line 14.
+(pdftex.def)             Requested size: 127.64053pt x 87.15237pt.
+File: out/037_r_12_11300110_L.pdf Graphic file (type pdf)
+<use out/037_r_12_11300110_L.pdf>
+Package pdftex.def Info: out/037_r_12_11300110_L.pdf  used on input line 14.
+(pdftex.def)             Requested size: 127.64053pt x 87.15237pt.
+
+out/037_r_12_11300110_L width=127.64053pt, hight=87.15237pt, pagewidth=143.4012
+6pt, pageheight=729.6886pt
+File: out/037_r_12_11300110_L.pdf Graphic file (type pdf)
+<use out/037_r_12_11300110_L.pdf>
+Package pdftex.def Info: out/037_r_12_11300110_L.pdf  used on input line 14.
+(pdftex.def)             Requested size: 143.41835pt x 97.9254pt.
+<out/037_r_12_11300110_K.pdf, id=626, 127.64087pt x 78.88773pt>
+File: out/037_r_12_11300110_K.pdf Graphic file (type pdf)
+<use out/037_r_12_11300110_K.pdf>
+Package pdftex.def Info: out/037_r_12_11300110_K.pdf  used on input line 14.
+(pdftex.def)             Requested size: 127.64053pt x 78.88751pt.
+File: out/037_r_12_11300110_K.pdf Graphic file (type pdf)
+<use out/037_r_12_11300110_K.pdf>
+Package pdftex.def Info: out/037_r_12_11300110_K.pdf  used on input line 14.
+(pdftex.def)             Requested size: 127.64053pt x 78.88751pt.
+
+out/037_r_12_11300110_K width=127.64053pt, hight=78.88751pt, pagewidth=143.4012
+6pt, pageheight=729.6886pt
+File: out/037_r_12_11300110_K.pdf Graphic file (type pdf)
+<use out/037_r_12_11300110_K.pdf>
+Package pdftex.def Info: out/037_r_12_11300110_K.pdf  used on input line 14.
+(pdftex.def)             Requested size: 143.41835pt x 88.6389pt.
+<out/037_r_12_11300110_R.pdf, id=627, 127.64087pt x 78.88773pt>
+File: out/037_r_12_11300110_R.pdf Graphic file (type pdf)
+<use out/037_r_12_11300110_R.pdf>
+Package pdftex.def Info: out/037_r_12_11300110_R.pdf  used on input line 14.
+(pdftex.def)             Requested size: 127.64053pt x 78.88751pt.
+File: out/037_r_12_11300110_R.pdf Graphic file (type pdf)
+<use out/037_r_12_11300110_R.pdf>
+Package pdftex.def Info: out/037_r_12_11300110_R.pdf  used on input line 14.
+(pdftex.def)             Requested size: 127.64053pt x 78.88751pt.
+
+out/037_r_12_11300110_R width=127.64053pt, hight=78.88751pt, pagewidth=143.4012
+6pt, pageheight=729.6886pt
+File: out/037_r_12_11300110_R.pdf Graphic file (type pdf)
+<use out/037_r_12_11300110_R.pdf>
+Package pdftex.def Info: out/037_r_12_11300110_R.pdf  used on input line 14.
+(pdftex.def)             Requested size: 143.41835pt x 88.6389pt.
+ [5 <./out/028_r_9_11300110_L.pdf> <./out/028_r_9_11300110_K.pdf> <./out/028_r_
+9_11300110_R.pdf> <./out/031_r_10_11300110_L.pdf> <./out/031_r_10_11300110_K.pd
+f> <./out/031_r_10_11300110_R.pdf> <./out/034_r_11_11300110_L.pdf> <./out/034_r
+_11_11300110_K.pdf> <./out/034_r_11_11300110_R.pdf>]
+(./out/038_r_12_constraints.tex)
+Overfull \hbox (13.78442pt too wide) in paragraph at lines 15--15
+[]\T1/lmr/bx/n/14.4 cellobiose + phos-phate = alpha-D-glucose 1-phosphate + D-g
+lucose 
+ []
+
+<out/040_r_13_11300110_L.pdf, id=759, 306.22205pt x 219.23405pt>
+File: out/040_r_13_11300110_L.pdf Graphic file (type pdf)
+<use out/040_r_13_11300110_L.pdf>
+Package pdftex.def Info: out/040_r_13_11300110_L.pdf  used on input line 15.
+(pdftex.def)             Requested size: 306.22128pt x 219.2335pt.
+File: out/040_r_13_11300110_L.pdf Graphic file (type pdf)
+<use out/040_r_13_11300110_L.pdf>
+Package pdftex.def Info: out/040_r_13_11300110_L.pdf  used on input line 15.
+(pdftex.def)             Requested size: 306.22128pt x 219.2335pt.
+
+out/040_r_13_11300110_L width=306.22128pt, hight=219.2335pt, pagewidth=143.4012
+6pt, pageheight=729.6886pt
+File: out/040_r_13_11300110_L.pdf Graphic file (type pdf)
+<use out/040_r_13_11300110_L.pdf>
+Package pdftex.def Info: out/040_r_13_11300110_L.pdf  used on input line 15.
+(pdftex.def)             Requested size: 143.40105pt x 102.66534pt.
+<out/040_r_13_11300110_K.pdf, id=760, 306.22205pt x 219.23405pt>
+File: out/040_r_13_11300110_K.pdf Graphic file (type pdf)
+<use out/040_r_13_11300110_K.pdf>
+Package pdftex.def Info: out/040_r_13_11300110_K.pdf  used on input line 15.
+(pdftex.def)             Requested size: 306.22128pt x 219.2335pt.
+File: out/040_r_13_11300110_K.pdf Graphic file (type pdf)
+<use out/040_r_13_11300110_K.pdf>
+Package pdftex.def Info: out/040_r_13_11300110_K.pdf  used on input line 15.
+(pdftex.def)             Requested size: 306.22128pt x 219.2335pt.
+
+out/040_r_13_11300110_K width=306.22128pt, hight=219.2335pt, pagewidth=143.4012
+6pt, pageheight=729.6886pt
+File: out/040_r_13_11300110_K.pdf Graphic file (type pdf)
+<use out/040_r_13_11300110_K.pdf>
+Package pdftex.def Info: out/040_r_13_11300110_K.pdf  used on input line 15.
+(pdftex.def)             Requested size: 143.40105pt x 102.66534pt.
+<out/040_r_13_11300110_R.pdf, id=761, 306.22205pt x 219.23405pt>
+File: out/040_r_13_11300110_R.pdf Graphic file (type pdf)
+<use out/040_r_13_11300110_R.pdf>
+Package pdftex.def Info: out/040_r_13_11300110_R.pdf  used on input line 15.
+(pdftex.def)             Requested size: 306.22128pt x 219.2335pt.
+File: out/040_r_13_11300110_R.pdf Graphic file (type pdf)
+<use out/040_r_13_11300110_R.pdf>
+Package pdftex.def Info: out/040_r_13_11300110_R.pdf  used on input line 15.
+(pdftex.def)             Requested size: 306.22128pt x 219.2335pt.
+
+out/040_r_13_11300110_R width=306.22128pt, hight=219.2335pt, pagewidth=143.4012
+6pt, pageheight=729.6886pt
+File: out/040_r_13_11300110_R.pdf Graphic file (type pdf)
+<use out/040_r_13_11300110_R.pdf>
+Package pdftex.def Info: out/040_r_13_11300110_R.pdf  used on input line 15.
+(pdftex.def)             Requested size: 143.40105pt x 102.66534pt.
+ (./out/041_r_13_constraints.tex)
+<out/043_r_14_11300110_L.pdf, id=762, 224.573pt x 150.19412pt>
+File: out/043_r_14_11300110_L.pdf Graphic file (type pdf)
+<use out/043_r_14_11300110_L.pdf>
+Package pdftex.def Info: out/043_r_14_11300110_L.pdf  used on input line 16.
+(pdftex.def)             Requested size: 224.57243pt x 150.19374pt.
+File: out/043_r_14_11300110_L.pdf Graphic file (type pdf)
+<use out/043_r_14_11300110_L.pdf>
+Package pdftex.def Info: out/043_r_14_11300110_L.pdf  used on input line 16.
+(pdftex.def)             Requested size: 224.57243pt x 150.19374pt.
+
+out/043_r_14_11300110_L width=224.57243pt, hight=150.19374pt, pagewidth=143.401
+26pt, pageheight=729.6886pt
+File: out/043_r_14_11300110_L.pdf Graphic file (type pdf)
+<use out/043_r_14_11300110_L.pdf>
+Package pdftex.def Info: out/043_r_14_11300110_L.pdf  used on input line 16.
+(pdftex.def)             Requested size: 143.40753pt x 95.91077pt.
+<out/043_r_14_11300110_K.pdf, id=763, 224.573pt x 150.19412pt>
+File: out/043_r_14_11300110_K.pdf Graphic file (type pdf)
+<use out/043_r_14_11300110_K.pdf>
+Package pdftex.def Info: out/043_r_14_11300110_K.pdf  used on input line 16.
+(pdftex.def)             Requested size: 224.57243pt x 150.19374pt.
+File: out/043_r_14_11300110_K.pdf Graphic file (type pdf)
+<use out/043_r_14_11300110_K.pdf>
+Package pdftex.def Info: out/043_r_14_11300110_K.pdf  used on input line 16.
+(pdftex.def)             Requested size: 224.57243pt x 150.19374pt.
+
+out/043_r_14_11300110_K width=224.57243pt, hight=150.19374pt, pagewidth=143.401
+26pt, pageheight=729.6886pt
+File: out/043_r_14_11300110_K.pdf Graphic file (type pdf)
+<use out/043_r_14_11300110_K.pdf>
+Package pdftex.def Info: out/043_r_14_11300110_K.pdf  used on input line 16.
+(pdftex.def)             Requested size: 143.40753pt x 95.91077pt.
+<out/043_r_14_11300110_R.pdf, id=764, 224.573pt x 150.19412pt>
+File: out/043_r_14_11300110_R.pdf Graphic file (type pdf)
+<use out/043_r_14_11300110_R.pdf>
+Package pdftex.def Info: out/043_r_14_11300110_R.pdf  used on input line 16.
+(pdftex.def)             Requested size: 224.57243pt x 150.19374pt.
+File: out/043_r_14_11300110_R.pdf Graphic file (type pdf)
+<use out/043_r_14_11300110_R.pdf>
+Package pdftex.def Info: out/043_r_14_11300110_R.pdf  used on input line 16.
+(pdftex.def)             Requested size: 224.57243pt x 150.19374pt.
+
+out/043_r_14_11300110_R width=224.57243pt, hight=150.19374pt, pagewidth=143.401
+26pt, pageheight=729.6886pt
+File: out/043_r_14_11300110_R.pdf Graphic file (type pdf)
+<use out/043_r_14_11300110_R.pdf>
+Package pdftex.def Info: out/043_r_14_11300110_R.pdf  used on input line 16.
+(pdftex.def)             Requested size: 143.40753pt x 95.91077pt.
+ (./out/044_r_14_constraints.tex)
+<out/046_r_15_11300110_L.pdf, id=765, 186.22072pt x 125.32321pt>
+File: out/046_r_15_11300110_L.pdf Graphic file (type pdf)
+<use out/046_r_15_11300110_L.pdf>
+Package pdftex.def Info: out/046_r_15_11300110_L.pdf  used on input line 17.
+(pdftex.def)             Requested size: 186.22025pt x 125.32289pt.
+File: out/046_r_15_11300110_L.pdf Graphic file (type pdf)
+<use out/046_r_15_11300110_L.pdf>
+Package pdftex.def Info: out/046_r_15_11300110_L.pdf  used on input line 17.
+(pdftex.def)             Requested size: 186.22025pt x 125.32289pt.
+
+out/046_r_15_11300110_L width=186.22025pt, hight=125.32289pt, pagewidth=143.401
+26pt, pageheight=729.6886pt
+File: out/046_r_15_11300110_L.pdf Graphic file (type pdf)
+<use out/046_r_15_11300110_L.pdf>
+Package pdftex.def Info: out/046_r_15_11300110_L.pdf  used on input line 17.
+(pdftex.def)             Requested size: 143.40175pt x 96.5068pt.
+<out/046_r_15_11300110_K.pdf, id=766, 186.22072pt x 125.32321pt>
+File: out/046_r_15_11300110_K.pdf Graphic file (type pdf)
+<use out/046_r_15_11300110_K.pdf>
+Package pdftex.def Info: out/046_r_15_11300110_K.pdf  used on input line 17.
+(pdftex.def)             Requested size: 186.22025pt x 125.32289pt.
+File: out/046_r_15_11300110_K.pdf Graphic file (type pdf)
+<use out/046_r_15_11300110_K.pdf>
+Package pdftex.def Info: out/046_r_15_11300110_K.pdf  used on input line 17.
+(pdftex.def)             Requested size: 186.22025pt x 125.32289pt.
+
+out/046_r_15_11300110_K width=186.22025pt, hight=125.32289pt, pagewidth=143.401
+26pt, pageheight=729.6886pt
+File: out/046_r_15_11300110_K.pdf Graphic file (type pdf)
+<use out/046_r_15_11300110_K.pdf>
+Package pdftex.def Info: out/046_r_15_11300110_K.pdf  used on input line 17.
+(pdftex.def)             Requested size: 143.40175pt x 96.5068pt.
+<out/046_r_15_11300110_R.pdf, id=767, 186.22072pt x 125.32321pt>
+File: out/046_r_15_11300110_R.pdf Graphic file (type pdf)
+<use out/046_r_15_11300110_R.pdf>
+Package pdftex.def Info: out/046_r_15_11300110_R.pdf  used on input line 17.
+(pdftex.def)             Requested size: 186.22025pt x 125.32289pt.
+File: out/046_r_15_11300110_R.pdf Graphic file (type pdf)
+<use out/046_r_15_11300110_R.pdf>
+Package pdftex.def Info: out/046_r_15_11300110_R.pdf  used on input line 17.
+(pdftex.def)             Requested size: 186.22025pt x 125.32289pt.
+
+out/046_r_15_11300110_R width=186.22025pt, hight=125.32289pt, pagewidth=143.401
+26pt, pageheight=729.6886pt
+File: out/046_r_15_11300110_R.pdf Graphic file (type pdf)
+<use out/046_r_15_11300110_R.pdf>
+Package pdftex.def Info: out/046_r_15_11300110_R.pdf  used on input line 17.
+(pdftex.def)             Requested size: 143.40175pt x 96.5068pt.
+ (./out/047_r_15_constraints.tex)
+<out/049_r_16_11300110_L.pdf, id=768, 210.36392pt x 141.98044pt>
+File: out/049_r_16_11300110_L.pdf Graphic file (type pdf)
+<use out/049_r_16_11300110_L.pdf>
+Package pdftex.def Info: out/049_r_16_11300110_L.pdf  used on input line 18.
+(pdftex.def)             Requested size: 210.36339pt x 141.98007pt.
+File: out/049_r_16_11300110_L.pdf Graphic file (type pdf)
+<use out/049_r_16_11300110_L.pdf>
+Package pdftex.def Info: out/049_r_16_11300110_L.pdf  used on input line 18.
+(pdftex.def)             Requested size: 210.36339pt x 141.98007pt.
+
+out/049_r_16_11300110_L width=210.36339pt, hight=141.98007pt, pagewidth=143.401
+26pt, pageheight=729.6886pt
+File: out/049_r_16_11300110_L.pdf Graphic file (type pdf)
+<use out/049_r_16_11300110_L.pdf>
+Package pdftex.def Info: out/049_r_16_11300110_L.pdf  used on input line 18.
+(pdftex.def)             Requested size: 143.40186pt x 96.78587pt.
+<out/049_r_16_11300110_K.pdf, id=769, 210.36392pt x 133.71556pt>
+File: out/049_r_16_11300110_K.pdf Graphic file (type pdf)
+<use out/049_r_16_11300110_K.pdf>
+Package pdftex.def Info: out/049_r_16_11300110_K.pdf  used on input line 18.
+(pdftex.def)             Requested size: 210.36339pt x 133.71523pt.
+File: out/049_r_16_11300110_K.pdf Graphic file (type pdf)
+<use out/049_r_16_11300110_K.pdf>
+Package pdftex.def Info: out/049_r_16_11300110_K.pdf  used on input line 18.
+(pdftex.def)             Requested size: 210.36339pt x 133.71523pt.
+
+out/049_r_16_11300110_K width=210.36339pt, hight=133.71523pt, pagewidth=143.401
+26pt, pageheight=729.6886pt
+File: out/049_r_16_11300110_K.pdf Graphic file (type pdf)
+<use out/049_r_16_11300110_K.pdf>
+Package pdftex.def Info: out/049_r_16_11300110_K.pdf  used on input line 18.
+(pdftex.def)             Requested size: 143.40186pt x 91.15184pt.
+<out/049_r_16_11300110_R.pdf, id=770, 210.36392pt x 133.71556pt>
+File: out/049_r_16_11300110_R.pdf Graphic file (type pdf)
+<use out/049_r_16_11300110_R.pdf>
+Package pdftex.def Info: out/049_r_16_11300110_R.pdf  used on input line 18.
+(pdftex.def)             Requested size: 210.36339pt x 133.71523pt.
+File: out/049_r_16_11300110_R.pdf Graphic file (type pdf)
+<use out/049_r_16_11300110_R.pdf>
+Package pdftex.def Info: out/049_r_16_11300110_R.pdf  used on input line 18.
+(pdftex.def)             Requested size: 210.36339pt x 133.71523pt.
+
+out/049_r_16_11300110_R width=210.36339pt, hight=133.71523pt, pagewidth=143.401
+26pt, pageheight=729.6886pt
+File: out/049_r_16_11300110_R.pdf Graphic file (type pdf)
+<use out/049_r_16_11300110_R.pdf>
+Package pdftex.def Info: out/049_r_16_11300110_R.pdf  used on input line 18.
+(pdftex.def)             Requested size: 143.40186pt x 91.15184pt.
+ [6 <./out/037_r_12_11300110_L.pdf> <./out/037_r_12_11300110_K.pdf> <./out/037_
+r_12_11300110_R.pdf> <./out/040_r_13_11300110_L.pdf> <./out/040_r_13_11300110_K
+.pdf> <./out/040_r_13_11300110_R.pdf> <./out/043_r_14_11300110_L.pdf> <./out/04
+3_r_14_11300110_K.pdf> <./out/043_r_14_11300110_R.pdf> <./out/046_r_15_11300110
+_L.pdf> <./out/046_r_15_11300110_K.pdf> <./out/046_r_15_11300110_R.pdf>] (./out
+/050_r_16_constraints.tex)
+<out/052_r_17_11300110_L.pdf, id=934, 202.47745pt x 163.3302pt>
+File: out/052_r_17_11300110_L.pdf Graphic file (type pdf)
+<use out/052_r_17_11300110_L.pdf>
+Package pdftex.def Info: out/052_r_17_11300110_L.pdf  used on input line 19.
+(pdftex.def)             Requested size: 202.47694pt x 163.32979pt.
+File: out/052_r_17_11300110_L.pdf Graphic file (type pdf)
+<use out/052_r_17_11300110_L.pdf>
+Package pdftex.def Info: out/052_r_17_11300110_L.pdf  used on input line 19.
+(pdftex.def)             Requested size: 202.47694pt x 163.32979pt.
+
+out/052_r_17_11300110_L width=202.47694pt, hight=163.32979pt, pagewidth=143.401
+26pt, pageheight=729.6886pt
+File: out/052_r_17_11300110_L.pdf Graphic file (type pdf)
+<use out/052_r_17_11300110_L.pdf>
+Package pdftex.def Info: out/052_r_17_11300110_L.pdf  used on input line 19.
+(pdftex.def)             Requested size: 143.40468pt x 115.67863pt.
+<out/052_r_17_11300110_K.pdf, id=935, 202.47745pt x 163.3302pt>
+File: out/052_r_17_11300110_K.pdf Graphic file (type pdf)
+<use out/052_r_17_11300110_K.pdf>
+Package pdftex.def Info: out/052_r_17_11300110_K.pdf  used on input line 19.
+(pdftex.def)             Requested size: 202.47694pt x 163.32979pt.
+File: out/052_r_17_11300110_K.pdf Graphic file (type pdf)
+<use out/052_r_17_11300110_K.pdf>
+Package pdftex.def Info: out/052_r_17_11300110_K.pdf  used on input line 19.
+(pdftex.def)             Requested size: 202.47694pt x 163.32979pt.
+
+out/052_r_17_11300110_K width=202.47694pt, hight=163.32979pt, pagewidth=143.401
+26pt, pageheight=729.6886pt
+File: out/052_r_17_11300110_K.pdf Graphic file (type pdf)
+<use out/052_r_17_11300110_K.pdf>
+Package pdftex.def Info: out/052_r_17_11300110_K.pdf  used on input line 19.
+(pdftex.def)             Requested size: 143.40468pt x 115.67863pt.
+<out/052_r_17_11300110_R.pdf, id=936, 202.47745pt x 163.3302pt>
+File: out/052_r_17_11300110_R.pdf Graphic file (type pdf)
+<use out/052_r_17_11300110_R.pdf>
+Package pdftex.def Info: out/052_r_17_11300110_R.pdf  used on input line 19.
+(pdftex.def)             Requested size: 202.47694pt x 163.32979pt.
+File: out/052_r_17_11300110_R.pdf Graphic file (type pdf)
+<use out/052_r_17_11300110_R.pdf>
+Package pdftex.def Info: out/052_r_17_11300110_R.pdf  used on input line 19.
+(pdftex.def)             Requested size: 202.47694pt x 163.32979pt.
+
+out/052_r_17_11300110_R width=202.47694pt, hight=163.32979pt, pagewidth=143.401
+26pt, pageheight=729.6886pt
+File: out/052_r_17_11300110_R.pdf Graphic file (type pdf)
+<use out/052_r_17_11300110_R.pdf>
+Package pdftex.def Info: out/052_r_17_11300110_R.pdf  used on input line 19.
+(pdftex.def)             Requested size: 143.40468pt x 115.67863pt.
+ (./out/053_r_17_constraints.tex)
+<out/055_r_18_11300110_L.pdf, id=937, 178.75684pt x 141.74857pt>
+File: out/055_r_18_11300110_L.pdf Graphic file (type pdf)
+<use out/055_r_18_11300110_L.pdf>
+Package pdftex.def Info: out/055_r_18_11300110_L.pdf  used on input line 20.
+(pdftex.def)             Requested size: 178.7564pt x 141.7482pt.
+File: out/055_r_18_11300110_L.pdf Graphic file (type pdf)
+<use out/055_r_18_11300110_L.pdf>
+Package pdftex.def Info: out/055_r_18_11300110_L.pdf  used on input line 20.
+(pdftex.def)             Requested size: 178.7564pt x 141.7482pt.
+
+out/055_r_18_11300110_L width=178.7564pt, hight=141.7482pt, pagewidth=143.40126
+pt, pageheight=729.6886pt
+File: out/055_r_18_11300110_L.pdf Graphic file (type pdf)
+<use out/055_r_18_11300110_L.pdf>
+Package pdftex.def Info: out/055_r_18_11300110_L.pdf  used on input line 20.
+(pdftex.def)             Requested size: 143.40388pt x 113.71477pt.
+<out/055_r_18_11300110_K.pdf, id=938, 178.75684pt x 133.48268pt>
+File: out/055_r_18_11300110_K.pdf Graphic file (type pdf)
+<use out/055_r_18_11300110_K.pdf>
+Package pdftex.def Info: out/055_r_18_11300110_K.pdf  used on input line 20.
+(pdftex.def)             Requested size: 178.7564pt x 133.48235pt.
+File: out/055_r_18_11300110_K.pdf Graphic file (type pdf)
+<use out/055_r_18_11300110_K.pdf>
+Package pdftex.def Info: out/055_r_18_11300110_K.pdf  used on input line 20.
+(pdftex.def)             Requested size: 178.7564pt x 133.48235pt.
+
+out/055_r_18_11300110_K width=178.7564pt, hight=133.48235pt, pagewidth=143.4012
+6pt, pageheight=729.6886pt
+File: out/055_r_18_11300110_K.pdf Graphic file (type pdf)
+<use out/055_r_18_11300110_K.pdf>
+Package pdftex.def Info: out/055_r_18_11300110_K.pdf  used on input line 20.
+(pdftex.def)             Requested size: 143.40388pt x 107.08365pt.
+<out/055_r_18_11300110_R.pdf, id=939, 178.75684pt x 133.48268pt>
+File: out/055_r_18_11300110_R.pdf Graphic file (type pdf)
+<use out/055_r_18_11300110_R.pdf>
+Package pdftex.def Info: out/055_r_18_11300110_R.pdf  used on input line 20.
+(pdftex.def)             Requested size: 178.7564pt x 133.48235pt.
+File: out/055_r_18_11300110_R.pdf Graphic file (type pdf)
+<use out/055_r_18_11300110_R.pdf>
+Package pdftex.def Info: out/055_r_18_11300110_R.pdf  used on input line 20.
+(pdftex.def)             Requested size: 178.7564pt x 133.48235pt.
+
+out/055_r_18_11300110_R width=178.7564pt, hight=133.48235pt, pagewidth=143.4012
+6pt, pageheight=729.6886pt
+File: out/055_r_18_11300110_R.pdf Graphic file (type pdf)
+<use out/055_r_18_11300110_R.pdf>
+Package pdftex.def Info: out/055_r_18_11300110_R.pdf  used on input line 20.
+(pdftex.def)             Requested size: 143.40388pt x 107.08365pt.
+ (./out/056_r_18_constraints.tex)
+LaTeX Font Info:    Font shape `T1/lmtt/bx/n' in size <14.4> not available
+(Font)              Font shape `T1/lmtt/b/n' tried instead on input line 21.
+
+
+pdfTeX warning: pdflatex (file ./out/676_dg_0_11100.pdf): PDF inclusion: found 
+PDF version <1.7>, but at most version <1.5> allowed
+<out/676_dg_0_11100.pdf, id=940, 387.4475pt x 116.435pt>
+File: out/676_dg_0_11100.pdf Graphic file (type pdf)
+<use out/676_dg_0_11100.pdf>
+Package pdftex.def Info: out/676_dg_0_11100.pdf  used on input line 21.
+(pdftex.def)             Requested size: 387.44655pt x 116.43471pt.
+File: out/676_dg_0_11100.pdf Graphic file (type pdf)
+<use out/676_dg_0_11100.pdf>
+Package pdftex.def Info: out/676_dg_0_11100.pdf  used on input line 21.
+(pdftex.def)             Requested size: 387.44655pt x 116.43471pt.
+
+out/676_dg_0_11100 width=387.44655pt, hight=116.43471pt, pagewidth=512.14963pt,
+ pageheight=729.6886pt
+File: out/676_dg_0_11100.pdf Graphic file (type pdf)
+<use out/676_dg_0_11100.pdf>
+Package pdftex.def Info: out/676_dg_0_11100.pdf  used on input line 21.
+(pdftex.def)             Requested size: 512.15944pt x 153.9132pt.
+ [7 <./out/049_r_16_11300110_L.pdf> <./out/049_r_16_11300110_K.pdf> <./out/049_
+r_16_11300110_R.pdf> <./out/052_r_17_11300110_L.pdf> <./out/052_r_17_11300110_K
+.pdf> <./out/052_r_17_11300110_R.pdf> <./out/055_r_18_11300110_L.pdf> <./out/05
+5_r_18_11300110_K.pdf> <./out/055_r_18_11300110_R.pdf>])
+[8 <./out/676_dg_0_11100.pdf>]
+
+enddocument/afterlastpage: lastpage setting LastPage.
+(summary/summary.aux)
+Package rerunfilecheck Info: File `summary.out' has not changed.
+(rerunfilecheck)             Checksum: 13BC475311D4FC51AEB09A5ABD444756;5815.
+ ) ) 
+Here is how much of TeX's memory you used:
+ 42562 strings out of 477861
+ 1023248 string characters out of 5835280
+ 1872388 words of memory out of 6000000
+ 61949 multiletter control sequences out of 15000+600000
+ 556318 words of font info for 73 fonts, out of 8000000 for 9000
+ 56 hyphenation exceptions out of 8191
+ 108i,12n,109p,798b,987s stack positions out of 10000i,1000n,20000p,200000b,200000s
+</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></u
+sr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share
+/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive
+/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/share/texlive/texmf-
+dist/fonts/type1/public/lm/lmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type
+1/public/lm/lmmi12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/lm/lmr
+12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/lm/lmr17.pfb></usr/sha
+re/texlive/texmf-dist/fonts/type1/public/lm/lmtk10.pfb></usr/share/texlive/texm
+f-dist/fonts/type1/public/lm/lmtt12.pfb>
+Output written on summary/summary.pdf (9 pages, 498226 bytes).
+PDF statistics:
+ 1119 PDF objects out of 1200 (max. 8388607)
+ 818 compressed objects within 9 object streams
+ 30 named destinations out of 1000 (max. 500000)
+ 559 words of extra memory for PDF output out of 10000 (max. 10000000)
+

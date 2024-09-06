@@ -5,8 +5,9 @@ import pandas as pd
 from utils import *
 from shortest_path_bipartite import *
 import sys
-sys.path.append("/home/talax/xtof/local/Mod/lib64")
+# sys.path.append("/home/talax/xtof/local/Mod/lib64")
 import subprocess
+import mod
 from mod import *
 from rdkit import Chem
 from rdkit.Chem import AllChem, DataStructs
@@ -71,7 +72,8 @@ def init_dg(mols):
     """
     # Initialize the derivation graph
     # dg = DG(graphDatabase=inputGraphs)
-    dg = DG(graphDatabase=mols)
+    # dg = DG(graphDatabase=mols)
+    dg = DG(graphDatabase=mols,labelSettings=LabelSettings(LabelType.Term, LabelRelation.Specialisation))
 
     # Add the molecule to the derivation graph
     with dg.build() as b:

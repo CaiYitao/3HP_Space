@@ -455,3 +455,5 @@ def hypergraph_to_biadjacency(hypergraph):
     return Q_hyperedges_vertices, Q_vertices_hyperedges, index_map_vertices, index_map_hyperedges
 
 
+def extract_rule_from_brenda(data):
+    df = pd.dataframe

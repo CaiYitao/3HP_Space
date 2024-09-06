@@ -1,0 +1,14 @@
+\begin{tikzpicture}[remember picture, scale=\modGraphScale, baseline={([yshift={-0.5ex}]current bounding box)}, thick, solid]
+\input{\modInputPrefix/out/084_g_13_mol_coord.tex}
+\node[modStyleGraphVertex, text=red, at=(\modIdPrefix v-coord-0)] (\modIdPrefix v-0) {\textbf{O}};
+\node[modStyleGraphVertex, text=red, at=(\modIdPrefix v-0.west), anchor=east] (\modIdPrefix v-0-aux) {\textbf{H}};
+\node[modStyleGraphVertex, at=(\modIdPrefix v-0-aux)] {\phantom{\textbf{H}}};
+\node[modStyleGraphVertex, modStyleCarbon, at=(\modIdPrefix v-coord-1)] (\modIdPrefix v-1) {\textbf{}};
+\node[modStyleGraphVertex, text=red, at=(\modIdPrefix v-coord-2)] (\modIdPrefix v-2) {\textbf{O}};
+\node[modStyleGraphVertex, text=red, at=(\modIdPrefix v-coord-3)] (\modIdPrefix v-3) {\textbf{O}};
+\node[modStyleGraphVertex, text=red, at=(\modIdPrefix v-3.east), anchor=west] (\modIdPrefix v-3-aux) {\textbf{H}};
+\node[modStyleGraphVertex, at=(\modIdPrefix v-3-aux)] {\phantom{\textbf{H}}};
+\modDrawDoubleBond{2}{1}{1}{0}{}{}
+\modDrawSingleBond{1}{0}{0}{1}{}{}
+\modDrawSingleBond{3}{1}{1}{0}{}{}
+\end{tikzpicture}

@@ -12,3 +12,11 @@ OP(=O)(O)OP(=O)(O)O,PPi
 OC(=O)O,HCO3
 [H+],H+
 O,H20
+C(CC(=O)O)C(C(=O)O)N,GLU
+[CoA]S[H],CoA
+[Ad][S+](C)CCCN,SAM
+[NAD][H],NADH
+[NAD+],NAD+
+[Ad]OP(=O)(O)OP(=O)(O)OP(=O)(O)O,ATP
+[CoA]SC(=O)C,Ac-CoA
+[CoA]SC(=O)C(O)C,LAC-CoA
