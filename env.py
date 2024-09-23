@@ -335,9 +335,9 @@ class Env(gym.Env):
         subprocess.run(["/home/talax/xtof/local/Mod/bin/mod_post"])
     
 
-    def dump(self):
+    def dump(self,path):
 
-        self.current_dg.dump()
+        self.current_dg.dump(path)
         # flush summary file handle
         # post.flushCommands()
         # # generate summary/summery.pdf

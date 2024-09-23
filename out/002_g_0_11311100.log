@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Fedora 40) (preloaded format=commonPreamble 2024.8.5)  27 AUG 2024 15:38
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Fedora 40) (preloaded format=commonPreamble 2024.8.5)  23 SEP 2024 16:35
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -25,7 +25,7 @@ File: l3backend-pdftex.def 2023-01-16 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count349
 \l__pdf_internal_box=\box96
 )
-No file out/002_g_0_11311100.aux.
+(./out/002_g_0_11311100.aux)
 \openout1 = `out/002_g_0_11311100.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 13.
@@ -46,6 +46,7 @@ LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 13.
 LaTeX Font Info:    ... okay on input line 13.
 LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 13.
 LaTeX Font Info:    ... okay on input line 13.
+
 (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count350
@@ -77,6 +78,8 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
 Package hyperref Info: Link coloring OFF on input line 13.
+
+(./out/002_g_0_11311100.out) (./out/002_g_0_11311100.out)
 \@outlinefile=\write5
 \openout5 = `out/002_g_0_11311100.out'.
 
@@ -100,12 +103,12 @@ your preamble.
 Preview: Fontsize 12pt
 Preview: PDFoutput 1
 (./out/002_g_0_11311100.tex (./out/001_g_0_mol_coord.tex)
-LaTeX Font Info:    Trying to load font information for U+msa on input line 3.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 4.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 3.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 4.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
@@ -113,29 +116,20 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 Preview: Tightpage -32891 -32891 32891 32891
 [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
 (./out/002_g_0_11311100.aux)
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
-
-Package rerunfilecheck Warning: File `out/002_g_0_11311100.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `out/002_g_0_11311100.out':
-(rerunfilecheck)             Before: <no file>
-(rerunfilecheck)             After:  D41D8CD98F00B204E9800998ECF8427E;0.
+Package rerunfilecheck Info: File `out/002_g_0_11311100.out' has not changed.
+(rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 1243 strings out of 439484
- 31570 string characters out of 4900194
- 1852388 words of memory out of 6000000
- 59219 multiletter control sequences out of 15000+600000
+ 1510 strings out of 439484
+ 36427 string characters out of 4900194
+ 1859388 words of memory out of 6000000
+ 59480 multiletter control sequences out of 15000+600000
  517239 words of font info for 51 fonts, out of 8000000 for 9000
  56 hyphenation exceptions out of 8191
  58i,7n,56p,372b,889s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></us
 r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb>
-Output written on out/002_g_0_11311100.pdf (1 page, 17489 bytes).
+Output written on out/002_g_0_11311100.pdf (1 page, 18142 bytes).
 PDF statistics:
  50 PDF objects out of 1000 (max. 8388607)
  17 compressed objects within 1 object stream

@@ -72,7 +72,7 @@ def main():
     mol_pool = known_mol0 + known_mol
     # print(f"known_mol within know_mol0: {mol_pool}")
     print(f"len known_mol: {len(mol_pool)}")
-    rules_path = "/home/mescalin/yitao/Documents/Code/3HPspace"
+    rules_path = "/home/mescalin/yitao/Documents/Code/3HP_Space/gml_rules"
     rules = collect_rules(rules_path)
     target_molecule="OCC1OC(O)C(C(C1O)O)O"
     init_mol = [h2o,coa,accoa,nadh,nadplus]

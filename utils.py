@@ -11,6 +11,7 @@ import pandas as pd
 
 import sys
 sys.path.append("/home/talax/xtof/local/Mod/lib64")
+import mod
 from mod import *
 import glob
 import os
@@ -340,7 +341,7 @@ def collect_rules(rule_gml_path):
     rule_gml_path = os.path.join(rule_gml_path, "*.gml")
     files = sorted(glob.glob(rule_gml_path, recursive=True))
     for file in files:
-        rule_list.append(ruleGML(file))
+        rule_list.append(mod.ruleGML(file))
 
     return rule_list
 
@@ -455,5 +456,29 @@ def hypergraph_to_biadjacency(hypergraph):
     return Q_hyperedges_vertices, Q_vertices_hyperedges, index_map_vertices, index_map_hyperedges
 
 
-def extract_rule_from_brenda(data):
-    df = pd.dataframe
+from typing import List
+
+def encode(molecule: str) -> str:
+    """
+    Encodes the given molecule string after replacing non-parsable parts.
+    
+    Args:
+        molecule (str): The molecular formula containing certain abbreviations.
+    
+    Returns:
+        str: The encoded molecular string with non-parsable parts replaced.
+    """
+    # Dictionary mapping of non-parsable abbreviations to lanthanides (or placeholder values)
+    non_parsable_to_lanthanides = {
+        'Ad': 'La',   # Ad -> Lanthanum (La) as a placeholder
+        'CoA': 'Ce',  # CoA -> Cerium (Ce) as a placeholder
+        'NAD': 'Pr',  # NAD -> Praseodymium (Pr)
+        # 'NAD+': 'Nd'  # NAD+ -> Neodymium (Nd)
+    }
+
+    # Replace non-parsable abbreviations in the molecule string
+    for key, replacement in non_parsable_to_lanthanides.items():
+        molecule = molecule.replace(f'{key}', f'{replacement}')
+    
+    return molecule
+
