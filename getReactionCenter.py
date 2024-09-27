@@ -38,19 +38,19 @@ def getReactionCenter(mapRes: mod.DGVertexMapper.Result) -> mod.UnionGraph.Verte
 
 		if not er or el.stringLabel != er.stringLabel:
 			res.add(el.source)
-			print('el.source added to res:', el.source)
+			# print('el.source added to res:', el.source)
 			res.add(el.target)
-			print('el.target added to res:', el.target)
+			# print('el.target added to res:', el.target)
 	for vl in gl.vertices:
 		vr = m[vl]
 		if not vr or vl.stringLabel != vr.stringLabel:
 			res.add(vl)
-			print(f'vr(target vertex) in a map of vl(source vertex): {vl} is: {vr}. vl added to res: {vl}')
+			# print(f'vr(target vertex) in a map of vl(source vertex): {vl} is: {vr}. vl added to res: {vl}')
 
 	return res
 
 
-def get_reaction_center(reactants: List[Union[str, mod.Graph]], rule_gml: mod.Rule) -> List[int]:
+def get_reaction_center(reactants: List[Union[str, mod.Graph]], rule: mod.Rule) -> List[int]:
 	"""
 	Receive reactants and a reaction GML rule, and output a binary vector indicating
 	the reaction center atoms.
@@ -64,10 +64,7 @@ def get_reaction_center(reactants: List[Union[str, mod.Graph]], rule_gml: mod.Ru
 	"""
 	# Convert SMILES to mod.Graph if necessary
 	graphs = [mod.smiles(r,allowAbstract=True) if isinstance(r, str) else r for r in reactants]
-	# print('graphs:', graphs)
-	# Create the rule from GML
-	rule = mod.Rule.fromGMLString(rule_gml)
-	# print('rule:', rule)
+
 	# Create a strategy to filter out reactions with more than 88 carbons on the right side
 	mstrat = mod.rightPredicate[
 		lambda der: all(g.vLabelCount('C') <= 88 for g in der.right)
@@ -81,86 +78,92 @@ def get_reaction_center(reactants: List[Union[str, mod.Graph]], rule_gml: mod.Ru
 	# Check if the rule was applied successfully
 		if len(res.subset) == 0:
 			# Rule cannot be applied, return all zeros
-			# return [0] * sum(g.numVertices for g in graphs)
-			return None
+			return torch.tensor([0] * sum(g.numVertices for g in graphs))
+			# return None
 		
-	dg.print()
-    
+	# dg.print()
 
 	for e in dg.edges:
-		print('e:', e)
+		# print('e:', e)
 		maps = mod.DGVertexMapper(e)
 
 		m = next(iter(maps), None)
 		if m is not None:
-			print('m:', m)
+			# print('m:', m)
 			vs = getReactionCenter(m)
-			print('output from getReactinCenter function vs:', vs)
-			print(", ".join(str(v.stringLabel) for v in vs))
+			# print('output from getReactinCenter function vs:', vs)
+			# print(", ".join(str(v.stringLabel) for v in vs))
 			reaction_center_vector = [v.id for v in vs]
-			print('reaction_center_vector:', reaction_center_vector)
+			# print('reaction_center_vector:', reaction_center_vector)
 		
 		break
 
 	total_v = sum(g.numVertices for g in graphs)
-	print('total_v:', total_v)
+	# print('total_v:', total_v)
 	all_vs = []
-	p = mod.GraphPrinter()
-	p.setReactionDefault()
-	p.withIndex = True
+	# p = mod.GraphPrinter()
+	# p.setReactionDefault()
+	# p.withIndex = True
     
 	for g in graphs:
-		g.print(p)
+		# g.print(p)
 		for v in g.vertices:
 			all_vs.append(v)
 		for e in g.edges:
 			all_vs.append(e)
-	print('all the vertices in the reactants graphs:', all_vs)	
-	print('all the vertices in the reactants graphs:', [v.stringLabel for v in all_vs])
+	# print('all the vertices in the reactants graphs:', all_vs)	
+	# print('all the vertices in the reactants graphs:', [v.stringLabel for v in all_vs])
 	binary_reaction_center = torch.zeros(total_v, dtype=torch.int).index_fill_(0, torch.tensor(reaction_center_vector), 1)
-	print('binary_reaction_center:', binary_reaction_center)
+	# print('binary_reaction_center:', binary_reaction_center)
 		
-	mod.post.flushCommands()
+	# mod.post.flushCommands()
         # generate summary/summery.pdf
-	subprocess.run(["/home/talax/xtof/local/Mod/bin/mod_post"])
+	# subprocess.run(["/home/talax/xtof/local/Mod/bin/mod_post"])
 	return binary_reaction_center
 
 # Example usage:
 def main():
 	reactants = ["C[C@@H](C(=O)O)O","[NAD+]"]  
 	rule_gml = """rule[
- ruleID "R1: (S)-lactate + NAD+ = pyruvate + NADH + H+" 
- left [
-   node [ id 9 label "NAD+"]
-   node [ id 7 label "H"]
-   edge [ source 2 target 3 label "-"]
-   edge [ source 3 target 7 label "-"]
-   edge [ source 2 target 8 label "-"]
-] 
- context [
-   node [ id 1 label "C"]
-   node [ id 2 label "C"]
-   node [ id 3 label "O"]
-   node [ id 4 label "C"]
-   node [ id 5 label "O"]
-   node [ id 6 label "O"]
-   node [ id 8 label "H"]
-   edge [ source 1 target 2 label "-"]
-   edge [ source 2 target 4 label "-"]
-   edge [ source 4 target 5 label "="]
-   edge [ source 4 target 6 label "-"]
+	ruleID "R1: (S)-lactate + NAD+ = pyruvate + NADH + H+" 
+	left [
+	node [ id 9 label "NAD+"]
+	node [ id 7 label "H"]
+	edge [ source 2 target 3 label "-"]
+	edge [ source 3 target 7 label "-"]
+	edge [ source 2 target 8 label "-"]
+	] 
+	context [
+	node [ id 1 label "C"]
+	node [ id 2 label "C"]
+	node [ id 3 label "O"]
+	node [ id 4 label "C"]
+	node [ id 5 label "O"]
+	node [ id 6 label "O"]
+	node [ id 8 label "H"]
+	edge [ source 1 target 2 label "-"]
+	edge [ source 2 target 4 label "-"]
+	edge [ source 4 target 5 label "="]
+	edge [ source 4 target 6 label "-"]
 
- ] 
- right [
-   node [ id 9 label "NAD"]
-   node [ id 7 label "H+"]
-   edge [ source 2 target 3 label "="]
-   edge [ source 8 target 9 label "-"]
- ]
-]
-"""
-	result = get_reaction_center(reactants, rule_gml)
+	] 
+	right [
+	node [ id 9 label "NAD"]
+	node [ id 7 label "H+"]
+	edge [ source 2 target 3 label "="]
+	edge [ source 8 target 9 label "-"]
+	]
+	]
+	"""
+    
+	
+	
+	rule = mod.Rule.fromGMLString(rule_gml)
+    
+	result = get_reaction_center(reactants, rule)
+    
 	print(result)
+
 
 if __name__ == "__main__":
 	main()
