@@ -1,0 +1,80 @@
+{
+    "os": "Linux-6.10.11-200.fc40.x86_64-x86_64-with-glibc2.39",
+    "python": "3.11.8",
+    "heartbeatAt": "2024-09-30T12:18:44.775297",
+    "startedAt": "2024-09-30T12:18:44.169419",
+    "docker": null,
+    "cuda": null,
+    "args": [],
+    "state": "running",
+    "program": "/home/mescalin/yitao/Documents/Code/3HP_Space/chytorch_test.py",
+    "codePathLocal": "chytorch_test.py",
+    "codePath": "chytorch_test.py",
+    "git": {
+        "remote": "https://github.com/CaiYitao/3HP_Space.git",
+        "commit": "8f3ffc11cd176a4655346753b622e0be8720dda6"
+    },
+    "email": "yitao.cai@univie.ac.at",
+    "root": "/home/mescalin/yitao/Documents/Code/3HP_Space",
+    "host": "xindus.tbi.univie.ac.at",
+    "username": "yitao",
+    "executable": "/scr/xindus/yitao/miniforge3/envs/aibio/bin/python",
+    "cpu_count": 4,
+    "cpu_count_logical": 8,
+    "cpu_freq": {
+        "current": 3709.2887499999997,
+        "min": 800.0,
+        "max": 3900.0
+    },
+    "cpu_freq_per_core": [
+        {
+            "current": 3825.651,
+            "min": 800.0,
+            "max": 3900.0
+        },
+        {
+            "current": 3744.581,
+            "min": 800.0,
+            "max": 3900.0
+        },
+        {
+            "current": 3699.758,
+            "min": 800.0,
+            "max": 3900.0
+        },
+        {
+            "current": 3722.688,
+            "min": 800.0,
+            "max": 3900.0
+        },
+        {
+            "current": 3825.448,
+            "min": 800.0,
+            "max": 3900.0
+        },
+        {
+            "current": 3827.729,
+            "min": 800.0,
+            "max": 3900.0
+        },
+        {
+            "current": 3741.719,
+            "min": 800.0,
+            "max": 3900.0
+        },
+        {
+            "current": 3726.506,
+            "min": 800.0,
+            "max": 3900.0
+        }
+    ],
+    "disk": {
+        "/": {
+            "total": 101.9599609375,
+            "used": 20.005287170410156
+        }
+    },
+    "memory": {
+        "total": 31.028709411621094
+    }
+}

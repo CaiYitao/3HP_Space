@@ -1,0 +1,27 @@
+Training Epochs:   0%|                                        | 0/1 [00:00<?, ?it/s]
+Traceback (most recent call last):
+  File "/home/mescalin/yitao/Documents/Code/3HP_Space/chytorch_test.py", line 328, in <module>
+    main()
+  File "/home/mescalin/yitao/Documents/Code/3HP_Space/chytorch_test.py", line 301, in main
+    train_loss = train_model(model, train_loader, criterion, optimizer, device, epoch)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mescalin/yitao/Documents/Code/3HP_Space/chytorch_test.py", line 183, in train_model
+    for reactants, rule_indices, targets in tqdm(train_loader, desc=f"Epoch {epoch+1} (Train)", leave=False, position=0):
+  File "/scr/xindus/yitao/miniforge3/envs/aibio/lib/python3.11/site-packages/tqdm/std.py", line 1181, in __iter__
+    for obj in iterable:
+  File "/scr/xindus/yitao/miniforge3/envs/aibio/lib/python3.11/site-packages/torch/utils/data/dataloader.py", line 630, in __next__
+    data = self._next_data()
+           ^^^^^^^^^^^^^^^^^
+  File "/scr/xindus/yitao/miniforge3/envs/aibio/lib/python3.11/site-packages/torch/utils/data/dataloader.py", line 674, in _next_data
+    data = self._dataset_fetcher.fetch(index)  # may raise StopIteration
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/scr/xindus/yitao/miniforge3/envs/aibio/lib/python3.11/site-packages/torch/utils/data/_utils/fetch.py", line 49, in fetch
+    data = self.dataset.__getitems__(possibly_batched_index)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/scr/xindus/yitao/miniforge3/envs/aibio/lib/python3.11/site-packages/torch/utils/data/dataset.py", line 364, in __getitems__
+    return [self.dataset[self.indices[idx]] for idx in indices]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/scr/xindus/yitao/miniforge3/envs/aibio/lib/python3.11/site-packages/torch/utils/data/dataset.py", line 364, in <listcomp>
+    return [self.dataset[self.indices[idx]] for idx in indices]
+                         ~~~~~~~~~~~~^^^^^
+IndexError: list index out of range
