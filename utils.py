@@ -482,3 +482,26 @@ def encode(molecule: str) -> str:
     
     return molecule
 
+def decode(molecule: str) -> str:
+    """
+    Decodes the given molecule string by replacing lanthanides with their original abbreviations.
+
+
+    Args:
+        molecule (str): The encoded molecular string containing lanthanides.
+    """
+    lanthanides_to_non_parsable = {
+        'La': 'Ad',  
+        'Ce': 'CoA', 
+        'Pr': 'NAD',  
+       
+    }
+
+    # Replace non-parsable abbreviations in the molecule string
+    for key, replacement in lanthanides_to_non_parsable.items():
+        molecule = molecule.replace(f'{key}', f'{replacement}')
+    
+    return molecule
+    
+  
+

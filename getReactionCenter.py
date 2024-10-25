@@ -20,8 +20,6 @@ def getReactionCenter(mapRes: mod.DGVertexMapper.Result) -> mod.UnionGraph.Verte
 		vlSrc, vlTar = el.source, el.target
 
 		vrSrc, vrTar = m[vlSrc], m[vlTar]
-		# print('vrSrc in m map of vlSrc(el.source):', vlSrc, 'is:', vrSrc)
-		# print('vrTar in m map of vlTar(el.target):', vlTar, 'is:', vrTar)
 
 		if not vrSrc or not vrTar:
 			return None
@@ -38,19 +36,19 @@ def getReactionCenter(mapRes: mod.DGVertexMapper.Result) -> mod.UnionGraph.Verte
 
 		if not er or el.stringLabel != er.stringLabel:
 			res.add(el.source)
-			# print('el.source added to res:', el.source)
+
 			res.add(el.target)
-			# print('el.target added to res:', el.target)
+
 	for vl in gl.vertices:
 		vr = m[vl]
 		if not vr or vl.stringLabel != vr.stringLabel:
 			res.add(vl)
-			# print(f'vr(target vertex) in a map of vl(source vertex): {vl} is: {vr}. vl added to res: {vl}')
+
 
 	return res
 
 
-def get_reaction_center(reactants: List[Union[str, mod.Graph]], rule: mod.Rule) -> List[int]:
+def get_reaction_center(reactants: List[Union[str, mod.Graph]], rule: mod.Rule) -> torch.tensor:
 	"""
 	Receive reactants and a reaction GML rule, and output a binary vector indicating
 	the reaction center atoms.
@@ -60,7 +58,7 @@ def get_reaction_center(reactants: List[Union[str, mod.Graph]], rule: mod.Rule) 
 	- rule_gml: GML string representation of the reaction rule
 
 	Returns:
-	- List[int]: Binary vector indicating reaction center atoms (1) and others (0)
+	- Tensor[int]: Binary vector indicating reaction center atoms (1) and others (0)
 	"""
 	# Convert SMILES to mod.Graph if necessary
 	graphs = [mod.smiles(r,allowAbstract=True) if isinstance(r, str) else r for r in reactants]
@@ -69,7 +67,7 @@ def get_reaction_center(reactants: List[Union[str, mod.Graph]], rule: mod.Rule) 
 	mstrat = mod.rightPredicate[
 		lambda der: all(g.vLabelCount('C') <= 88 for g in der.right)
 	](rule)
-
+	total_v = sum(g.numVertices for g in graphs)
 	# Create a DG and apply the rule
 	dg = mod.DG()
 	with dg.build() as b:
@@ -78,42 +76,59 @@ def get_reaction_center(reactants: List[Union[str, mod.Graph]], rule: mod.Rule) 
 	# Check if the rule was applied successfully
 		if len(res.subset) == 0:
 			# Rule cannot be applied, return all zeros
-			return torch.tensor([0] * sum(g.numVertices for g in graphs))
-			# return None
-		
-	# dg.print()
+			return torch.tensor([0] * total_v)
 
 	for e in dg.edges:
-		# print('e:', e)
+
 		maps = mod.DGVertexMapper(e)
 
 		m = next(iter(maps), None)
 		if m is not None:
-			# print('m:', m)
+			external_id_map = {}
+            
+			cumulative_offset = 0
+            
+			gl = m.map.domain
+			
+			for g in gl:
+
+				for i in range(g.minExternalId, g.maxExternalId + 1):
+					v = g.getVertexFromExternalId(i)
+
+					if v:
+						global_id = cumulative_offset + v.id
+
+						external_id_map[global_id] = i
+				cumulative_offset += g.numVertices
 			vs = getReactionCenter(m)
-			# print('output from getReactinCenter function vs:', vs)
-			# print(", ".join(str(v.stringLabel) for v in vs))
-			reaction_center_vector = [v.id for v in vs]
-			# print('reaction_center_vector:', reaction_center_vector)
-		
+			reaction_center_vector = []
+			for v in vs:
+				if external_id_map.get(v.id) is not None:
+					reaction_center_vector.append(external_id_map.get(v.id) - 1)
+				else:
+					continue
+			# reaction_center_vector = [v.id for v in vs]
+
+					
 		break
 
-	total_v = sum(g.numVertices for g in graphs)
-	# print('total_v:', total_v)
-	all_vs = []
-	# p = mod.GraphPrinter()
-	# p.setReactionDefault()
-	# p.withIndex = True
     
-	for g in graphs:
-		# g.print(p)
-		for v in g.vertices:
-			all_vs.append(v)
-		for e in g.edges:
-			all_vs.append(e)
+	binary_reaction_center = torch.zeros(total_v, dtype=torch.int).index_fill_(0, torch.tensor(reaction_center_vector), 1)
+	# print('total_v:', total_v)
+	# all_vs = []
+	# # p = mod.GraphPrinter()
+	# # p.setReactionDefault()
+	# # p.withIndex = True
+    
+	# for g in graphs:
+	# 	# g.print(p)
+	# 	for v in g.vertices:
+	# 		all_vs.append(v)
+	# 	for e in g.edges:
+	# 		all_vs.append(e)
 	# print('all the vertices in the reactants graphs:', all_vs)	
 	# print('all the vertices in the reactants graphs:', [v.stringLabel for v in all_vs])
-	binary_reaction_center = torch.zeros(total_v, dtype=torch.int).index_fill_(0, torch.tensor(reaction_center_vector), 1)
+	
 	# print('binary_reaction_center:', binary_reaction_center)
 		
 	# mod.post.flushCommands()
@@ -163,7 +178,11 @@ def main():
 	result = get_reaction_center(reactants, rule)
     
 	print(result)
+	
+
+
 
 
 if __name__ == "__main__":
 	main()
+
