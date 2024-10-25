@@ -7,7 +7,7 @@ from typing import List, Dict, Tuple
 import pandas as pd
 import numpy as np
 from getReactionCenter import get_reaction_center
-from utils import collect_rules
+from utils import collect_rules,encode
 import wandb
 from tqdm import tqdm
 from collections import defaultdict
@@ -39,7 +39,7 @@ class ReactionDataset(Dataset):
         self.meta_data = meta_data
         self.rules_dict = rules_dict
         self.max_tokens = max_tokens
-        self.smiles_dataset = SMILESDataset(meta_data['Reactants'].tolist(), cache={})
+        self.smiles_dataset = SMILESDataset([encode(smi) for smi in meta_data['Reactants'].tolist()], cache={})
         self.reactants_dataset = MoleculeDataset(self.smiles_dataset)
         self.num_rules = len(rules_dict)
 
@@ -148,10 +148,10 @@ class ReactionDataset(Dataset):
         
 #         return reactants, rule_idx, target
 
-    def pad_target(self, target: torch.Tensor) -> torch.Tensor:
-        padded = torch.zeros(self.max_tokens, dtype=torch.float32)
-        padded[:len(target)] = target.float()
-        return padded
+    # def pad_target(self, target: torch.Tensor) -> torch.Tensor:
+    #     padded = torch.zeros(self.max_tokens, dtype=torch.float32)
+    #     padded[:len(target)] = target.float()
+    #     return padded
     
 def create_train_val_test_split(dataset: ReactionDataset, train_ratio: float = 0.8, test_ratio: float = 0.1):
     num_samples = len(dataset)
@@ -267,9 +267,9 @@ def validate_model(model: nn.Module, val_loader: DataLoader, criterion: nn.Modul
             reactants, rule_indices, targets = reactants.to(device), rule_indices.to(device), targets.to(device)
             
             outputs = model(reactants, rule_indices)
-            print('output[0]:',outputs[0])
-            print('shape of output',outputs.shape)
-            print('shape of target', targets.shape)
+            # print('output[0]:',outputs[0])
+            # print('shape of output',outputs.shape)
+            # print('shape of target', targets.shape)
             loss = criterion(outputs, targets)
             total_loss += loss.item()
             all_targets.append(targets.cpu().numpy())
@@ -324,13 +324,13 @@ def main():
     max_tokens = 128
     batch_size = 32
     learning_rate = 0.001
-    num_epochs = 1
-
+    num_epochs = 3
+    import os 
     # Load meta dataset
-    meta_data = pd.read_csv("data/reaction_dataset_encoded.csv")
+    meta_data = pd.read_csv(os.path.join(os.getcwd(), "data/reaction_dataset.csv"))
 
     # Prepare rules dictionary
-    rule_gml_path = "/home/mescalin/yitao/Documents/Code/3HP_Space/gml_rules"
+    rule_gml_path = os.path.join(os.getcwd(), "gml_rules")
     rules_dict = {i+1: rule for i, rule in enumerate(collect_rules(rule_gml_path))}
     
     # Create dataset and data loader
@@ -353,6 +353,7 @@ def main():
 
     # Create model
     device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
+    print("device",device)
     model = ReactionCenterPredictor(num_rules=len(rules_dict), hidden_size=hidden_size, max_tokens=max_tokens).to(device)
 
     # Loss and optimizer
