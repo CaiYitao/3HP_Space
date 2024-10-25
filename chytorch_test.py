@@ -1,22 +1,23 @@
 import torch
 import torch.nn as nn
 import torch.nn.functional as F
-from torch.utils.data import DataLoader, Dataset
+from torch.utils.data import DataLoader, Dataset,WeightedRandomSampler
+
 from chytorch.nn import MoleculeEncoder
-from chytorch.utils.data import (
-    MoleculeDataset,
-    collate_molecules,
-    chained_collate,
-    SMILESDataset,
-)
-from typing import List, Dict, Tuple
+from chytorch.utils.data import MoleculeDataset, collate_molecules, chained_collate,SMILESDataset
+
+from typing import List, Dict, Tuple, Callable, Optional
 import pandas as pd
 import numpy as np
+from sklearn.metrics import roc_curve, auc
+import matplotlib.pyplot as plt
+from tqdm import tqdm
+from collections import defaultdict
+
 from getReactionCenter import get_reaction_center
 from utils import collect_rules, encode
 import wandb
-from tqdm import tqdm
-from collections import defaultdict
+
 import mod
 
 # class ReactionCenterPredictor(nn.Module):
@@ -101,7 +102,6 @@ class ReactionCenterPredictor(nn.Module):
         return torch.sigmoid(x)  # Apply sigmoid to the output
 
 
-from torch.utils.data import WeightedRandomSampler
 
 
 class ReactionDataset(Dataset):
@@ -127,8 +127,9 @@ class ReactionDataset(Dataset):
             self.reactant_indices[reactant].append(idx)
 
         # Create lists for applicable and non-applicable pairs
-        self.applicable_pairs = []
-        self.non_applicable_pairs = []
+        self.applicable_pairs = []    #num_applicable 910
+ 
+        self.non_applicable_pairs = []   #num_non_applicable 12960
 
         for reactant, indices in self.reactant_indices.items():
             for rule_idx in range(self.num_rules):
@@ -140,9 +141,7 @@ class ReactionDataset(Dataset):
                 reactant_smiles_list = reactant_smiles.split(".")
 
                 target = get_reaction_center(reactant_smiles_list, rule)
-                if (
-                    target.sum() > 0
-                ):  # Assuming target is a binary tensor where sum > 0 indicates applicability
+                if target.sum() >= 1:  # Assuming target is a binary tensor where sum >=1  indicates applicability
                     self.applicable_pairs.append((indices[0], rule_idx))
                 else:
                     self.non_applicable_pairs.append((indices[0], rule_idx))
@@ -173,7 +172,7 @@ class ReactionDataset(Dataset):
         # Get the reactants
         reactants = self.reactants_dataset[reactant_idx]
         # reactant_smiles = self.meta_data['Reactants'].iloc[reactant_idx]
-        reacant_smiles = self.meta_data["mapped_reactants"].iloc[reactant_idx]
+        reactant_smiles = self.meta_data["mapped_reactants"].iloc[reactant_idx]
         reactant_smiles_list = reactant_smiles.split(".")
 
         rule = self.rules_dict[rule_idx + 1]  # +1 because rules_dict is 1-indexed
@@ -321,6 +320,7 @@ from sklearn.metrics import roc_curve, auc
 import matplotlib.pyplot as plt
 
 
+import os
 def find_optimal_threshold(
     y_true: np.ndarray,
     y_pred: np.ndarray,
@@ -368,8 +368,12 @@ def find_optimal_threshold(
         plt.ylabel("True Positive Rate")
         plt.title(f"ROC Curve (Optimization: {optimization_metric}, p={p})")
         plt.legend(loc="lower right")
-        plt.show()
-
+        directory = "/gpfs/data/fs72319/yitao/plot"
+        save_path = os.path.join(directory,'roc_auc.png')
+        os.mkdirs(directory,exist_ok=True)
+        plt.savefig(save_path)
+        plt.close()
+    
     return optimal_threshold, roc_auc, fpr, tpr, thresholds
 
 
@@ -428,28 +432,17 @@ def predict_applicability(
         predicted_applicability = (outputs > threshold).float()
         return predicted_applicability  # Return the binary predictions directly
 
-
-def evaluate_applicability(
-    model: nn.Module, test_loader: DataLoader, device: torch.device
-) -> float:
+def evaluate_applicability(model: nn.Module, test_loader: DataLoader, device: torch.device,threshold: np.array) -> float:
     model.eval()
     correct = 0
     total = 0
 
     with torch.no_grad():
         for reactants, rule_indices, targets in test_loader:  # Use test_loader here
-            reactants, rule_indices, targets = (
-                reactants.to(device),
-                rule_indices.to(device),
-                targets.to(device),
-            )
-
-            predicted_applicability = predict_applicability(
-                model, reactants, rule_indices
-            )
-            correct += (
-                (predicted_applicability == targets).all(dim=1).sum().item()
-            )  # Check if predictions match targets
+            reactants, rule_indices, targets = reactants.to(device), rule_indices.to(device), targets.to(device)
+            
+            predicted_applicability = predict_applicability(model, reactants, rule_indices,threshold)
+            correct += (predicted_applicability == targets).all(dim=1).sum().item()  # Check if predictions match targets
             total += targets.numel()  # Count total number of elements in targets
 
     accuracy = correct / total
@@ -457,7 +450,7 @@ def evaluate_applicability(
 
 
 def main():
-
+    import os
     wandb.init(project="3HP_Space_RCP")
 
     # Hyperparameters
@@ -465,17 +458,16 @@ def main():
     max_tokens = 128
     batch_size = 32
     learning_rate = 0.001
-    num_epochs = 50
-
-    import os
-
+    num_epochs = 30
+    current_path = os.getcwd()
+    import os 
     # Load meta dataset
-    meta_data = pd.read_csv(os.path.join(os.getcwd(), "data/reaction_dataset.csv"))
+    meta_data = pd.read_csv(os.path.join(current_path, "data/reaction_dataset.csv"))
 
     # Prepare rules dictionary
-    rule_gml_path = os.path.join(os.getcwd(), "gml_rules")
-    rules_dict = {i + 1: rule for i, rule in enumerate(collect_rules(rule_gml_path))}
-
+    rule_gml_path = os.path.join(current_path, "gml_rules")
+    rules_dict = {i+1: rule for i, rule in enumerate(collect_rules(rule_gml_path))}
+    
     # Create dataset and data loader
     dataset = ReactionDataset(meta_data, rules_dict, max_tokens)
 
@@ -541,12 +533,8 @@ def main():
         if val_accuracy > best_val_accuracy:
             best_val_accuracy = val_accuracy
             best_model = model.state_dict()
-            torch.save(
-                best_model, f"model/epoch_{epoch+1}_val_accuracy_{val_accuracy:.4f}.pth"
-            )
-            print(
-                f"Best model saved at epoch {epoch+1} with validation accuracy: {val_accuracy:.4f}"
-            )
+            torch.save(best_model,os.path.join(current_path, f"model/epoch_{epoch+1}_val_accuracy_{val_accuracy:.4f}.pth"))
+            print(f"Best model saved at epoch {epoch+1} with validation accuracy: {val_accuracy:.4f}")
 
         wandb.log(
             {

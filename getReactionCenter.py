@@ -136,47 +136,96 @@ def get_reaction_center(reactants: List[Union[str, mod.Graph]], rule: mod.Rule) 
 	# subprocess.run(["/home/talax/xtof/local/Mod/bin/mod_post"])
 	return binary_reaction_center
 
+import os
+import pandas as pd    
+from utils import *
 # # Example usage:
-# def main():
-# 	reactants = ["C[C@@H](C(=O)O)O","[NAD+]"]  
-# 	rule_gml = """rule[
-# 	ruleID "R1: (S)-lactate + NAD+ = pyruvate + NADH + H+" 
-# 	left [
-# 	node [ id 9 label "NAD+"]
-# 	node [ id 7 label "H"]
-# 	edge [ source 2 target 3 label "-"]
-# 	edge [ source 3 target 7 label "-"]
-# 	edge [ source 2 target 8 label "-"]
-# 	] 
-# 	context [
-# 	node [ id 1 label "C"]
-# 	node [ id 2 label "C"]
-# 	node [ id 3 label "O"]
-# 	node [ id 4 label "C"]
-# 	node [ id 5 label "O"]
-# 	node [ id 6 label "O"]
-# 	node [ id 8 label "H"]
-# 	edge [ source 1 target 2 label "-"]
-# 	edge [ source 2 target 4 label "-"]
-# 	edge [ source 4 target 5 label "="]
-# 	edge [ source 4 target 6 label "-"]
+def main():
 
-# 	] 
-# 	right [
-# 	node [ id 9 label "NAD"]
-# 	node [ id 7 label "H+"]
-# 	edge [ source 2 target 3 label "="]
-# 	edge [ source 8 target 9 label "-"]
-# 	]
-# 	]
-# 	"""
+
+
+    # # Load meta dataset
+    # meta_data = pd.read_csv(os.path.join(os.getcwd(), "data/reaction_dataset.csv"))
+    # reactants = meta_data[meta_data['Rule'] == 1]['Reactants'].tolist()
+
+    # rule_indices = meta_data[meta_data['Rule'] == 1].index.tolist()
+
+	# Load meta dataset
+	meta_data = pd.read_csv(os.path.join(os.getcwd(), "data/reaction_dataset.csv"))
+	#Create list of R columns
+	r_columns = [f'R{i}' for i in range(1, 20)]  # R1 to R19
+
+	# Initialize lists to store reactants and rule indices
+	reactants = []
+	rule_indices = []
+
+	# Find reactants and corresponding rule indices where value is 1
+	for index, row in meta_data.iterrows():
+		for i, col in enumerate(r_columns, 1):
+			if row[col] == 1:
+				reactants.append(row['Reactants'])
+				rule_indices.append(i)
+
+
+	rule_gml_path = os.path.join(os.getcwd(), "gml_rules")
+	rules_dict = {i+1: rule for i, rule in enumerate(collect_rules(rule_gml_path))}
+
+	reaction_center_sums = []
+
+	for reactant, rule_index in zip(reactants[:20], rule_indices[:20]):
+		
+		rule = rules_dict[rule_index]
+		reactant = reactant.split(".")
+		reaction_center = get_reaction_center(reactant, rule)
+		reaction_center_sums.append(reaction_center.sum())
+		print(f"Reactant: {reactant}, Rule Index: {rule_index}, Reaction Center Sum: {reaction_center}")
+
+	print("Total reaction center sum list:", reaction_center_sums)
+
+
+
+
+def main():
+	reactants = ["C[C@@H](C(=O)O)O","[NAD+]"]  
+	rule_gml = """rule[
+	ruleID "R1: (S)-lactate + NAD+ = pyruvate + NADH + H+" 
+	left [
+	node [ id 9 label "NAD+"]
+	node [ id 7 label "H"]
+	edge [ source 2 target 3 label "-"]
+	edge [ source 3 target 7 label "-"]
+	edge [ source 2 target 8 label "-"]
+	] 
+	context [
+	node [ id 1 label "C"]
+	node [ id 2 label "C"]
+	node [ id 3 label "O"]
+	node [ id 4 label "C"]
+	node [ id 5 label "O"]
+	node [ id 6 label "O"]
+	node [ id 8 label "H"]
+	edge [ source 1 target 2 label "-"]
+	edge [ source 2 target 4 label "-"]
+	edge [ source 4 target 5 label "="]
+	edge [ source 4 target 6 label "-"]
+
+	] 
+	right [
+	node [ id 9 label "NAD"]
+	node [ id 7 label "H+"]
+	edge [ source 2 target 3 label "="]
+	edge [ source 8 target 9 label "-"]
+	]
+	]
+	"""
     
 	
 	
-# 	rule = mod.Rule.fromGMLString(rule_gml)
+	rule = mod.Rule.fromGMLString(rule_gml)
     
-# 	result = get_reaction_center(reactants, rule)
+	result = get_reaction_center(reactants, rule)
     
+<<<<<<< Updated upstream
 <<<<<<< HEAD
 	print(result)
 	
@@ -194,3 +243,10 @@ if __name__ == "__main__":
 # if __name__ == "__main__":
 # 	main()
 >>>>>>> 59261c696daff9c817697b397661971a6ca3af69
+=======
+	print(result)
+
+
+if __name__ == "__main__":
+	main()
+>>>>>>> Stashed changes
