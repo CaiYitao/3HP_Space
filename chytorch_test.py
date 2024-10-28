@@ -370,7 +370,7 @@ def find_optimal_threshold(
         plt.legend(loc="lower right")
         directory = "/gpfs/data/fs72319/yitao/plot"
         save_path = os.path.join(directory,'roc_auc.png')
-        os.mkdirs(directory,exist_ok=True)
+        os.makedirs(directory,exist_ok=True)
         plt.savefig(save_path)
         plt.close()
     
