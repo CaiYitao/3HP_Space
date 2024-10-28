@@ -3,146 +3,151 @@ from typing import List, Optional, Set, Union
 import subprocess
 import torch
 
+
 def getReactionCenter(mapRes: mod.DGVertexMapper.Result) -> mod.UnionGraph.Vertex:
-	"""
-	Receive a vertex map from DGVertexMapper and output a set of educt vertices that
-	form the reaction center.
+    """
+    Receive a vertex map from DGVertexMapper and output a set of educt vertices that
+    form the reaction center.
 
-	Note, this assumes that we are doing relatively normal chemistry stuff,
-	otherwise we would need to iterate through the codomain graph as well to be sure we
-	get everything.
-	"""
-	m = mapRes.map
-	gl = m.domain
+    Note, this assumes that we are doing relatively normal chemistry stuff,
+    otherwise we would need to iterate through the codomain graph as well to be sure we
+    get everything.
+    """
+    m = mapRes.map
+    gl = m.domain
 
-	
-	def findEdge(el: mod.UnionGraph.Edge) -> Optional[mod.UnionGraph.Edge]:
-		vlSrc, vlTar = el.source, el.target
+    def findEdge(el: mod.UnionGraph.Edge) -> Optional[mod.UnionGraph.Edge]:
+        vlSrc, vlTar = el.source, el.target
 
-		vrSrc, vrTar = m[vlSrc], m[vlTar]
+        vrSrc, vrTar = m[vlSrc], m[vlTar]
 
-		if not vrSrc or not vrTar:
-			return None
-		for e in vrSrc.incidentEdges:
-			if e.target == vrTar:
-				return e
-		return None
+        if not vrSrc or not vrTar:
+            return None
+        for e in vrSrc.incidentEdges:
+            if e.target == vrTar:
+                return e
+        return None
 
-	res = set()
+    res = set()
 
-	for el in gl.edges:	
+    for el in gl.edges:
 
-		er = findEdge(el)	
+        er = findEdge(el)
 
-		if not er or el.stringLabel != er.stringLabel:
-			res.add(el.source)
+        if not er or el.stringLabel != er.stringLabel:
+            res.add(el.source)
 
-			res.add(el.target)
+            res.add(el.target)
 
-	for vl in gl.vertices:
-		vr = m[vl]
-		if not vr or vl.stringLabel != vr.stringLabel:
-			res.add(vl)
+    for vl in gl.vertices:
+        vr = m[vl]
+        if not vr or vl.stringLabel != vr.stringLabel:
+            res.add(vl)
 
-
-	return res
+    return res
 
 
-def get_reaction_center(reactants: List[Union[str, mod.Graph]], rule: mod.Rule) -> torch.tensor:
-	"""
-	Receive reactants and a reaction GML rule, and output a binary vector indicating
-	the reaction center atoms.
+def get_reaction_center(
+    reactants: List[Union[str, mod.Graph]], rule: mod.Rule
+) -> torch.tensor:
+    """
+    Receive reactants and a reaction GML rule, and output a binary vector indicating
+    the reaction center atoms.
 
-	Parameters:
-	- reactants: List of reactant SMILES strings or mod.Graph objects
-	- rule_gml: GML string representation of the reaction rule
+    Parameters:
+    - reactants: List of reactant SMILES strings or mod.Graph objects
+    - rule_gml: GML string representation of the reaction rule
 
-	Returns:
-	- Tensor[int]: Binary vector indicating reaction center atoms (1) and others (0)
-	"""
-	# Convert SMILES to mod.Graph if necessary
-	graphs = [mod.smiles(r,allowAbstract=True) if isinstance(r, str) else r for r in reactants]
+    Returns:
+    - Tensor[int]: Binary vector indicating reaction center atoms (1) and others (0)
+    """
+    # Convert SMILES to mod.Graph if necessary
+    graphs = [
+        mod.smiles(r, allowAbstract=True) if isinstance(r, str) else r
+        for r in reactants
+    ]
 
-	# Create a strategy to filter out reactions with more than 88 carbons on the right side
-	mstrat = mod.rightPredicate[
-		lambda der: all(g.vLabelCount('C') <= 88 for g in der.right)
-	](rule)
-	total_v = sum(g.numVertices for g in graphs)
-	# Create a DG and apply the rule
-	dg = mod.DG()
-	with dg.build() as b:
-		res = b.execute(mod.addSubset(graphs) >> mstrat)
+    # Create a strategy to filter out reactions with more than 88 carbons on the right side
+    mstrat = mod.rightPredicate[
+        lambda der: all(g.vLabelCount("C") <= 88 for g in der.right)
+    ](rule)
+    total_v = sum(g.numVertices for g in graphs)
+    # Create a DG and apply the rule
+    dg = mod.DG()
+    with dg.build() as b:
+        res = b.execute(mod.addSubset(graphs) >> mstrat)
 
-	# Check if the rule was applied successfully
-		if len(res.subset) == 0:
-			# Rule cannot be applied, return all zeros
-			return torch.tensor([0] * total_v)
+        # Check if the rule was applied successfully
+        if len(res.subset) == 0:
+            # Rule cannot be applied, return all zeros
+            return torch.tensor([0] * total_v)
 
-	for e in dg.edges:
+    for e in dg.edges:
 
-		maps = mod.DGVertexMapper(e)
+        maps = mod.DGVertexMapper(e)
 
-		m = next(iter(maps), None)
-		if m is not None:
-			external_id_map = {}
-            
-			cumulative_offset = 0
-            
-			gl = m.map.domain
-			
-			for g in gl:
+        m = next(iter(maps), None)
+        if m is not None:
+            external_id_map = {}
 
-				for i in range(g.minExternalId, g.maxExternalId + 1):
-					v = g.getVertexFromExternalId(i)
+            cumulative_offset = 0
 
-					if v:
-						global_id = cumulative_offset + v.id
+            gl = m.map.domain
 
-						external_id_map[global_id] = i
-				cumulative_offset += g.numVertices
-			vs = getReactionCenter(m)
-			reaction_center_vector = []
-			for v in vs:
-				if external_id_map.get(v.id) is not None:
-					reaction_center_vector.append(external_id_map.get(v.id) - 1)
-				else:
-					continue
-			# reaction_center_vector = [v.id for v in vs]
+            for g in gl:
 
-					
-		break
+                for i in range(g.minExternalId, g.maxExternalId + 1):
+                    v = g.getVertexFromExternalId(i)
 
-    
-	binary_reaction_center = torch.zeros(total_v, dtype=torch.int).index_fill_(0, torch.tensor(reaction_center_vector), 1)
-	# print('total_v:', total_v)
-	# all_vs = []
-	# # p = mod.GraphPrinter()
-	# # p.setReactionDefault()
-	# # p.withIndex = True
-    
-	# for g in graphs:
-	# 	# g.print(p)
-	# 	for v in g.vertices:
-	# 		all_vs.append(v)
-	# 	for e in g.edges:
-	# 		all_vs.append(e)
-	# print('all the vertices in the reactants graphs:', all_vs)	
-	# print('all the vertices in the reactants graphs:', [v.stringLabel for v in all_vs])
-	
-	# print('binary_reaction_center:', binary_reaction_center)
-		
-	# mod.post.flushCommands()
-        # generate summary/summery.pdf
-	# subprocess.run(["/home/talax/xtof/local/Mod/bin/mod_post"])
-	return binary_reaction_center
+                    if v:
+                        global_id = cumulative_offset + v.id
+
+                        external_id_map[global_id] = i
+                cumulative_offset += g.numVertices
+            vs = getReactionCenter(m)
+            reaction_center_vector = []
+            for v in vs:
+                if external_id_map.get(v.id) is not None:
+                    reaction_center_vector.append(external_id_map.get(v.id) - 1)
+                else:
+                    continue
+            # reaction_center_vector = [v.id for v in vs]
+
+        break
+
+    binary_reaction_center = torch.zeros(total_v, dtype=torch.int).index_fill_(
+        0, torch.tensor(reaction_center_vector), 1
+    )
+    # print('total_v:', total_v)
+    # all_vs = []
+    # # p = mod.GraphPrinter()
+    # # p.setReactionDefault()
+    # # p.withIndex = True
+
+    # for g in graphs:
+    # 	# g.print(p)
+    # 	for v in g.vertices:
+    # 		all_vs.append(v)
+    # 	for e in g.edges:
+    # 		all_vs.append(e)
+    # print('all the vertices in the reactants graphs:', all_vs)
+    # print('all the vertices in the reactants graphs:', [v.stringLabel for v in all_vs])
+
+    # print('binary_reaction_center:', binary_reaction_center)
+
+    # mod.post.flushCommands()
+    # generate summary/summery.pdf
+    # subprocess.run(["/home/talax/xtof/local/Mod/bin/mod_post"])
+    return binary_reaction_center
+
 
 import os
-import pandas as pd    
+import pandas as pd
 from utils import *
+
+
 # # Example usage:
 def main():
-
-
 
     # # Load meta dataset
     # meta_data = pd.read_csv(os.path.join(os.getcwd(), "data/reaction_dataset.csv"))
@@ -150,44 +155,43 @@ def main():
 
     # rule_indices = meta_data[meta_data['Rule'] == 1].index.tolist()
 
-	# Load meta dataset
-	meta_data = pd.read_csv(os.path.join(os.getcwd(), "data/reaction_dataset.csv"))
-	#Create list of R columns
-	r_columns = [f'R{i}' for i in range(1, 20)]  # R1 to R19
+    # Load meta dataset
+    meta_data = pd.read_csv(os.path.join(os.getcwd(), "data/reaction_dataset.csv"))
+    # Create list of R columns
+    r_columns = [f"R{i}" for i in range(1, 20)]  # R1 to R19
 
-	# Initialize lists to store reactants and rule indices
-	reactants = []
-	rule_indices = []
+    # Initialize lists to store reactants and rule indices
+    reactants = []
+    rule_indices = []
 
-	# Find reactants and corresponding rule indices where value is 1
-	for index, row in meta_data.iterrows():
-		for i, col in enumerate(r_columns, 1):
-			if row[col] == 1:
-				reactants.append(row['Reactants'])
-				rule_indices.append(i)
+    # Find reactants and corresponding rule indices where value is 1
+    for index, row in meta_data.iterrows():
+        for i, col in enumerate(r_columns, 1):
+            if row[col] == 1:
+                reactants.append(row["Reactants"])
+                rule_indices.append(i)
 
+    rule_gml_path = os.path.join(os.getcwd(), "gml_rules")
+    rules_dict = {i + 1: rule for i, rule in enumerate(collect_rules(rule_gml_path))}
 
-	rule_gml_path = os.path.join(os.getcwd(), "gml_rules")
-	rules_dict = {i+1: rule for i, rule in enumerate(collect_rules(rule_gml_path))}
+    reaction_center_sums = []
 
-	reaction_center_sums = []
+    for reactant, rule_index in zip(reactants[:20], rule_indices[:20]):
 
-	for reactant, rule_index in zip(reactants[:20], rule_indices[:20]):
-		
-		rule = rules_dict[rule_index]
-		reactant = reactant.split(".")
-		reaction_center = get_reaction_center(reactant, rule)
-		reaction_center_sums.append(reaction_center.sum())
-		print(f"Reactant: {reactant}, Rule Index: {rule_index}, Reaction Center Sum: {reaction_center}")
+        rule = rules_dict[rule_index]
+        reactant = reactant.split(".")
+        reaction_center = get_reaction_center(reactant, rule)
+        reaction_center_sums.append(reaction_center.sum())
+        print(
+            f"Reactant: {reactant}, Rule Index: {rule_index}, Reaction Center Sum: {reaction_center}"
+        )
 
-	print("Total reaction center sum list:", reaction_center_sums)
-
-
+    print("Total reaction center sum list:", reaction_center_sums)
 
 
 def main():
-	reactants = ["C[C@@H](C(=O)O)O","[NAD+]"]  
-	rule_gml = """rule[
+    reactants = ["C[C@@H](C(=O)O)O", "[NAD+]"]
+    rule_gml = """rule[
 	ruleID "R1: (S)-lactate + NAD+ = pyruvate + NADH + H+" 
 	left [
 	node [ id 9 label "NAD+"]
@@ -220,16 +224,14 @@ def main():
 	"""
     
 	
-	
-	rule = mod.Rule.fromGMLString(rule_gml)
-    
-	result = get_reaction_center(reactants, rule)
+    rule = mod.Rule.fromGMLString(rule_gml)
+    result = get_reaction_center(reactants, rule)
 
-	print(result)
-	
+
 
 
 
 
 if __name__ == "__main__":
 	main()
+
