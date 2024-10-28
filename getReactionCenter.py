@@ -224,9 +224,7 @@ def main():
 	rule = mod.Rule.fromGMLString(rule_gml)
     
 	result = get_reaction_center(reactants, rule)
-    
-<<<<<<< Updated upstream
-<<<<<<< HEAD
+
 	print(result)
 	
 
@@ -235,18 +233,3 @@ def main():
 
 if __name__ == "__main__":
 	main()
-
-=======
-# 	print(result)
-
-
-# if __name__ == "__main__":
-# 	main()
->>>>>>> 59261c696daff9c817697b397661971a6ca3af69
-=======
-	print(result)
-
-
-if __name__ == "__main__":
-	main()
->>>>>>> Stashed changes
